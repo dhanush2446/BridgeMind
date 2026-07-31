@@ -6,7 +6,7 @@ export interface DomainExample {
   domain: string;
   problem: string;
   solution: string;
-  outcome: string;
+  outcome?: string;
 }
 
 export interface StructuralPattern {

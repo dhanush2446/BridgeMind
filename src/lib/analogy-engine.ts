@@ -39,6 +39,7 @@ export interface AnalogySuggestion {
   mappings: AnalogyMapping[];
   explanation: string;
   transferableSolutions: string[];
+  url?: string;
 }
 
 export interface BrokenBridge {
@@ -416,12 +417,21 @@ export async function analyzeProblem(input: string): Promise<FullAnalysis> {
     examples: matchedPapers.map(p => ({
       domain: p.domain,
       problem: p.title,
-      solution: p.solution
+      solution: p.solution,
+      outcome: `Validated structural mapping in ${p.domain}.`
     })),
     commonSolutions: [
       primaryPaper.solution,
       "Decentralized dynamic threshold adjustment",
       "Biomimetic structural dissipation pattern"
+    ],
+    commonFailures: [
+      "Rigid boundary assumptions across domains",
+      "Scale invariant breakdown"
+    ],
+    relatedPatterns: [
+      "cascading-failure-vulnerability",
+      "feedback-loop-amplification"
     ]
   };
 

@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  turbopack: {
-    root: __dirname,
-  },
+  serverExternalPackages: ['better-sqlite3'],
 };
 
 module.exports = nextConfig;
+
