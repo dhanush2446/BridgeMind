@@ -1,0 +1,294 @@
+{
+  "updatedAt": "2026-07-30T03:07:46.317Z",
+  "analogiesCount": 8,
+  "analogies": [
+    {
+      "id": "er-to-airport",
+      "sourceDomain": "Aviation",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Airport Runway Scheduling & Air Traffic Control",
+      "targetSystem": "Emergency Room Patient Processing",
+      "overallStrength": 0.89,
+      "mappings": [
+        {
+          "sourceNode": "Aircraft",
+          "targetNode": "Patients",
+          "strength": 0.91,
+          "reason": "Both arrive unpredictably and require prioritized processing."
+        },
+        {
+          "sourceNode": "Runway",
+          "targetNode": "Treatment Room",
+          "strength": 0.93,
+          "reason": "Both are scarce physical resources serving one unit at a time."
+        },
+        {
+          "sourceNode": "Air Traffic Controller",
+          "targetNode": "Triage Nurse",
+          "strength": 0.87,
+          "reason": "Both assess incoming units and assign queue priority."
+        },
+        {
+          "sourceNode": "Holding Pattern",
+          "targetNode": "ER Waiting Room",
+          "strength": 0.88,
+          "reason": "Both hold pending units when capacity is saturated."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Triage Urgency Escalation",
+          "reason": "Medical condition degrades over time if untreated, unlike delayed flights.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "Turnaround Predictability",
+          "reason": "Treatment duration varies widely per patient compared to standard flight landing slots.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "Implement predictive arrival modeling based on weather/flu season data",
+        "Create fast-track express lanes for non-critical cases to reduce queue depth",
+        "Dynamic resource pre-allocation based on incoming surge telemetry"
+      ]
+    },
+    {
+      "id": "kingfisher-to-shinkansen",
+      "sourceDomain": "Biology",
+      "targetDomain": "Transportation Engineering",
+      "sourceSystem": "Kingfisher Diving Head & Beak Geometry",
+      "targetSystem": "High-Speed Bullet Train Tunnel Entry",
+      "overallStrength": 0.94,
+      "mappings": [
+        {
+          "sourceNode": "Water-Air Density Interface",
+          "targetNode": "Tunnel-Atmosphere Air Pressure Interface",
+          "strength": 0.95,
+          "reason": "Both involve sudden medium density shifts generating pressure waves."
+        },
+        {
+          "sourceNode": "Beak Taper Angle",
+          "targetNode": "Train Nose Cone Profile",
+          "strength": 0.92,
+          "reason": "Both gradually displace fluid/air without acoustic shockwave build-up."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Hull Elastic Deformation",
+          "reason": "Biological beak deforms slightly under pressure; steel train hulls are rigid bodies.",
+          "severity": "low"
+        }
+      ],
+      "transferableSolutions": [
+        "Bio-inspired wedge nose cone geometry for high-speed transport vehicles",
+        "Varying cross-sectional taper ratios along vehicle front"
+      ]
+    },
+    {
+      "id": "bullwhip-to-pid",
+      "sourceDomain": "Cybernetics",
+      "targetDomain": "Supply Chain",
+      "sourceSystem": "PID Industrial Feedback Loop",
+      "targetSystem": "Multi-Tier Inventory Ordering Systems",
+      "overallStrength": 0.86,
+      "mappings": [
+        {
+          "sourceNode": "Sensor Signal Lag",
+          "targetNode": "Order Fulfillment Lead Time",
+          "strength": 0.88,
+          "reason": "Both introduce phase delay into system feedback."
+        },
+        {
+          "sourceNode": "Damping Gain Factor",
+          "targetNode": "Safety Stock Buffer",
+          "strength": 0.84,
+          "reason": "Both absorb transient spikes to prevent overshoot."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Human Perceptual Panic Bias",
+          "reason": "Supply chain managers panic-order under scarcity, unlike automated linear PID controllers.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "Point-of-sale telemetry sharing to eliminate feedback delays",
+        "Derivative gain smoothing on automated reorder triggers"
+      ]
+    },
+    {
+      "id": "termite-to-building",
+      "sourceDomain": "Biology & Ecology",
+      "targetDomain": "Architectural Engineering",
+      "sourceSystem": "Macrotermes Termite Mound Air Passages",
+      "targetSystem": "Commercial High-Rise Passive HVAC",
+      "overallStrength": 0.91,
+      "mappings": [
+        {
+          "sourceNode": "Mound Central Chimney",
+          "targetNode": "Building Atrium Vent Shaft",
+          "strength": 0.93,
+          "reason": "Both utilize thermal buoyance stack effect for air displacement."
+        },
+        {
+          "sourceNode": "Fungus Comb Cell",
+          "targetNode": "Basement Thermal Mass Slabs",
+          "strength": 0.89,
+          "reason": "Both absorb daytime heat and release it during cool night periods."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Active Worker Maintenance",
+          "reason": "Termites constantly seal and open pores; buildings rely on static mechanical dampers.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "Nighttime thermal purging of heavy concrete building cores",
+        "Buoyancy-driven chimney ventilation shafts in high-density office towers"
+      ]
+    },
+    {
+      "id": "ant-to-network-routing",
+      "sourceDomain": "Ecology",
+      "targetDomain": "Computer Science",
+      "sourceSystem": "Ant Colony Pheromone Trail Selection",
+      "targetSystem": "Autonomous Vehicle Swarm Rerouting",
+      "overallStrength": 0.88,
+      "mappings": [
+        {
+          "sourceNode": "Pheromone Intensity",
+          "targetNode": "Route Latency Telemetry",
+          "strength": 0.9,
+          "reason": "Both act as indirect signals indicating path efficiency."
+        },
+        {
+          "sourceNode": "Evaporation Rate",
+          "targetNode": "Route Expiration TTL Timer",
+          "strength": 0.87,
+          "reason": "Both decay stale information so agents don't use outdated routes."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Local Congestion Amplification",
+          "reason": "Too many cars following high-score route create instant traffic jams.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "Stigmergic route scoring with exponential decay time-to-live",
+        "Probabilistic routing choice to prevent single-path saturation"
+      ]
+    },
+    {
+      "id": "lotus-to-solar-panel",
+      "sourceDomain": "Botany",
+      "targetDomain": "Materials Science",
+      "sourceSystem": "Lotus Leaf Epidermal Micro-Papillae",
+      "targetSystem": "Photovoltaic Glass Coating",
+      "overallStrength": 0.93,
+      "mappings": [
+        {
+          "sourceNode": "Epicuticular Wax Crystals",
+          "targetNode": "Nanostructured Hydrophobic Coating",
+          "strength": 0.94,
+          "reason": "Both reduce surface contact area with liquid droplets."
+        },
+        {
+          "sourceNode": "Raindrop Roll-off",
+          "targetNode": "Self-Cleaning Washing Action",
+          "strength": 0.92,
+          "reason": "Both carry surface debris away without external energy."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Abrasion Vulnerability",
+          "reason": "Botanical leaves regenerate wax layer; industrial glass coatings wear down over time.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "Hierarchical micro-nano surface patterning for hydrophobic applications",
+        "Self-replenishing surface lubricant layers"
+      ]
+    },
+    {
+      "id": "immune-to-cybersecurity",
+      "sourceDomain": "Immunology",
+      "targetDomain": "Cybersecurity",
+      "sourceSystem": "Human Adaptive Immune System",
+      "targetSystem": "Enterprise Zero-Trust Intrusion Prevention",
+      "overallStrength": 0.87,
+      "mappings": [
+        {
+          "sourceNode": "Pathogen Antigen",
+          "targetNode": "Malware Signature / Payload",
+          "strength": 0.89,
+          "reason": "Both represent foreign entities seeking system compromise."
+        },
+        {
+          "sourceNode": "T-Cell Negative Selection",
+          "targetNode": "Behavioral Anomaly Profiler",
+          "strength": 0.86,
+          "reason": "Both filter out normal self-behavior to flag non-self anomalies."
+        },
+        {
+          "sourceNode": "Antibody Memory Cells",
+          "targetNode": "Patch & Rule Registry",
+          "strength": 0.88,
+          "reason": "Both retain rapid response capabilities against known repeat threats."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Autoimmune Reaction Risk",
+          "reason": "Over-aggressive immune response destroys healthy tissue; strict cyber security can block legitimate user workflows.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "Negative selection anomaly detectors for un-cataloged zero-day exploits",
+        "Quarantine sandboxing prior to full system isolation"
+      ]
+    },
+    {
+      "id": "whale-to-wind-turbine",
+      "sourceDomain": "Marine Biology",
+      "targetDomain": "Renewable Energy",
+      "sourceSystem": "Humpback Whale Pectoral Flipper",
+      "targetSystem": "Wind Turbine Blade Geometry",
+      "overallStrength": 0.9,
+      "mappings": [
+        {
+          "sourceNode": "Flipper Leading-Edge Tubercles",
+          "targetNode": "Blade Serrated Leading Edge",
+          "strength": 0.92,
+          "reason": "Both create channelized vortices that delay boundary-layer aerodynamic stall."
+        },
+        {
+          "sourceNode": "Tight Turning Radius underwater",
+          "targetNode": "Low Wind Speed Pitch Sensitivity",
+          "strength": 0.88,
+          "reason": "Both maintain lift forces under steep angles of attack."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Noise Harmonics",
+          "reason": "Whale flippers move silently in water; high-speed turbine blade bumps produce tonal noise if un-tuned.",
+          "severity": "low"
+        }
+      ],
+      "transferableSolutions": [
+        "Tubercles leading edge modifications to boost low-wind power output",
+        "Vortex generators on wing leading edges for pitch stability"
+      ]
+    }
+  ]
+}

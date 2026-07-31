@@ -1,0 +1,274 @@
+{
+  "version": "1.0.0",
+  "totalPatterns": 12,
+  "patterns": [
+    {
+      "id": "distributed-flow-constrained-network",
+      "number": 1,
+      "name": "Distributed Flow Under Variable Demand",
+      "abstractDescription": "Resources flow through a network of constrained pathways toward distributed destinations. Demand fluctuates, capacity is limited, and congestion emerges when flow exceeds local capacity.",
+      "structuralElements": [
+        "Flow units",
+        "Constrained channels",
+        "Variable demand",
+        "Distributed destinations",
+        "Capacity limits",
+        "Congestion points",
+        "Routing decisions"
+      ],
+      "domainCount": 12,
+      "examples": [
+        {
+          "domain": "Urban Planning",
+          "problem": "City traffic congestion during peak hours",
+          "solution": "Adaptive traffic signals, congestion pricing, alternate route distribution",
+          "outcome": "30% reduction in peak congestion in Singapore"
+        },
+        {
+          "domain": "Biology",
+          "problem": "Blood circulation through restricted vessels",
+          "solution": "Vasodilation, collateral vessel formation, heart rate adaptation",
+          "outcome": "Continuous oxygen delivery despite variable demand"
+        },
+        {
+          "domain": "Computer Science",
+          "problem": "Internet packet routing under heavy load",
+          "solution": "TCP congestion control, load balancing, adaptive routing protocols",
+          "outcome": "Stable throughput with minimal packet loss"
+        },
+        {
+          "domain": "Ecology",
+          "problem": "Ant colony food distribution across foraging trails",
+          "solution": "Pheromone-based decentralized routing, trail reinforcement",
+          "outcome": "Near-optimal path discovery without central control"
+        },
+        {
+          "domain": "Healthcare",
+          "problem": "Emergency room patient flow during surges",
+          "solution": "Triage protocols, overflow routing, dynamic staffing",
+          "outcome": "Reduced wait times during peak demand"
+        }
+      ],
+      "commonSolutions": [
+        "Adaptive routing to bypass congestion",
+        "Buffer/storage at intermediate points",
+        "Dynamic capacity allocation",
+        "Decentralized decision-making at nodes"
+      ],
+      "commonFailures": [
+        "Over-centralization of routing decisions",
+        "Insufficient buffer capacity",
+        "Ignoring feedback loops in demand"
+      ],
+      "relatedPatterns": [
+        "bottleneck-cascade",
+        "queue-priority-limited-capacity",
+        "load-balancing-heterogeneous"
+      ]
+    },
+    {
+      "id": "rapid-spread-connected-population",
+      "number": 2,
+      "name": "Rapid Spread Through Connected Population",
+      "abstractDescription": "An entity (information, disease, behavior, fire) propagates through a connected network. Spread rate depends on connectivity, susceptibility, and containment barriers.",
+      "structuralElements": [
+        "Spreading agent",
+        "Connected population/network",
+        "Susceptibility",
+        "Transmission rate",
+        "Containment barriers",
+        "Tipping points",
+        "Recovery/resistance"
+      ],
+      "domainCount": 10,
+      "examples": [
+        {
+          "domain": "Epidemiology",
+          "problem": "Infectious disease pandemic spread",
+          "solution": "Vaccination, quarantine, contact tracing, social distancing",
+          "outcome": "Flattened infection curve, herd immunity"
+        },
+        {
+          "domain": "Information Science",
+          "problem": "Fake news propagation on social media",
+          "solution": "Fact-checking nodes, algorithmic dampening, media literacy",
+          "outcome": "Reduced viral spread of misinformation"
+        },
+        {
+          "domain": "Cybersecurity",
+          "problem": "Malware and worm propagation through networks",
+          "solution": "Network segmentation, patch management, intrusion detection",
+          "outcome": "Contained spread to isolated network segments"
+        },
+        {
+          "domain": "Finance",
+          "problem": "Financial panic and bank run contagion",
+          "solution": "Circuit breakers, deposit insurance, central bank intervention",
+          "outcome": "Prevented systemic collapse during crises"
+        }
+      ],
+      "commonSolutions": [
+        "Create structural barriers/firebreaks in the network",
+        "Increase resistance at vulnerable nodes",
+        "Early detection and rapid containment",
+        "Reduce connectivity at key hubs"
+      ],
+      "commonFailures": [
+        "Delayed detection allows exponential growth",
+        "Over-connected hubs amplify spread",
+        "Uniform containment ignoring network topology"
+      ],
+      "relatedPatterns": [
+        "network-hub-vulnerability",
+        "tipping-point-cascade",
+        "immune-response-adaptive"
+      ]
+    },
+    {
+      "id": "queue-priority-limited-capacity",
+      "number": 3,
+      "name": "Uncertain Arrivals with Priority Queuing Under Limited Capacity",
+      "abstractDescription": "Agents arrive unpredictably at a processing system with finite capacity. A priority mechanism determines service order. Delays cascade when arrival rate exceeds processing capacity.",
+      "structuralElements": [
+        "Uncertain arrivals",
+        "Limited service capacity",
+        "Priority-based queues",
+        "Cascading delays",
+        "Service time variability",
+        "Overflow mechanisms"
+      ],
+      "domainCount": 9,
+      "examples": [
+        {
+          "domain": "Healthcare",
+          "problem": "Emergency room overcrowding and long wait times",
+          "solution": "Triage protocols, fast-track lanes, predictive staffing",
+          "outcome": "Reduced average wait from 4h to 90min"
+        },
+        {
+          "domain": "Aviation",
+          "problem": "Airport security queue congestion during peak travel",
+          "solution": "PreCheck lanes, dynamic staffing, automated screening",
+          "outcome": "Average wait time under 15 minutes"
+        },
+        {
+          "domain": "Computer Science",
+          "problem": "Network Quality of Service (QoS) packet prioritization",
+          "solution": "Weighted fair queuing, ECN congestion signaling",
+          "outcome": "Sub-10ms latency for voice/video packets under congestion"
+        }
+      ],
+      "commonSolutions": [
+        "Multi-tier priority system",
+        "Parallel processing channels",
+        "Predictive capacity planning",
+        "Dynamic resource allocation based on queue depth"
+      ],
+      "commonFailures": [
+        "Single queue bottleneck",
+        "Priority inversion",
+        "Ignoring arrival rate patterns"
+      ],
+      "relatedPatterns": [
+        "distributed-flow-constrained-network",
+        "bottleneck-cascade"
+      ]
+    },
+    {
+      "id": "decentralized-task-allocation",
+      "number": 4,
+      "name": "Decentralized Task Allocation Under Local Information",
+      "abstractDescription": "A system of autonomous agents allocates tasks among themselves using only local information and simple communication rules, without a central coordinator.",
+      "structuralElements": [
+        "Autonomous agents",
+        "Local information only",
+        "Simple communication rules",
+        "Emergent coordination",
+        "Dynamic task arrival",
+        "Distributed decision-making"
+      ],
+      "domainCount": 8,
+      "examples": [
+        {
+          "domain": "Biology",
+          "problem": "Bee hive task allocation (foraging, nursing, building)",
+          "solution": "Age-based role switching, waggle dance communication, threshold response",
+          "outcome": "Efficient division of labor without central control"
+        },
+        {
+          "domain": "Logistics",
+          "problem": "Warehouse worker task assignment across dynamic orders",
+          "solution": "Zone-based picking, local queue management, peer signaling",
+          "outcome": "Reduced walking distance and improved throughput"
+        },
+        {
+          "domain": "Robotics",
+          "problem": "Swarm robotics search and rescue in disaster zones",
+          "solution": "Stigmergic communication, localized frontier exploration",
+          "outcome": "Rapid coverage without single point of failure"
+        }
+      ],
+      "commonSolutions": [
+        "Simple local rules producing global coordination",
+        "Threshold-based role switching",
+        "Indirect communication through environment (stigmergy)"
+      ],
+      "commonFailures": [
+        "Deadlock when all agents wait for others",
+        "Oscillation between states without convergence"
+      ],
+      "relatedPatterns": [
+        "swarm-intelligence-emergent",
+        "distributed-consensus-protocol"
+      ]
+    },
+    {
+      "id": "delayed-feedback-oscillation",
+      "number": 5,
+      "name": "Delayed Feedback Oscillations & System Instability",
+      "abstractDescription": "A control system attempts to maintain equilibrium, but delays between measurement, action, and system response cause overshooting and perpetual oscillations.",
+      "structuralElements": [
+        "Target equilibrium state",
+        "Sensor delay",
+        "Actuator response lag",
+        "System inertia",
+        "Overshoot amplitude",
+        "Damping controls"
+      ],
+      "domainCount": 11,
+      "examples": [
+        {
+          "domain": "Economics",
+          "problem": "The Bullwhip Effect in multi-tier supply chains",
+          "solution": "Point-of-sale data sharing, reduced order batch sizes, vendor-managed inventory",
+          "outcome": "50% reduction in inventory variance"
+        },
+        {
+          "domain": "Cybernetics",
+          "problem": "PID controller hunting in industrial thermostats",
+          "solution": "Derivative gain adjustment, predictive feedforward estimation",
+          "outcome": "Zero steady-state oscillation around setpoint"
+        },
+        {
+          "domain": "Neuroscience",
+          "problem": "Intention tremors in Parkinsonian motor control",
+          "solution": "Deep brain stimulation to override phase-lagged proprioceptive feedback",
+          "outcome": "Restored smooth motor trajectory execution"
+        }
+      ],
+      "commonSolutions": [
+        "Shorten feedback latency loops",
+        "Add derivative / predictive feedforward compensation",
+        "Introduce non-linear damping filters"
+      ],
+      "commonFailures": [
+        "Amplifying actuator power to force faster correction",
+        "Measuring state at insufficient sampling frequencies"
+      ],
+      "relatedPatterns": [
+        "distributed-flow-constrained-network",
+        "tipping-point-cascade"
+      ]
+    }
+  ]
+}

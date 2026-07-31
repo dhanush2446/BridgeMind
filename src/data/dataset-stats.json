@@ -1,0 +1,36 @@
+{
+  "lastHarvested": "2026-07-30T17:11:51.150Z",
+  "totalCaseStudies": 1509,
+  "totalAnalogies": 8,
+  "totalPatterns": 15,
+  "totalDomains": 20,
+  "domainCounts": {
+    "Computer Science": 140,
+    "Cybernetics": 96,
+    "Urban Planning": 169,
+    "Architecture": 39,
+    "Cybersecurity": 66,
+    "Healthcare": 138,
+    "Marine Hydrodynamics": 64,
+    "Neuroscience": 256,
+    "Materials Science": 23,
+    "Robotics & Autonomous Swarms": 127,
+    "Energy Systems": 51,
+    "Chemical Engineering": 5,
+    "Quantum Computing": 152,
+    "Aerospace Engineering": 17,
+    "Biomimicry": 52,
+    "Ecology": 39,
+    "Nanotechnology": 20,
+    "Economics & Finance": 52,
+    "Mechanical Engineering": 2,
+    "Aviation": 1
+  },
+  "sources": [
+    "ArXiv API (25 scientific categories)",
+    "Semantic Scholar Academic Graph API",
+    "OpenAlex Open Research Knowledge Graph",
+    "Curated Cross-Domain Niche Case Studies"
+  ],
+  "pipelineVersion": "7.0.0 (Real Multi-Source Corpus)"
+}

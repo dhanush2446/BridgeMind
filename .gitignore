@@ -1,0 +1,36 @@
+# dependencies
+node_modules/
+.pnpm-store
+
+# Next.js build output
+.next/
+out/
+tsconfig.tsbuildinfo
+
+# Production
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+
+# Environment and secrets
+.env
+.env*.local
+
+# Logs and debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

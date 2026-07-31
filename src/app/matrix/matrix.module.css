@@ -1,0 +1,192 @@
+/* ── Domain Matrix Styles ── */
+
+.main {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(6, 7, 14, 0.6);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 64px;
+  z-index: 40;
+}
+
+.pageTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.pageTitleIcon {
+  font-size: 1.4rem;
+}
+
+.pageSubtitle {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+}
+
+.container {
+  padding: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 32px;
+}
+
+.matrixWrapper {
+  overflow-x: auto;
+}
+
+.matrixGrid {
+  display: grid;
+  grid-template-columns: 120px repeat(10, minmax(64px, 1fr));
+  gap: 4px;
+}
+
+.cellHeaderCorner {
+  background: transparent;
+}
+
+.cellHeaderCol {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 8px 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.cellHeaderRow {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding-right: 8px;
+}
+
+.matrixCell {
+  height: 54px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.matrixCell:hover {
+  transform: scale(1.06);
+  z-index: 10;
+  border-color: #ffffff;
+}
+
+.cellSelected {
+  border-color: var(--accent-cyan) !important;
+  box-shadow: 0 0 16px rgba(0, 229, 255, 0.4);
+  z-index: 12;
+}
+
+.cellScore {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Detail Card */
+.detailCard {
+  padding: 28px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pairArrow {
+  font-size: 1.1rem;
+  color: var(--text-tertiary);
+}
+
+.scoreRow {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.scoreValue {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+}
+
+.scoreLabel {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.detailSection h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.detailSection ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detailSection li {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 2px solid var(--accent-cyan);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

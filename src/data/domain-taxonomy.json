@@ -1,0 +1,272 @@
+{
+  "version": "2.0.0",
+  "description": "Universal Analogy Engine Domain Taxonomy & Structural Role Dictionary",
+  "taxonomy": {
+    "Healthcare": {
+      "Patient": {
+        "role": "Flow Unit",
+        "abstract": "Agent requiring prioritized service"
+      },
+      "Triage Nurse": {
+        "role": "Priority Dispatcher",
+        "abstract": "Classification & routing node"
+      },
+      "Treatment Room": {
+        "role": "Shared Resource",
+        "abstract": "Constrained processing capacity"
+      },
+      "ICU Bed": {
+        "role": "Critical Bottleneck",
+        "abstract": "High-dependency priority resource"
+      },
+      "Surgical Queue": {
+        "role": "Priority Buffer",
+        "abstract": "Ordered delay store"
+      }
+    },
+    "Aviation": {
+      "Aircraft": {
+        "role": "Flow Unit",
+        "abstract": "Agent requiring service"
+      },
+      "Air Traffic Control": {
+        "role": "Priority Dispatcher",
+        "abstract": "Classification node"
+      },
+      "Runway": {
+        "role": "Shared Resource",
+        "abstract": "Constrained processing capacity"
+      },
+      "Holding Pattern": {
+        "role": "Priority Buffer",
+        "abstract": "Ordered delay store"
+      },
+      "Fuel Reserve": {
+        "role": "Critical Constraint",
+        "abstract": "System decay threshold"
+      }
+    },
+    "Computer Science": {
+      "Data Packet": {
+        "role": "Flow Unit",
+        "abstract": "Agent requiring service"
+      },
+      "Router / Load Balancer": {
+        "role": "Priority Dispatcher",
+        "abstract": "Classification node"
+      },
+      "Buffer / Queue": {
+        "role": "Priority Buffer",
+        "abstract": "Ordered delay store"
+      },
+      "CPU Core": {
+        "role": "Shared Resource",
+        "abstract": "Constrained processing capacity"
+      },
+      "Bandwidth Limit": {
+        "role": "Channel Constraint",
+        "abstract": "Max throughput threshold"
+      }
+    },
+    "Ecology": {
+      "Foraging Ant": {
+        "role": "Autonomous Agent",
+        "abstract": "Decentralized task executor"
+      },
+      "Pheromone Trail": {
+        "role": "Stigmergic Signal",
+        "abstract": "Environment-mediated feedback channel"
+      },
+      "Nest Entrance": {
+        "role": "Shared Resource",
+        "abstract": "Constrained processing capacity"
+      },
+      "Food Source": {
+        "role": "Target Sink",
+        "abstract": "Resource extraction node"
+      },
+      "Predator Threat": {
+        "role": "Systemic Risk",
+        "abstract": "Exogenous disruption factor"
+      }
+    },
+    "Supply Chain": {
+      "Cargo Unit / Order": {
+        "role": "Flow Unit",
+        "abstract": "Agent requiring service"
+      },
+      "Fulfillment Hub": {
+        "role": "Priority Dispatcher",
+        "abstract": "Classification node"
+      },
+      "Warehouse Bay": {
+        "role": "Shared Resource",
+        "abstract": "Constrained processing capacity"
+      },
+      "Safety Stock": {
+        "role": "Buffer Storage",
+        "abstract": "Damping store against volatility"
+      },
+      "Lead Time Delay": {
+        "role": "Feedback Lag",
+        "abstract": "Phase offset in control response"
+      }
+    },
+    "Economics & Finance": {
+      "Liquidity Capital": {
+        "role": "Flow Unit",
+        "abstract": "Agent requiring service"
+      },
+      "Central Bank": {
+        "role": "Priority Dispatcher",
+        "abstract": "Macro regulatory node"
+      },
+      "Reserve Ratio": {
+        "role": "Buffer Storage",
+        "abstract": "Damping store against volatility"
+      },
+      "Bank Run Panic": {
+        "role": "Cascade Effect",
+        "abstract": "Positive feedback contagion"
+      },
+      "Circuit Breaker": {
+        "role": "Damping Mechanism",
+        "abstract": "Automatic trip barrier"
+      }
+    },
+    "Cybernetics": {
+      "Feedback Loop": {
+        "role": "Control Loop",
+        "abstract": "Self-regulating signal circuit"
+      },
+      "Actuator": {
+        "role": "Target Sink",
+        "abstract": "Resource application node"
+      },
+      "Sensor": {
+        "role": "State Estimator",
+        "abstract": "Measurement extraction node"
+      },
+      "PID Controller": {
+        "role": "Priority Dispatcher",
+        "abstract": "Error-correcting governor"
+      },
+      "Hysteresis": {
+        "role": "Phase Lag",
+        "abstract": "Non-linear response buffer"
+      }
+    },
+    "Biomimicry": {
+      "Biological Model": {
+        "role": "Source Template",
+        "abstract": "Evolutionary optimized structure"
+      },
+      "Adaptation Mechanism": {
+        "role": "Functional Principle",
+        "abstract": "Abstract solution concept"
+      },
+      "Environmental Pressures": {
+        "role": "Boundary Constraints",
+        "abstract": "Fitness landscape limits"
+      }
+    },
+    "Materials Science": {
+      "Crystal Lattice": {
+        "role": "Structural Framework",
+        "abstract": "Periodic spatial organization"
+      },
+      "Dislocation Defect": {
+        "role": "Stress Concentrator",
+        "abstract": "Localized failure seed"
+      },
+      "Nanostructure Coating": {
+        "role": "Interface Barrier",
+        "abstract": "Surface property modifier"
+      }
+    },
+    "Nanotechnology": {
+      "Nanorobot": {
+        "role": "Micro-Actuator",
+        "abstract": "Targeted molecular agent"
+      },
+      "Target Antigen": {
+        "role": "Molecular Key",
+        "abstract": "Trigger recognition site"
+      },
+      "Payload Release": {
+        "role": "Effector Trigger",
+        "abstract": "Targeted action execution"
+      }
+    },
+    "Neuroscience": {
+      "Neuron Spike": {
+        "role": "Discrete Signal",
+        "abstract": "Binary action potential pulse"
+      },
+      "Synaptic Plasticity": {
+        "role": "Weight Adaptation",
+        "abstract": "Learning connection modifier"
+      },
+      "Basal Ganglia": {
+        "role": "Central Arbiter",
+        "abstract": "Action selection governor"
+      }
+    },
+    "Quantum Computing": {
+      "Physical Qubit": {
+        "role": "State Carrier",
+        "abstract": "Superposition quantum unit"
+      },
+      "Decoherence Noise": {
+        "role": "Exogenous Perturbation",
+        "abstract": "State decay factor"
+      },
+      "Surface Code": {
+        "role": "Topological Shield",
+        "abstract": "Redundant error checker"
+      }
+    },
+    "Energy Systems": {
+      "Power Grid Load": {
+        "role": "Flow Unit",
+        "abstract": "Real-time energy demand"
+      },
+      "Battery Buffer": {
+        "role": "Impedance Equalizer",
+        "abstract": "Transient energy store"
+      },
+      "Frequency Governor": {
+        "role": "Phase Synchronizer",
+        "abstract": "System oscillation controller"
+      }
+    },
+    "Urban Planning": {
+      "Traffic Flow": {
+        "role": "Flow Unit",
+        "abstract": "Dynamic agent congestion stream"
+      },
+      "Signal Intersection": {
+        "role": "Bottleneck Node",
+        "abstract": "Intermittent flow regulator"
+      },
+      "Transit Hub": {
+        "role": "Distribution Node",
+        "abstract": "Multi-modal transfer point"
+      }
+    },
+    "Architecture & Building Science": {
+      "Thermal Core": {
+        "role": "Heat Sink",
+        "abstract": "Passive energy accumulator"
+      },
+      "Ventilation Shaft": {
+        "role": "Convection Duct",
+        "abstract": "Density-driven fluid channel"
+      },
+      "Facade Envelope": {
+        "role": "Climate Barrier",
+        "abstract": "Selective boundary layer"
+      }
+    }
+  }
+}
