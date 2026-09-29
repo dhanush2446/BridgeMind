@@ -311,7 +311,7 @@ Example: 'A hospital has long emergency-room waiting times during peak hours. Pa
               <span className="gradient-text">structural reasoning engine</span>
             </h2>
             <p className={styles.featuresSubtitle}>
-              Seven integrated systems working together to find, validate, and
+              Integrated systems working together to find, validate, and
               synthesize cross-domain solutions.
             </p>
           </div>
@@ -320,74 +320,42 @@ Example: 'A hospital has long emergency-room waiting times during peak hours. Pa
           <div className={styles.featureGrid}>
             {[
               {
-                icon: "✏️",
-                title: "Multimodal Diagram Studio",
-                description:
-                  "Visually construct problem flowcharts with entities, bottlenecks, and loops on an interactive canvas.",
-                color: "cyan",
-                path: "/studio",
-              },
-              {
-                icon: "⚙️",
-                title: "Mechanism Transfer Simulator",
-                description:
-                  "Simulate 4-stage cross-domain mechanism transfer and stress-test boundary stability under load.",
-                color: "amber",
-                path: "/simulate",
-              },
-              {
-                icon: "📊",
-                title: "Domain Isomorphism Matrix",
-                description:
-                  "Explore a 10x10 transferability heatmap quantifying structural isomorphism across knowledge fields.",
-                color: "purple",
-                path: "/matrix",
-              },
-              {
                 icon: "🔮",
-                title: "Interactive Isomorphism Graph",
+                title: "Interactive Isomorphism Engine",
                 description:
-                  "Live visualization mapping your problem to its structural twins across domains. Click any connection to see the reasoning.",
+                  "Live visualization mapping your problem to its structural twins across domains with deep reasoning.",
                 color: "cyan",
                 path: "/analyze",
               },
               {
-                icon: "🧠",
-                title: "Self-Evolving Knowledge Graph",
-                description:
-                  "Every analysis strengthens a growing map of global problem structures. The system gets smarter with every query.",
-                color: "purple",
-                path: "/knowledge",
-              },
-              {
                 icon: "🔬",
-                title: "Broken Bridge Engine",
+                title: "Broken Bridge Analysis",
                 description:
-                  "Identifies exactly where each analogy collapses — and innovates at the crack. Turns failures into design requirements.",
+                  "Identifies exactly where each analogy collapses — and innovates at the crack to create robust solutions.",
                 color: "red",
                 path: "/analyze",
               },
               {
                 icon: "⚡",
-                title: "Hybrid Analogy Generator",
+                title: "Hybrid Mechanism Generator",
                 description:
-                  "Combines mechanisms from multiple domains into new solutions that no single field could produce.",
+                  "Combines principles from multiple distinct fields into novel solutions no single domain could yield.",
                 color: "amber",
                 path: "/analyze",
               },
               {
-                icon: "📐",
-                title: "Universal Pattern Library",
+                icon: "💾",
+                title: "Scientific Corpus & SQLite Hub",
                 description:
-                  "A searchable atlas of ~127 recurring problem structures. Everything else is domain-specific decoration.",
-                color: "blue",
-                path: "/patterns",
+                  "Browse, search, and inspect indexed peer-reviewed research papers across 20 scientific disciplines with sub-3ms FTS5 search.",
+                color: "purple",
+                path: "/datasets",
               },
               {
                 icon: "🌍",
                 title: "Impact Problem Finder",
                 description:
-                  "After solving your problem, discover other global challenges with the same structure waiting to be solved.",
+                  "After solving your problem, discover other global challenges with the exact same abstract structure.",
                 color: "green",
                 path: "/analyze",
               },

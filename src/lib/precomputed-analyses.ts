@@ -45,6 +45,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "er-to-airport",
         sourceDomain: "Aviation",
         sourceSystem: "Airport Runway Scheduling System",
+        analogyName: "Runway Scheduling → ER Triage",
         overallStrength: 0.89,
         mappings: [
           { sourceNode: "Aircraft", targetNode: "Patients", reason: "Both arrive unpredictably and require prioritized processing with varying urgency levels.", strength: 0.91 },
@@ -66,6 +67,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "er-to-packet-routing",
         sourceDomain: "Computer Science",
         sourceSystem: "Network Quality of Service (QoS)",
+        analogyName: "Network QoS → Patient Prioritization",
         overallStrength: 0.83,
         mappings: [
           { sourceNode: "Data Packets", targetNode: "Patients", reason: "Both are units requiring processing that arrive in bursts with varying priority.", strength: 0.82 },
@@ -86,6 +88,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "er-to-ant-foraging",
         sourceDomain: "Ecology",
         sourceSystem: "Ant Colony Resource Processing",
+        analogyName: "Ant Nest → ER Staffing",
         overallStrength: 0.71,
         mappings: [
           { sourceNode: "Returning Foragers", targetNode: "Arriving Patients", reason: "Both arrive at a central processing point carrying needs that require different handling.", strength: 0.70 },
@@ -210,6 +213,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "traffic-to-ant-colony",
         sourceDomain: "Ecology",
         sourceSystem: "Ant Colony Foraging Network",
+        analogyName: "Ant Trails → Traffic Routes",
         overallStrength: 0.86,
         mappings: [
           { sourceNode: "Ants", targetNode: "Vehicles", reason: "Both are autonomous agents navigating a shared network to reach destinations.", strength: 0.88 },
@@ -229,6 +233,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "traffic-to-blood-flow",
         sourceDomain: "Biology",
         sourceSystem: "Blood Circulatory System",
+        analogyName: "Blood Flow → Traffic Flow",
         overallStrength: 0.81,
         mappings: [
           { sourceNode: "Blood Cells", targetNode: "Vehicles", reason: "Both are flow units carrying payload through constrained channels.", strength: 0.84 },
@@ -248,6 +253,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "traffic-to-immune",
         sourceDomain: "Biology",
         sourceSystem: "Immune System Response",
+        analogyName: "Immune Response → Congestion Clearing",
         overallStrength: 0.68,
         mappings: [
           { sourceNode: "Threat Detection", targetNode: "Congestion Detection", reason: "Both identify localized problems that could spread if unchecked.", strength: 0.74 },
@@ -338,6 +344,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "datacenter-to-termite",
         sourceDomain: "Biology",
         sourceSystem: "Termite Mound Ventilation System",
+        analogyName: "Termite Cooling → Data Center Cooling",
         overallStrength: 0.91,
         mappings: [
           { sourceNode: "Mound Interior", targetNode: "Server Room", reason: "Both are enclosed spaces generating heat that must be regulated within narrow temperature bands.", strength: 0.93 },
@@ -359,6 +366,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "datacenter-to-human-body",
         sourceDomain: "Biology",
         sourceSystem: "Human Thermoregulation System",
+        analogyName: "Body Temperature → Server Temperature",
         overallStrength: 0.84,
         mappings: [
           { sourceNode: "Blood Circulation", targetNode: "Coolant Distribution", reason: "Both transport heat from generation points to dissipation surfaces via fluid circulation.", strength: 0.89 },
@@ -378,6 +386,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "datacenter-to-coral-reef",
         sourceDomain: "Marine Biology",
         sourceSystem: "Coral Reef Water Flow Architecture",
+        analogyName: "Reef Water Flow → Server Airflow",
         overallStrength: 0.72,
         mappings: [
           { sourceNode: "Coral Structure", targetNode: "Server Rack Layout", reason: "Both are porous structures that must allow fluid flow through and around them.", strength: 0.75 },
@@ -472,6 +481,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "warehouse-to-bee-hive",
         sourceDomain: "Biology",
         sourceSystem: "Bee Hive Task Allocation & Resource Distribution",
+        analogyName: "Bee Hive → Warehouse Workers",
         overallStrength: 0.82,
         mappings: [
           { sourceNode: "Worker Bees", targetNode: "Pick Workers", reason: "Both are autonomous agents retrieving items from distributed storage locations.", strength: 0.88 },
@@ -491,6 +501,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "warehouse-to-hospital-pharmacy",
         sourceDomain: "Healthcare",
         sourceSystem: "Hospital Pharmacy Dispensing System",
+        analogyName: "Pharmacy Queue → Warehouse Queue",
         overallStrength: 0.87,
         mappings: [
           { sourceNode: "Medication Orders", targetNode: "Pick Orders", reason: "Both are requests for specific items from a large inventory that must be fulfilled quickly and accurately.", strength: 0.92 },
@@ -509,6 +520,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "warehouse-to-cpu-pipeline",
         sourceDomain: "Computer Architecture",
         sourceSystem: "CPU Instruction Pipeline",
+        analogyName: "CPU Pipeline → Order Pipeline",
         overallStrength: 0.79,
         mappings: [
           { sourceNode: "Instructions", targetNode: "Orders", reason: "Both are work units flowing through a multi-stage sequential pipeline.", strength: 0.85 },
@@ -602,6 +614,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "misinfo-to-epidemic",
         sourceDomain: "Epidemiology",
         sourceSystem: "Infectious Disease Epidemic Control",
+        analogyName: "Virus Spread → Fake News Spread",
         overallStrength: 0.88,
         mappings: [
           { sourceNode: "Pathogen", targetNode: "Misinformation Content", reason: "Both are agents that spread through a population, 'infecting' susceptible individuals.", strength: 0.90 },
@@ -623,6 +636,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "misinfo-to-immune-system",
         sourceDomain: "Biology",
         sourceSystem: "Adaptive Immune Response",
+        analogyName: "Immune Memory → Fact-Checking Memory",
         overallStrength: 0.81,
         mappings: [
           { sourceNode: "Antigens", targetNode: "Misinformation Markers", reason: "Both are identifying features that the defense system learns to recognize.", strength: 0.82 },
@@ -642,6 +656,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "misinfo-to-forest-fire",
         sourceDomain: "Ecology",
         sourceSystem: "Forest Fire Management",
+        analogyName: "Firebreak → Content Firewall",
         overallStrength: 0.76,
         mappings: [
           { sourceNode: "Fire", targetNode: "Viral Content", reason: "Both spread rapidly through connected fuel/network when conditions are right.", strength: 0.82 },
@@ -734,6 +749,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "democracy-to-immune",
         sourceDomain: "Immunology",
         sourceSystem: "Immune System Self/Non-Self Calibration",
+        analogyName: "Immune Tolerance → Political Tolerance",
         overallStrength: 0.78,
         mappings: [
           { sourceNode: "Self/Non-Self Distinction", targetNode: "Us/Them Political Division", reason: "Both systems must distinguish between 'own' and 'other' without overreacting to harmless differences.", strength: 0.82 },
@@ -753,6 +769,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "democracy-to-ecosystem",
         sourceDomain: "Ecology",
         sourceSystem: "Diverse Ecosystem Stability",
+        analogyName: "Ecosystem Balance → Political Balance",
         overallStrength: 0.82,
         mappings: [
           { sourceNode: "Species Diversity", targetNode: "Political Party Diversity", reason: "Both systems become more stable and resilient with greater diversity of actors.", strength: 0.86 },
@@ -772,6 +789,7 @@ export const PRECOMPUTED_ANALYSES: Record<string, FullAnalysis> = {
         id: "democracy-to-neural",
         sourceDomain: "Neuroscience",
         sourceSystem: "Neural Conflict Resolution in the Brain",
+        analogyName: "Brain Conflict → Political Conflict",
         overallStrength: 0.75,
         mappings: [
           { sourceNode: "Conflicting Neural Signals", targetNode: "Conflicting Political Views", reason: "Both represent competing inputs that must be resolved into coherent action.", strength: 0.78 },

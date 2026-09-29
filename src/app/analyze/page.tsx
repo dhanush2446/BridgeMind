@@ -3,7 +3,9 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import type { FullAnalysis, AnalogySuggestion, BrokenBridgeReport, HybridSolution, ImpactProblem, ProblemStructure } from "@/lib/analogy-engine";
+import { getCleanPaperUrl } from "@/lib/paper-utils";
 import type { StructuralPattern } from "@/lib/seed-data";
+import SolutionVisualizer from "@/components/SolutionVisualizer";
 import styles from "./analyze.module.css";
 
 /* ══════════════════════════════════════════════
@@ -446,6 +448,107 @@ function IsomorphismGraph({ analogy }: { analogy: AnalogySuggestion }) {
           <p>{analogy.mappings[selectedMapping].reason}</p>
         </div>
       )}
+    </div>
+  );
+}
+
+/* ══════════════════════════════════════════════
+   5-PART DETAILED ANALOGY BREAKDOWN PANEL
+   ══════════════════════════════════════════════ */
+
+function DetailedAnalogyBreakdown({ analogy }: { analogy: AnalogySuggestion }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className={styles.analogyAccordion}>
+      <button
+        className={`${styles.analogyAccordionToggle} ${isOpen ? styles.analogyAccordionToggleOpen : ""}`}
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsOpen(!isOpen);
+        }}
+      >
+        <span className={styles.analogyAccordionLabel}>
+          {isOpen ? "Hide Details" : "View Details"}
+        </span>
+        <span className={`${styles.analogyAccordionChevron} ${isOpen ? styles.analogyAccordionChevronOpen : ""}`}>
+          ›
+        </span>
+      </button>
+
+      <div className={`${styles.analogyAccordionContent} ${isOpen ? styles.analogyAccordionContentOpen : ""}`}>
+        <div className={styles.detailedAnalogyBreakdown}>
+          {/* 1. Target Research Problem Context */}
+          <div className={styles.breakdownBox}>
+            <div className={styles.breakdownHeader}>
+              <span className={styles.breakdownIcon}>🎯</span>
+              <span>What Problem Was Solved ({analogy.sourceDomain})</span>
+            </div>
+            <p className={styles.breakdownText}>
+              {analogy.targetProblem || analogy.explanation}
+            </p>
+          </div>
+
+          {/* 2. Root Mechanism */}
+          {analogy.problemMechanism && (
+            <div className={styles.breakdownBox}>
+              <div className={styles.breakdownHeader}>
+                <span className={styles.breakdownIcon}>⚡</span>
+                <span>Why It Happens</span>
+              </div>
+              <p className={styles.breakdownText}>{analogy.problemMechanism}</p>
+            </div>
+          )}
+
+          {/* 3. Source Domain Solution */}
+          {analogy.targetSolution && (
+            <div className={styles.breakdownBox}>
+              <div className={styles.breakdownHeader}>
+                <span className={styles.breakdownIcon}>🔧</span>
+                <span>How They Fixed It</span>
+              </div>
+              <p className={styles.breakdownText}>{analogy.targetSolution}</p>
+            </div>
+          )}
+
+          {/* 4. Why The Two Problems Match */}
+          {analogy.structuralComparison && (
+            <div className={styles.breakdownBox}>
+              <div className={styles.breakdownHeader}>
+                <span className={styles.breakdownIcon}>🔀</span>
+                <span>Why These Two Problems Match</span>
+              </div>
+              <p className={styles.breakdownText}>{analogy.structuralComparison}</p>
+            </div>
+          )}
+
+          {/* 5. How To Apply This To Your Problem */}
+          {analogy.detailedTransferSolution && (
+            <div className={styles.breakdownBoxHighlight}>
+              <div className={styles.breakdownHeaderHighlight}>
+                <span className={styles.breakdownIcon}>🚀</span>
+                <span>How To Apply This To Your Problem</span>
+              </div>
+              <div className={styles.breakdownTextHighlight}>
+                {analogy.detailedTransferSolution}
+              </div>
+            </div>
+          )}
+
+          {/* Research Paper Link Button */}
+          <div style={{ marginTop: "1rem", paddingTop: "0.75rem", borderTop: "1px solid rgba(255, 255, 255, 0.08)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
+            <span style={{ fontSize: "0.8rem", color: "#94a3b8" }}>📄 Research Paper: <strong>{analogy.sourceSystem}</strong></span>
+            <a
+              href={getCleanPaperUrl(analogy.sourceSystem, analogy.url)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.paperBtn}
+            >
+              View Published Research Paper ↗
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -1062,6 +1165,9 @@ export default function AnalyzePage() {
             : analysis.problem}
         </div>
         <div className={styles.topBarActions}>
+          <span style={{ fontSize: "0.75rem", background: "rgba(16, 185, 129, 0.15)", border: "1px solid rgba(16, 185, 129, 0.4)", color: "#34d399", padding: "0.3rem 0.65rem", borderRadius: "12px", display: "inline-flex", alignItems: "center", gap: "0.4rem", fontWeight: 600 }}>
+            <span>⚡</span> Mapped Analogies Auto-Updated
+          </span>
           <ExportButton analysis={analysis} />
         </div>
       </div>
@@ -1147,8 +1253,11 @@ export default function AnalyzePage() {
                         {Math.round(analogy.overallStrength * 100)}%
                       </span>
                     </div>
-                    <h4 className={styles.analogyCardTitle}>{analogy.sourceSystem}</h4>
-                    <p className={styles.analogyCardDesc}>{analogy.explanation}</p>
+                    <h4 className={styles.analogyShortName}>{analogy.analogyName || analogy.sourceSystem}</h4>
+                    {analogy.analogyName && (
+                      <div className={styles.analogySubtitle}>{analogy.sourceSystem}</div>
+                    )}
+
                     <div className={styles.analogyCardMappings}>
                       {analogy.mappings.slice(0, 3).map((m, j) => (
                         <div key={j} className={styles.miniMapping}>
@@ -1163,16 +1272,27 @@ export default function AnalyzePage() {
                         </span>
                       )}
                     </div>
-                    <button
-                      className={styles.viewGraphBtn}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedAnalogyIdx(i);
-                        setActiveTab("graph");
-                      }}
-                    >
-                      View Isomorphism Graph →
-                    </button>
+                    <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.75rem", flexWrap: "wrap" }}>
+                      <button
+                        className={styles.viewGraphBtn}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedAnalogyIdx(i);
+                          setActiveTab("graph");
+                        }}
+                      >
+                        View Isomorphism Graph →
+                      </button>
+                      <a
+                        href={getCleanPaperUrl(analogy.sourceSystem, analogy.url)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.paperBtn}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        📄 Open Paper ↗
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -1191,12 +1311,35 @@ export default function AnalyzePage() {
                   onClick={() => setSelectedAnalogyIdx(i)}
                 >
                   <span className={`tag tag-cyan`}>{a.sourceDomain}</span>
-                  {a.sourceSystem}
+                  {a.analogyName || a.sourceSystem}
                 </button>
               ))}
             </div>
 
+            {/* Inspiring Research Paper Card */}
+            <div className={styles.paperBannerCard}>
+              <div className={styles.paperBannerInfo}>
+                <span style={{ fontSize: "0.72rem", color: "#38bdf8", fontWeight: 700, textTransform: "uppercase" }}>
+                  📄 Inspiring Research Paper ({analysis.analogies[selectedAnalogyIdx].sourceDomain})
+                </span>
+                <span className={styles.paperBannerTitle}>{analysis.analogies[selectedAnalogyIdx].sourceSystem}</span>
+              </div>
+              <a
+                href={getCleanPaperUrl(analysis.analogies[selectedAnalogyIdx].sourceSystem, analysis.analogies[selectedAnalogyIdx].url)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.paperBtn}
+                style={{ padding: "0.6rem 1.2rem", fontSize: "0.85rem" }}
+              >
+                View Published Research Paper ↗
+              </a>
+            </div>
+
             <IsomorphismGraph analogy={analysis.analogies[selectedAnalogyIdx]} />
+
+            <SolutionVisualizer analogy={analysis.analogies[selectedAnalogyIdx]} />
+
+            <DetailedAnalogyBreakdown analogy={analysis.analogies[selectedAnalogyIdx]} />
 
             {/* Transferable Solutions */}
             <div className={styles.transferSolutions}>

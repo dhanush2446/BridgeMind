@@ -44,7 +44,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     console.log("[API:Datasets] Dynamic dataset re-harvest requested...");
-    const { stdout, stderr } = await execAsync("npx tsx scripts/collect-datasets.ts");
+    const { stdout, stderr } = await execAsync("npx tsx scripts/harvest-real-corpus.ts");
     console.log("[API:Datasets] Harvest output:", stdout);
     if (stderr) console.warn("[API:Datasets] Harvest warnings:", stderr);
 

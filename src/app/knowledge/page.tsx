@@ -1,15 +1,16 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { useRouter } from "next/navigation";
-import { SEED_ANALOGIES, SEED_PATTERNS } from "@/lib/seed-data";
 import styles from "./knowledge.module.css";
+
+/* ── Types ── */
 
 interface GraphNode {
   id: string;
   label: string;
-  type: "pattern" | "domain" | "analogy";
-  details?: string;
+  type: "pattern" | "domain";
+  details: string;
+  paperCount: number;
   x: number;
   y: number;
   vx: number;
@@ -21,117 +22,138 @@ interface GraphNode {
 interface GraphEdge {
   source: string;
   target: string;
-  strength: number;
+  weight: number;
+  strength: number; // normalised 0-1
+}
+
+interface ApiNode {
+  id: string;
+  label: string;
+  type: "domain" | "pattern";
+  paperCount: number;
+  details: string;
+}
+
+interface ApiEdge {
+  source: string;
+  target: string;
+  weight: number;
+}
+
+interface ApiStats {
+  totalPapers: number;
+  totalDomains: number;
+  totalPatterns: number;
+  totalEdges: number;
 }
 
 export default function KnowledgePage() {
-  const router = useRouter();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const nodesRef = useRef<GraphNode[]>([]);
   const edgesRef = useRef<GraphEdge[]>([]);
-  const dragRef = useRef<{ node: GraphNode | null; isDragging: boolean }>({ node: null, isDragging: false });
-  
+  const dragRef = useRef<{ node: GraphNode | null; isDragging: boolean }>({
+    node: null,
+    isDragging: false,
+  });
+
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
-  const [filterType, setFilterType] = useState<"all" | "pattern" | "domain" | "analogy">("all");
+  const [filterType, setFilterType] = useState<"all" | "pattern" | "domain">("all");
   const [zoomScale, setZoomScale] = useState(1);
+  const [stats, setStats] = useState<ApiStats | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  // Initialize graph data
+  /* ── Fetch graph data from database API ── */
   useEffect(() => {
-    const nodes: GraphNode[] = [];
-    const edges: GraphEdge[] = [];
-    const cx = 450;
-    const cy = 350;
+    async function loadGraphData() {
+      try {
+        const res = await fetch("/api/knowledge");
+        if (!res.ok) throw new Error("API error");
+        const data = await res.json();
 
-    // Pattern nodes
-    SEED_PATTERNS.slice(0, 15).forEach((pattern, i) => {
-      const angle = (i / 15) * Math.PI * 2;
-      const r = 160;
-      nodes.push({
-        id: `pattern-${pattern.id}`,
-        label: pattern.name,
-        type: "pattern",
-        details: pattern.abstractDescription,
-        x: cx + Math.cos(angle) * r + (Math.random() - 0.5) * 20,
-        y: cy + Math.sin(angle) * r + (Math.random() - 0.5) * 20,
-        vx: 0,
-        vy: 0,
-        color: "#00e5ff",
-        radius: 9,
-      });
-    });
+        const apiNodes: ApiNode[] = data.nodes ?? [];
+        const apiEdges: ApiEdge[] = data.edges ?? [];
+        const apiStats: ApiStats = data.stats ?? { totalPapers: 0, totalDomains: 0, totalPatterns: 0, totalEdges: 0 };
+        setStats(apiStats);
 
-    // Domain nodes
-    const domains = [...new Set(SEED_PATTERNS.flatMap((p) => p.examples.map((e) => e.domain)))].slice(0, 12);
-    domains.forEach((domain, i) => {
-      const angle = (i / 12) * Math.PI * 2;
-      const r = 300;
-      nodes.push({
-        id: `domain-${domain}`,
-        label: domain,
-        type: "domain",
-        details: `Knowledge domain spanning biological, engineering, and artificial systems.`,
-        x: cx + Math.cos(angle) * r + (Math.random() - 0.5) * 20,
-        y: cy + Math.sin(angle) * r + (Math.random() - 0.5) * 20,
-        vx: 0,
-        vy: 0,
-        color: "#a855f7",
-        radius: 7,
-      });
-    });
+        const cx = 500;
+        const cy = 400;
 
-    // Analogy nodes
-    SEED_ANALOGIES.forEach((analogy) => {
-      const angle = Math.random() * Math.PI * 2;
-      const r = 220 + Math.random() * 50;
-      nodes.push({
-        id: `analogy-${analogy.id}`,
-        label: `${analogy.sourceDomain} → ${analogy.targetDomain}`,
-        type: "analogy",
-        details: `${analogy.sourceSystem} (${analogy.sourceDomain}) mapped to ${analogy.targetSystem} (${analogy.targetDomain}). Match strength: ${Math.round(analogy.overallStrength * 100)}%.`,
-        x: cx + Math.cos(angle) * r,
-        y: cy + Math.sin(angle) * r,
-        vx: 0,
-        vy: 0,
-        color: "#4d7cff",
-        radius: 6,
-      });
-    });
+        /* ── Compute max counts for radius scaling ── */
+        const maxDomainCount = Math.max(1, ...apiNodes.filter((n) => n.type === "domain").map((n) => n.paperCount));
+        const maxPatternCount = Math.max(1, ...apiNodes.filter((n) => n.type === "pattern").map((n) => n.paperCount));
 
-    // Edges: patterns → domains
-    SEED_PATTERNS.slice(0, 15).forEach((pattern) => {
-      pattern.examples.forEach((ex) => {
-        if (domains.includes(ex.domain)) {
-          edges.push({
-            source: `pattern-${pattern.id}`,
-            target: `domain-${ex.domain}`,
-            strength: 0.35,
+        const domainNodes = apiNodes.filter((n) => n.type === "domain");
+        const patternNodes = apiNodes.filter((n) => n.type === "pattern");
+
+        const nodes: GraphNode[] = [];
+
+        /* Domain nodes – outer ring */
+        domainNodes.forEach((n, i) => {
+          const angle = (i / domainNodes.length) * Math.PI * 2;
+          const r = 320;
+          const sizeScale = 5 + 9 * (n.paperCount / maxDomainCount);
+          nodes.push({
+            id: n.id,
+            label: n.label,
+            type: "domain",
+            details: n.details,
+            paperCount: n.paperCount,
+            x: cx + Math.cos(angle) * r + (Math.random() - 0.5) * 15,
+            y: cy + Math.sin(angle) * r + (Math.random() - 0.5) * 15,
+            vx: 0,
+            vy: 0,
+            color: "#a855f7",
+            radius: sizeScale,
           });
-        }
-      });
-    });
-
-    // Edges: analogies → patterns
-    SEED_ANALOGIES.forEach((analogy) => {
-      const patternNode = nodes.find((n) => n.id === `pattern-${analogy.patternId}`);
-      if (patternNode) {
-        edges.push({
-          source: `analogy-${analogy.id}`,
-          target: patternNode.id,
-          strength: analogy.overallStrength,
         });
-      }
-    });
 
-    nodesRef.current = nodes;
-    edgesRef.current = edges;
+        /* Pattern nodes – inner ring */
+        patternNodes.forEach((n, i) => {
+          const angle = (i / patternNodes.length) * Math.PI * 2;
+          const r = 150;
+          const sizeScale = 6 + 8 * (n.paperCount / maxPatternCount);
+          nodes.push({
+            id: n.id,
+            label: n.label,
+            type: "pattern",
+            details: n.details,
+            paperCount: n.paperCount,
+            x: cx + Math.cos(angle) * r + (Math.random() - 0.5) * 10,
+            y: cy + Math.sin(angle) * r + (Math.random() - 0.5) * 10,
+            vx: 0,
+            vy: 0,
+            color: "#00e5ff",
+            radius: sizeScale,
+          });
+        });
+
+        /* Edges – normalise weights */
+        const maxWeight = Math.max(1, ...apiEdges.map((e) => e.weight));
+        const edges: GraphEdge[] = apiEdges.map((e) => ({
+          source: e.source,
+          target: e.target,
+          weight: e.weight,
+          strength: e.weight / maxWeight,
+        }));
+
+        nodesRef.current = nodes;
+        edgesRef.current = edges;
+      } catch (err) {
+        console.error("Failed to load knowledge graph data:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadGraphData();
   }, []);
 
-  // Force simulation loop
+  /* ── Force simulation loop ── */
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas || loading) return;
 
     const resizeCanvas = () => {
       const parent = canvas.parentElement;
@@ -160,11 +182,11 @@ export default function KnowledgePage() {
       const nodes = nodesRef.current;
       const edges = edgesRef.current;
 
-      const repulsion = 4500;
-      const k = 0.0012;
-      const damping = 0.91;
+      const repulsion = 5000;
+      const k = 0.001;
+      const damping = 0.90;
 
-      // Repulsion
+      /* Repulsion */
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[j].x - nodes[i].x;
@@ -180,7 +202,7 @@ export default function KnowledgePage() {
         }
       }
 
-      // Edge attraction
+      /* Edge attraction */
       for (const edge of edges) {
         const source = nodes.find((n) => n.id === edge.source);
         const target = nodes.find((n) => n.id === edge.target);
@@ -198,7 +220,7 @@ export default function KnowledgePage() {
         target.vy -= fy;
       }
 
-      // Center gravity
+      /* Center gravity */
       for (const node of nodes) {
         const dx = w / 2 - node.x;
         const dy = h / 2 - node.y;
@@ -206,25 +228,25 @@ export default function KnowledgePage() {
         node.vy += dy * 0.0004;
       }
 
-      // Position updates
+      /* Position updates */
       for (const node of nodes) {
         if (dragRef.current.node === node) continue;
         node.vx *= damping;
         node.vy *= damping;
         node.x += node.vx;
         node.y += node.vy;
-        node.x = Math.max(30, Math.min(w - 30, node.x));
-        node.y = Math.max(30, Math.min(h - 30, node.y));
+        node.x = Math.max(40, Math.min(w - 40, node.x));
+        node.y = Math.max(40, Math.min(h - 40, node.y));
       }
 
-      // Draw edges
+      /* ── Draw edges ── */
       for (const edge of edges) {
         const source = nodes.find((n) => n.id === edge.source);
         const target = nodes.find((n) => n.id === edge.target);
         if (!source || !target) continue;
 
-        const isSourceMatched = !filterType || filterType === "all" || source.type === filterType;
-        const isTargetMatched = !filterType || filterType === "all" || target.type === filterType;
+        const isSourceMatched = filterType === "all" || source.type === filterType;
+        const isTargetMatched = filterType === "all" || target.type === filterType;
         if (!isSourceMatched && !isTargetMatched) continue;
 
         const isConnectedToActive =
@@ -237,16 +259,17 @@ export default function KnowledgePage() {
         ctx.moveTo(source.x, source.y);
         ctx.lineTo(target.x, target.y);
         ctx.strokeStyle = isConnectedToActive
-          ? "rgba(0, 229, 255, 0.7)"
-          : `rgba(255, 255, 255, ${0.03 + edge.strength * 0.05})`;
-        ctx.lineWidth = isConnectedToActive ? 1.8 : 0.6;
+          ? `rgba(0, 229, 255, ${0.4 + edge.strength * 0.5})`
+          : `rgba(255, 255, 255, ${0.02 + edge.strength * 0.06})`;
+        ctx.lineWidth = isConnectedToActive ? 1.2 + edge.strength * 1.5 : 0.4 + edge.strength * 0.6;
         ctx.stroke();
       }
 
-      // Draw nodes
+      /* ── Draw nodes ── */
       for (const node of nodes) {
         const matchesFilter = filterType === "all" || node.type === filterType;
-        const matchesSearch = !searchQuery || node.label.toLowerCase().includes(searchQuery.toLowerCase());
+        const matchesSearch =
+          !searchQuery || node.label.toLowerCase().includes(searchQuery.toLowerCase());
 
         if (!matchesFilter) continue;
 
@@ -259,7 +282,7 @@ export default function KnowledgePage() {
         ctx.beginPath();
         ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
         ctx.fillStyle = node.color;
-        ctx.globalAlpha = isHighlighted ? 1 : searchQuery && !matchesSearch ? 0.15 : 0.65;
+        ctx.globalAlpha = isHighlighted ? 1 : searchQuery && !matchesSearch ? 0.15 : 0.7;
         ctx.fill();
         ctx.globalAlpha = 1;
 
@@ -273,12 +296,19 @@ export default function KnowledgePage() {
           ctx.globalAlpha = 1;
         }
 
-        // Label
-        if (node.type === "pattern" || isHighlighted || (searchQuery && matchesSearch)) {
+        /* Label */
+        const shouldLabel =
+          node.type === "pattern" ||
+          isHighlighted ||
+          (searchQuery && matchesSearch) ||
+          node.radius >= 10;
+        if (shouldLabel) {
           ctx.font = `${isHighlighted ? "600" : "400"} ${isHighlighted ? "11" : "9"}px Inter`;
           ctx.fillStyle = isHighlighted ? "#ffffff" : "rgba(154, 160, 184, 0.6)";
           ctx.textAlign = "center";
-          ctx.fillText(node.label, node.x, node.y + radius + 13);
+          const displayLabel =
+            node.label.length > 28 ? node.label.slice(0, 26) + "…" : node.label;
+          ctx.fillText(displayLabel, node.x, node.y + radius + 13);
         }
       }
 
@@ -292,8 +322,9 @@ export default function KnowledgePage() {
       window.removeEventListener("resize", resizeCanvas);
       cancelAnimationFrame(animId);
     };
-  }, [hoveredNode, selectedNode, filterType, searchQuery, zoomScale]);
+  }, [hoveredNode, selectedNode, filterType, searchQuery, zoomScale, loading]);
 
+  /* ── Mouse handlers ── */
   const handleMouseMove = (e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -334,7 +365,7 @@ export default function KnowledgePage() {
     dragRef.current = { node: null, isDragging: false };
   };
 
-  // Find connected neighbors of selected node
+  /* ── Connected neighbors ── */
   const getConnectedNeighbors = useCallback(() => {
     if (!selectedNode) return [];
     const connectedIds = new Set<string>();
@@ -342,9 +373,12 @@ export default function KnowledgePage() {
       if (edge.source === selectedNode.id) connectedIds.add(edge.target);
       if (edge.target === selectedNode.id) connectedIds.add(edge.source);
     });
-    return nodesRef.current.filter((n) => connectedIds.has(n.id));
+    return nodesRef.current
+      .filter((n) => connectedIds.has(n.id))
+      .sort((a, b) => b.paperCount - a.paperCount);
   }, [selectedNode]);
 
+  /* ── Render ── */
   return (
     <main className={styles.main}>
       {/* Page Header with Controls */}
@@ -354,6 +388,11 @@ export default function KnowledgePage() {
             <span className={styles.pageTitleIcon}>🧠</span>
             Knowledge Graph Explorer
           </h1>
+          {stats && (
+            <p style={{ fontSize: "0.8rem", color: "var(--text-tertiary)", marginTop: 2 }}>
+              {stats.totalDomains} domains · {stats.totalPatterns} patterns · {stats.totalEdges} connections · {stats.totalPapers.toLocaleString()} papers
+            </p>
+          )}
         </div>
 
         {/* Search & Filter bar */}
@@ -378,7 +417,7 @@ export default function KnowledgePage() {
           </div>
 
           <div className={styles.filterGroup}>
-            {(["all", "pattern", "domain", "analogy"] as const).map((type) => (
+            {(["all", "pattern", "domain"] as const).map((type) => (
               <button
                 key={type}
                 className={`${styles.filterBtn} ${filterType === type ? styles.filterBtnActive : ""}`}
@@ -391,66 +430,94 @@ export default function KnowledgePage() {
         </div>
       </div>
 
-      <div className={styles.graphContainer}>
-        <canvas
-          ref={canvasRef}
-          className={styles.graphCanvas}
-          onMouseMove={handleMouseMove}
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-          style={{ cursor: hoveredNode ? "grab" : "default" }}
-        />
-
-        {/* Floating Zoom Controls */}
-        <div className={styles.zoomControls}>
-          <button onClick={() => setZoomScale((z) => Math.min(z + 0.2, 2.5))} title="Zoom In">+</button>
-          <button onClick={() => setZoomScale(1)} title="Reset Zoom">100%</button>
-          <button onClick={() => setZoomScale((z) => Math.max(z - 0.2, 0.5))} title="Zoom Out">−</button>
+      {loading ? (
+        <div style={{ padding: "3rem", textAlign: "center", color: "#38bdf8" }}>
+          ⚡ Loading knowledge graph from 1,509 research papers...
         </div>
+      ) : (
+        <div className={styles.graphContainer}>
+          <canvas
+            ref={canvasRef}
+            className={styles.graphCanvas}
+            onMouseMove={handleMouseMove}
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
+            style={{ cursor: hoveredNode ? "grab" : "default" }}
+          />
 
-        {/* Graph Overlay Info */}
-        <div className={styles.graphOverlay}>
-          <p>Drag nodes to explore. Click any node to view structural details.</p>
-          <p className={styles.graphOverlaySub}>
-            {nodesRef.current.length} nodes &bull; {edgesRef.current.length} connections across knowledge domains
-          </p>
-        </div>
+          {/* Floating Zoom Controls */}
+          <div className={styles.zoomControls}>
+            <button onClick={() => setZoomScale((z) => Math.min(z + 0.2, 2.5))} title="Zoom In">+</button>
+            <button onClick={() => setZoomScale(1)} title="Reset Zoom">100%</button>
+            <button onClick={() => setZoomScale((z) => Math.max(z - 0.2, 0.5))} title="Zoom Out">−</button>
+          </div>
 
-        {/* Node Detail Sidebar */}
-        {selectedNode && (
-          <div className={styles.nodeSidebar}>
-            <div className={styles.nodeSidebarHeader}>
-              <span className={styles.nodeTypeBadge} style={{ background: selectedNode.color }}>
-                {selectedNode.type}
-              </span>
-              <button className={styles.closeSidebar} onClick={() => setSelectedNode(null)}>
-                ×
-              </button>
-            </div>
-            <h3 className={styles.nodeTitle}>{selectedNode.label}</h3>
-            {selectedNode.details && (
-              <p className={styles.nodeDesc}>{selectedNode.details}</p>
-            )}
+          {/* Graph Overlay Info */}
+          <div className={styles.graphOverlay}>
+            <p>Drag nodes to explore. Click any node to view structural details.</p>
+            <p className={styles.graphOverlaySub}>
+              {nodesRef.current.length} nodes &bull; {edgesRef.current.length} connections across knowledge domains
+            </p>
+          </div>
 
-            <div className={styles.connectedSection}>
-              <h4 className={styles.connectedTitle}>Connected Nodes ({getConnectedNeighbors().length})</h4>
-              <div className={styles.neighborList}>
-                {getConnectedNeighbors().map((neighbor) => (
-                  <button
-                    key={neighbor.id}
-                    className={styles.neighborItem}
-                    onClick={() => setSelectedNode(neighbor)}
-                  >
-                    <span className={styles.neighborDot} style={{ background: neighbor.color }} />
-                    <span className={styles.neighborLabel}>{neighbor.label}</span>
-                  </button>
-                ))}
+          {/* Legend */}
+          <div style={{
+            position: "absolute", bottom: 16, left: 16,
+            display: "flex", gap: 16, fontSize: "0.75rem", color: "var(--text-tertiary)",
+            background: "rgba(6,7,14,0.7)", padding: "6px 14px", borderRadius: 8,
+            backdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.06)"
+          }}>
+            <span><span style={{ display: "inline-block", width: 8, height: 8, borderRadius: "50%", background: "#a855f7", marginRight: 4 }} />Domains</span>
+            <span><span style={{ display: "inline-block", width: 8, height: 8, borderRadius: "50%", background: "#00e5ff", marginRight: 4 }} />Patterns</span>
+            <span style={{ opacity: 0.6 }}>Node size = paper count</span>
+          </div>
+
+          {/* Node Detail Sidebar */}
+          {selectedNode && (
+            <div className={styles.nodeSidebar}>
+              <div className={styles.nodeSidebarHeader}>
+                <span className={styles.nodeTypeBadge} style={{ background: selectedNode.color }}>
+                  {selectedNode.type}
+                </span>
+                <button className={styles.closeSidebar} onClick={() => setSelectedNode(null)}>
+                  ×
+                </button>
+              </div>
+              <h3 className={styles.nodeTitle}>{selectedNode.label}</h3>
+              <p style={{ fontSize: "0.8rem", color: "var(--accent-cyan)", fontWeight: 700, margin: "4px 0 8px" }}>
+                {selectedNode.paperCount} papers
+              </p>
+              {selectedNode.details && (
+                <p className={styles.nodeDesc}>{selectedNode.details}</p>
+              )}
+
+              <div className={styles.connectedSection}>
+                <h4 className={styles.connectedTitle}>
+                  Connected Nodes ({getConnectedNeighbors().length})
+                </h4>
+                <div className={styles.neighborList}>
+                  {getConnectedNeighbors().map((neighbor) => (
+                    <button
+                      key={neighbor.id}
+                      className={styles.neighborItem}
+                      onClick={() => setSelectedNode(neighbor)}
+                    >
+                      <span className={styles.neighborDot} style={{ background: neighbor.color }} />
+                      <span className={styles.neighborLabel}>
+                        {neighbor.label}
+                        <span style={{ opacity: 0.5, marginLeft: 6, fontSize: "0.7rem" }}>
+                          ({neighbor.paperCount})
+                        </span>
+                      </span>
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      )}
     </main>
   );
 }

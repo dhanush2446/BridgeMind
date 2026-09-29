@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-30T17:11:51.142Z",
-  "total": 1509,
+  "updatedAt": "2026-08-17T15:45:58.099Z",
+  "total": 1566,
   "domains": [
     "Computer Science",
     "Cybernetics",
@@ -358,7 +358,26 @@
       "url": "https://arxiv.org/abs/1208.0384v1"
     },
     {
-      "id": "arxiv-1206.0420v1-17",
+      "id": "arxiv-1011.3115v1-17",
+      "source": "ArXiv (cs.NI)",
+      "domain": "Cybersecurity",
+      "title": "Cyber-Physical Control over Wireless Sensor and Actuator Networks with Packet Loss",
+      "problem": "There is a growing interest in design and implementation of cyber-physical control systems over wireless sensor and actuator networks (WSANs). Thanks to the use of wireless communications and distributed architectures, these systems encompass many advantages as compared to traditional networked control systems using hard wirelines. While WSANs are enabling a new generation of control systems, they also introduce considerable challenges for quality-of-service (QoS) provisioning. In this chapter w",
+      "solution": "e examine some of the major QoS challenges raised by WSANs, including resource constraints, platform heterogeneity, dynamic network topology, and mixed traffic. These challenges make it difficult to fulfill the requirements of cyber-physical control in terms of reliability and real-time. The focus of this chapter is on addressing the problem of network reliability. Specifically, we analyze the beh",
+      "abstractPattern": "Distributed Flow Under Variable Demand",
+      "keywords": [
+        "network",
+        "congestion",
+        "packet",
+        "routing",
+        "flow",
+        "control",
+        "cybersecurity"
+      ],
+      "url": "https://arxiv.org/abs/1011.3115v1"
+    },
+    {
+      "id": "arxiv-1206.0420v1-18",
       "source": "ArXiv (cs.NI)",
       "domain": "Urban Planning",
       "title": "Multipath Routing With Novel Packet Scheduling Approach In Wireless Sensor Networks",
@@ -376,25 +395,6 @@
         "planning"
       ],
       "url": "https://arxiv.org/abs/1206.0420v1"
-    },
-    {
-      "id": "arxiv-1011.3115v1-18",
-      "source": "ArXiv (cs.NI)",
-      "domain": "Cybersecurity",
-      "title": "Cyber-Physical Control over Wireless Sensor and Actuator Networks with Packet Loss",
-      "problem": "There is a growing interest in design and implementation of cyber-physical control systems over wireless sensor and actuator networks (WSANs). Thanks to the use of wireless communications and distributed architectures, these systems encompass many advantages as compared to traditional networked control systems using hard wirelines. While WSANs are enabling a new generation of control systems, they also introduce considerable challenges for quality-of-service (QoS) provisioning. In this chapter w",
-      "solution": "e examine some of the major QoS challenges raised by WSANs, including resource constraints, platform heterogeneity, dynamic network topology, and mixed traffic. These challenges make it difficult to fulfill the requirements of cyber-physical control in terms of reliability and real-time. The focus of this chapter is on addressing the problem of network reliability. Specifically, we analyze the beh",
-      "abstractPattern": "Distributed Flow Under Variable Demand",
-      "keywords": [
-        "network",
-        "congestion",
-        "packet",
-        "routing",
-        "flow",
-        "control",
-        "cybersecurity"
-      ],
-      "url": "https://arxiv.org/abs/1011.3115v1"
     },
     {
       "id": "arxiv-1207.0425v1-19",
@@ -908,7 +908,7 @@
       "title": "Fault-Tolerant Adaptive Parallel and Distributed Simulation",
       "problem": "Discrete Event Simulation is a widely used technique that is used to model and analyze complex systems in many fields of science and engineering. The increasingly large size of simulation models poses a serious computational challenge, since the time needed to run a simulation can be prohibitively large. For this reason, Parallel and Distributes Simulation techniques have been proposed to take advantage of multiple execution units which are found in multicore processors, cluster of workstations ",
       "solution": "or HPC systems. The current generation of HPC systems includes hundreds of thousands of computing nodes and a vast amount of ancillary components. Despite improvements in manufacturing processes, failures of some components are frequent, and the situation will get worse as larger systems are built. In this paper we describe FT-GAIA, a software-based fault-tolerant extension of the GAIA/ARTÌS paral",
-      "abstractPattern": "Impedance Matching & Peak Load Buffering",
+      "abstractPattern": "Redundancy Fallback & Fail-Safe Topology",
       "keywords": [
         "distributed",
         "systems",
@@ -1057,7 +1057,7 @@
       "title": "ReStore: In-Memory REplicated STORagE for Rapid Recovery in Fault-Tolerant Algorithms",
       "problem": "Fault-tolerant distributed applications require mechanisms to recover data lost via a process failure. On modern cluster systems it is typically impractical to request replacement resources after such a failure. Therefore, applications have to continue working with the remaining resources. This requires redistributing the workload and that the non-failed processes reload data. We present an algorithmic framework and its C++ library implementation ReStore for MPI programs that enables recovery of",
       "solution": " data after process failures. By storing all required data in memory via an appropriate data distribution and replication, recovery is substantially faster than with standard checkpointing schemes that rely on a parallel file system. As the application developer can specify which data to load, we also support shrinking recovery instead of recovery using spare compute nodes. We evaluate ReStore in ",
-      "abstractPattern": "Impedance Matching & Peak Load Buffering",
+      "abstractPattern": "Delayed Feedback Oscillations & System Instability",
       "keywords": [
         "distributed",
         "systems",
@@ -1279,7 +1279,7 @@
       "title": "Evaluating Fault Tolerance and Scalability in Distributed File Systems: A Case Study of GFS, HDFS, and MinIO",
       "problem": "Distributed File Systems (DFS) are essential for managing vast datasets across multiple servers, offering benefits in scalability, fault tolerance, and data accessibility. This paper presents a comprehensive evaluation of three prominent DFSs - Google File System (GFS), Hadoop Distributed File System (HDFS), and MinIO - focusing on their fault tolerance mechanisms and scalability under varying data loads and client demands. Through detailed analysis, how these systems handle data redundancy, ser",
       "solution": "ver failures, and client access protocols, ensuring reliability in dynamic, large-scale environments is assessed. In addition, the impact of system design on performance, particularly in distributed cloud and computing architectures is assessed. By comparing the strengths and limitations of each DFS, the paper provides practical insights for selecting the most appropriate system for different ente",
-      "abstractPattern": "Impedance Matching & Peak Load Buffering",
+      "abstractPattern": "Redundancy Fallback & Fail-Safe Topology",
       "keywords": [
         "distributed",
         "systems",
@@ -1373,7 +1373,7 @@
       "title": "Arma: Byzantine Fault Tolerant Consensus with Horizontal Scalability",
       "problem": "Arma is a Byzantine Fault Tolerant (BFT) consensus system designed to achieve horizontal scalability across all hardware resources: network bandwidth, CPU, and disk I/O. As opposed to preceding BFT protocols, Arma separates the dissemination and validation of client transactions from the consensus process, restricting the latter to totally ordering only metadata of batches of transactions. This separation enables each party to distribute compute and storage resources for transaction validation, ",
       "solution": "dissemination and disk I/O among multiple machines, resulting in horizontal scalability. Additionally, Arma ensures censorship resistance by imposing a maximum time limit on the inclusion of client transactions. We built and evaluated two Arma prototypes. The first is an independent system handling over 200,000 transactions per second, the second integrated into Hyperledger Fabric, speeding its co",
-      "abstractPattern": "Decentralized Task Allocation Under Local Information",
+      "abstractPattern": "Distributed Flow Under Variable Demand",
       "keywords": [
         "distributed",
         "systems",
@@ -1405,26 +1405,7 @@
       "url": "https://arxiv.org/abs/1908.01455v1"
     },
     {
-      "id": "arxiv-1706.03317v1-32",
-      "source": "ArXiv (cs.DC)",
-      "domain": "Computer Science",
-      "title": "Fault Tolerant Consensus Agreement Algorithm",
-      "problem": "Recently a new fault tolerant and simple mechanism was designed for solving commit consensus problem. It is based on replicated validation of messages sent between transaction participants and a special dispatcher validator manager node. This paper presents a correctness, safety proofs and performance analysis of this algorithm.",
-      "solution": "Structural optimization and algorithmic refinement approach.",
-      "abstractPattern": "Decentralized Task Allocation Under Local Information",
-      "keywords": [
-        "distributed",
-        "systems",
-        "consensus",
-        "fault",
-        "tolerance",
-        "computer",
-        "science"
-      ],
-      "url": "https://arxiv.org/abs/1706.03317v1"
-    },
-    {
-      "id": "arxiv-2502.00191v3-33",
+      "id": "arxiv-2502.00191v3-32",
       "source": "ArXiv (cs.DC)",
       "domain": "Computer Science",
       "title": "Asynchronous Fault-Tolerant Language Decidability for Runtime Verification of Distributed Systems",
@@ -1441,6 +1422,25 @@
         "science"
       ],
       "url": "https://arxiv.org/abs/2502.00191v3"
+    },
+    {
+      "id": "arxiv-1706.03317v1-33",
+      "source": "ArXiv (cs.DC)",
+      "domain": "Computer Science",
+      "title": "Fault Tolerant Consensus Agreement Algorithm",
+      "problem": "Recently a new fault tolerant and simple mechanism was designed for solving commit consensus problem. It is based on replicated validation of messages sent between transaction participants and a special dispatcher validator manager node. This paper presents a correctness, safety proofs and performance analysis of this algorithm.",
+      "solution": "Structural optimization and algorithmic refinement approach.",
+      "abstractPattern": "Uncertain Arrivals with Priority Queuing",
+      "keywords": [
+        "distributed",
+        "systems",
+        "consensus",
+        "fault",
+        "tolerance",
+        "computer",
+        "science"
+      ],
+      "url": "https://arxiv.org/abs/1706.03317v1"
     },
     {
       "id": "arxiv-1810.05256v2-34",
@@ -1489,7 +1489,7 @@
       "title": "Arma: Byzantine Fault Tolerant consensus with Linear Scalability",
       "problem": "Arma is a Byzantine Fault Tolerant (BFT) consensus system designed to achieve linear scalability across all hardware resources: network bandwidth, CPU, and disk I/O. As opposed to preceding BFT protocols, Arma separates the dissemination and validation of client transactions from the consensus process, restricting the latter to totally ordering only metadata of batches of transactions. This separation enables each party to distribute compute and storage resources for transaction validation, diss",
       "solution": "emination and disk I/O among multiple machines, resulting in linear scalability. Additionally, Arma ensures censorship resistance by imposing a maximum time limit for the inclusion of client transactions. We build a prototype implementation of Arma and evaluate its performance experimentally. Our results show that Arma totally orders over 100,000 transactions per second when deployed in a WAN sett",
-      "abstractPattern": "Decentralized Task Allocation Under Local Information",
+      "abstractPattern": "Distributed Flow Under Variable Demand",
       "keywords": [
         "distributed",
         "systems",
@@ -1687,27 +1687,7 @@
       "url": "https://arxiv.org/abs/1809.07124v2"
     },
     {
-      "id": "arxiv-2505.17115v2-7",
-      "source": "ArXiv (cs.MA)",
-      "domain": "Robotics & Autonomous Swarms",
-      "title": "Swarm Intelligence Enhanced Reasoning: A Density-Driven Framework for LLM-Based Multi-Agent Optimization",
-      "problem": "Recently, many approaches, such as Chain-of-Thought (CoT) prompting and Multi-Agent Debate (MAD), have been proposed to further enrich Large Language Models' (LLMs) complex problem-solving capacities in reasoning scenarios. However, these methods may fail to solve complex problems due to the lack of ability to find optimal solutions. Swarm Intelligence has been serving as a powerful tool for finding optima in the field of traditional optimization problems. To this end, we propose integrating swa",
-      "solution": "rm intelligence into the reasoning process by introducing a novel Agent-based Swarm Intelligence (ASI) paradigm. In this paradigm, we formulate LLM reasoning as an optimization problem and use a swarm intelligence scheme to guide a group of LLM-based agents in collaboratively searching for optimal solutions. To avoid swarm intelligence getting trapped in local optima, we further develop a Swarm In",
-      "abstractPattern": "Decentralized Task Allocation Under Local Information",
-      "keywords": [
-        "multi-agent",
-        "swarm",
-        "intelligence",
-        "decentralized",
-        "robotics",
-        "&",
-        "autonomous",
-        "swarms"
-      ],
-      "url": "https://arxiv.org/abs/2505.17115v2"
-    },
-    {
-      "id": "arxiv-2503.03800v1-8",
+      "id": "arxiv-2503.03800v1-7",
       "source": "ArXiv (cs.MA)",
       "domain": "Robotics & Autonomous Swarms",
       "title": "Multi-Agent Systems Powered by Large Language Models: Applications in Swarm Intelligence",
@@ -1725,6 +1705,26 @@
         "swarms"
       ],
       "url": "https://arxiv.org/abs/2503.03800v1"
+    },
+    {
+      "id": "arxiv-2505.17115v2-8",
+      "source": "ArXiv (cs.MA)",
+      "domain": "Robotics & Autonomous Swarms",
+      "title": "Swarm Intelligence Enhanced Reasoning: A Density-Driven Framework for LLM-Based Multi-Agent Optimization",
+      "problem": "Recently, many approaches, such as Chain-of-Thought (CoT) prompting and Multi-Agent Debate (MAD), have been proposed to further enrich Large Language Models' (LLMs) complex problem-solving capacities in reasoning scenarios. However, these methods may fail to solve complex problems due to the lack of ability to find optimal solutions. Swarm Intelligence has been serving as a powerful tool for finding optima in the field of traditional optimization problems. To this end, we propose integrating swa",
+      "solution": "rm intelligence into the reasoning process by introducing a novel Agent-based Swarm Intelligence (ASI) paradigm. In this paradigm, we formulate LLM reasoning as an optimization problem and use a swarm intelligence scheme to guide a group of LLM-based agents in collaboratively searching for optimal solutions. To avoid swarm intelligence getting trapped in local optima, we further develop a Swarm In",
+      "abstractPattern": "Decentralized Task Allocation Under Local Information",
+      "keywords": [
+        "multi-agent",
+        "swarm",
+        "intelligence",
+        "decentralized",
+        "robotics",
+        "&",
+        "autonomous",
+        "swarms"
+      ],
+      "url": "https://arxiv.org/abs/2505.17115v2"
     },
     {
       "id": "arxiv-2303.14061v4-9",
@@ -1841,7 +1841,25 @@
       "url": "https://arxiv.org/abs/2501.01140v1"
     },
     {
-      "id": "arxiv-1304.4051v1-15",
+      "id": "arxiv-2110.08172v2-15",
+      "source": "ArXiv (cs.MA)",
+      "domain": "Energy Systems",
+      "title": "MLFC: From 10 to 50 Planners in the Multi-Agent Programming Contest",
+      "problem": "In this paper, we describe the strategies used by our team, MLFC, that led us to achieve the 2nd place in the 15th edition of the Multi-Agent Programming Contest. The scenario used in the contest is an extension of the previous edition (14th) \"Agents Assemble\" wherein two teams of agents move around a 2D grid and compete to assemble complex block structures. We discuss the languages and tools used during the development of our team. Then, we summarise the main strategies that were carried over f",
+      "solution": "rom our previous participation in the 14th edition and list the limitations (if any) of using these strategies in the latest contest edition. We also developed new strategies that were made specifically for the extended scenario: cartography (determining the size of the map); formal verification of the map merging protocol (to provide assurances that it works when increasing the number of agents);",
+      "abstractPattern": "Decentralized Task Allocation Under Local Information",
+      "keywords": [
+        "multi-agent",
+        "swarm",
+        "intelligence",
+        "decentralized",
+        "energy",
+        "systems"
+      ],
+      "url": "https://arxiv.org/abs/2110.08172v2"
+    },
+    {
+      "id": "arxiv-1304.4051v1-16",
       "source": "ArXiv (cs.MA)",
       "domain": "Robotics & Autonomous Swarms",
       "title": "Coordinating metaheuristic agents with swarm intelligence",
@@ -1859,24 +1877,6 @@
         "swarms"
       ],
       "url": "https://arxiv.org/abs/1304.4051v1"
-    },
-    {
-      "id": "arxiv-2110.08172v2-16",
-      "source": "ArXiv (cs.MA)",
-      "domain": "Energy Systems",
-      "title": "MLFC: From 10 to 50 Planners in the Multi-Agent Programming Contest",
-      "problem": "In this paper, we describe the strategies used by our team, MLFC, that led us to achieve the 2nd place in the 15th edition of the Multi-Agent Programming Contest. The scenario used in the contest is an extension of the previous edition (14th) \"Agents Assemble\" wherein two teams of agents move around a 2D grid and compete to assemble complex block structures. We discuss the languages and tools used during the development of our team. Then, we summarise the main strategies that were carried over f",
-      "solution": "rom our previous participation in the 14th edition and list the limitations (if any) of using these strategies in the latest contest edition. We also developed new strategies that were made specifically for the extended scenario: cartography (determining the size of the map); formal verification of the map merging protocol (to provide assurances that it works when increasing the number of agents);",
-      "abstractPattern": "Decentralized Task Allocation Under Local Information",
-      "keywords": [
-        "multi-agent",
-        "swarm",
-        "intelligence",
-        "decentralized",
-        "energy",
-        "systems"
-      ],
-      "url": "https://arxiv.org/abs/2110.08172v2"
     },
     {
       "id": "arxiv-1908.05822v1-17",
@@ -2125,7 +2125,25 @@
       "url": "https://arxiv.org/abs/2403.14783v1"
     },
     {
-      "id": "arxiv-2405.16887v2-30",
+      "id": "arxiv-2201.04612v1-30",
+      "source": "ArXiv (cs.MA)",
+      "domain": "Urban Planning",
+      "title": "Agent-Temporal Attention for Reward Redistribution in Episodic Multi-Agent Reinforcement Learning",
+      "problem": "This paper considers multi-agent reinforcement learning (MARL) tasks where agents receive a shared global reward at the end of an episode. The delayed nature of this reward affects the ability of the agents to assess the quality of their actions at intermediate time-steps. This paper focuses on developing methods to learn a temporal redistribution of the episodic reward to obtain a dense reward signal. Solving such MARL problems requires addressing two challenges: identifying (1) relative import",
+      "solution": "ance of states along the length of an episode (along time), and (2) relative importance of individual agents' states at any single time-step (among agents). In this paper, we introduce Agent-Temporal Attention for Reward Redistribution in Episodic Multi-Agent Reinforcement Learning (AREL) to address these two challenges. AREL uses attention mechanisms to characterize the influence of actions on st",
+      "abstractPattern": "Decentralized Task Allocation Under Local Information",
+      "keywords": [
+        "multi-agent",
+        "swarm",
+        "intelligence",
+        "decentralized",
+        "urban",
+        "planning"
+      ],
+      "url": "https://arxiv.org/abs/2201.04612v1"
+    },
+    {
+      "id": "arxiv-2405.16887v2-31",
       "source": "ArXiv (cs.MA)",
       "domain": "Urban Planning",
       "title": "A Large Language Model-based multi-agent manufacturing system for intelligent shopfloor",
@@ -2143,7 +2161,7 @@
       "url": "https://arxiv.org/abs/2405.16887v2"
     },
     {
-      "id": "arxiv-2606.14130v2-31",
+      "id": "arxiv-2606.14130v2-32",
       "source": "ArXiv (cs.MA)",
       "domain": "Cybernetics",
       "title": "Contract-Based Compositional Shielding for Safe Multi-Agent Reinforcement Learning",
@@ -2158,24 +2176,6 @@
         "cybernetics"
       ],
       "url": "https://arxiv.org/abs/2606.14130v2"
-    },
-    {
-      "id": "arxiv-2201.04612v1-32",
-      "source": "ArXiv (cs.MA)",
-      "domain": "Urban Planning",
-      "title": "Agent-Temporal Attention for Reward Redistribution in Episodic Multi-Agent Reinforcement Learning",
-      "problem": "This paper considers multi-agent reinforcement learning (MARL) tasks where agents receive a shared global reward at the end of an episode. The delayed nature of this reward affects the ability of the agents to assess the quality of their actions at intermediate time-steps. This paper focuses on developing methods to learn a temporal redistribution of the episodic reward to obtain a dense reward signal. Solving such MARL problems requires addressing two challenges: identifying (1) relative import",
-      "solution": "ance of states along the length of an episode (along time), and (2) relative importance of individual agents' states at any single time-step (among agents). In this paper, we introduce Agent-Temporal Attention for Reward Redistribution in Episodic Multi-Agent Reinforcement Learning (AREL) to address these two challenges. AREL uses attention mechanisms to characterize the influence of actions on st",
-      "abstractPattern": "Decentralized Task Allocation Under Local Information",
-      "keywords": [
-        "multi-agent",
-        "swarm",
-        "intelligence",
-        "decentralized",
-        "urban",
-        "planning"
-      ],
-      "url": "https://arxiv.org/abs/2201.04612v1"
     },
     {
       "id": "arxiv-0604110v1-33",
@@ -2267,25 +2267,7 @@
       "url": "https://arxiv.org/abs/2302.00521v2"
     },
     {
-      "id": "arxiv-2004.08883v4-38",
-      "source": "ArXiv (cs.MA)",
-      "domain": "Computer Science",
-      "title": "Variational Policy Propagation for Multi-agent Reinforcement Learning",
-      "problem": "We propose a \\emph{collaborative} multi-agent reinforcement learning algorithm named variational policy propagation (VPP) to learn a \\emph{joint} policy through the interactions over agents. We prove that the joint policy is a Markov Random Field under some mild conditions, which in turn reduces the policy space effectively. We integrate the variational inference as special differentiable layers in policy such that the actions can be efficiently sampled from the Markov Random Field and the overa",
-      "solution": "ll policy is differentiable. We evaluate our algorithm on several large scale challenging tasks and demonstrate that it outperforms previous state-of-the-arts.",
-      "abstractPattern": "Rapid Spread Through Connected Population",
-      "keywords": [
-        "multi-agent",
-        "swarm",
-        "intelligence",
-        "decentralized",
-        "computer",
-        "science"
-      ],
-      "url": "https://arxiv.org/abs/2004.08883v4"
-    },
-    {
-      "id": "arxiv-2301.08278v3-39",
+      "id": "arxiv-2301.08278v3-38",
       "source": "ArXiv (cs.MA)",
       "domain": "Urban Planning",
       "title": "Investigating the Impact of Direct Punishment on the Emergence of Cooperation in Multi-Agent Reinforcement Learning Systems",
@@ -2301,6 +2283,24 @@
         "planning"
       ],
       "url": "https://arxiv.org/abs/2301.08278v3"
+    },
+    {
+      "id": "arxiv-2111.13145v1-39",
+      "source": "ArXiv (cs.MA)",
+      "domain": "Computer Science",
+      "title": "Unravelling multi-agent ranked delegations",
+      "problem": "We introduce a voting model with multi-agent ranked delegations. This model generalises liquid democracy in two aspects: first, an agent's delegation can use the votes of multiple other agents to determine their own -- for instance, an agent's vote may correspond to the majority outcome of the votes of a trusted group of agents; second, agents can submit a ranking over multiple delegations, so that a backup delegation can be used when their preferred delegations are involved in cycles. The main ",
+      "solution": "focus of this paper is the study of unravelling procedures that transform the delegation ballots received from the agents into a profile of direct votes, from which a winning alternative can then be determined by using a standard voting rule. We propose and study six such unravelling procedures, two based on optimisation and four using a greedy approach. We study both algorithmic and axiomatic pro",
+      "abstractPattern": "Decentralized Task Allocation Under Local Information",
+      "keywords": [
+        "multi-agent",
+        "swarm",
+        "intelligence",
+        "decentralized",
+        "computer",
+        "science"
+      ],
+      "url": "https://arxiv.org/abs/2111.13145v1"
     },
     {
       "id": "arxiv-2504.16021v1-0",
@@ -2327,7 +2327,7 @@
       "title": "Response: Emergent analogical reasoning in large language models",
       "problem": "In their recent Nature Human Behaviour paper, \"Emergent analogical reasoning in large language models,\" (Webb, Holyoak, and Lu, 2023) the authors argue that \"large language models such as GPT-3 have acquired an emergent ability to find zero-shot solutions to a broad range of analogy problems.\" In this response, we provide counterexamples of the letter string analogies. In our tests, GPT-3 fails to solve simplest variations of the original tasks, whereas human performance remains consistently hig",
       "solution": "h across all modified versions. Zero-shot reasoning is an extraordinary claim that requires extraordinary evidence. We do not see that evidence in our experiments. To strengthen claims of humanlike reasoning such as zero-shot reasoning, it is important that the field develop approaches that rule out data memorization.",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Self-Organization & Emergent Collective Behavior",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2364,7 +2364,7 @@
       "title": "Can Large Reasoning Models do Analogical Reasoning under Perceptual Uncertainty?",
       "problem": "This work presents a first evaluation of two state-of-the-art Large Reasoning Models (LRMs), OpenAI's o3-mini and DeepSeek R1, on analogical reasoning, focusing on well-established nonverbal human IQ tests based on Raven's progressive matrices. We benchmark with the I-RAVEN dataset and its extension, I-RAVEN-X, which tests the ability to generalize to longer reasoning rules and ranges of the attribute values. To assess the influence of visual uncertainties on these symbolic analogical reasoning ",
       "solution": "tests, we extend the I-RAVEN-X dataset, which otherwise assumes an oracle perception. We adopt a two-fold strategy to simulate this imperfect visual perception: 1) we introduce confounding attributes which, being sampled at random, do not contribute to the prediction of the correct answer of the puzzles, and 2) we smoothen the distributions of the input attributes' values. We observe a sharp decli",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2383,7 +2383,7 @@
       "title": "Knowledge-based Analogical Reasoning in Neuro-symbolic Latent Spaces",
       "problem": "Analogical Reasoning problems challenge both connectionist and symbolic AI systems as these entail a combination of background knowledge, reasoning and pattern recognition. While symbolic systems ingest explicit domain knowledge and perform deductive reasoning, they are sensitive to noise and require inputs be mapped to preset symbolic features. Connectionist systems on the other hand can directly ingest rich input spaces such as images, text or speech and recognize pattern even with noisy input",
       "solution": "s. However, connectionist models struggle to include explicit domain knowledge for deductive reasoning. In this paper, we propose a framework that combines the pattern recognition abilities of neural networks with symbolic reasoning and background knowledge for solving a class of Analogical Reasoning problems where the set of attributes and possible relations across them are known apriori. We take",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Self-Organization & Emergent Collective Behavior",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2401,7 +2401,7 @@
       "title": "From Propositional Logic to Plausible Reasoning: A Uniqueness Theorem",
       "problem": "We consider the question of extending propositional logic to a logic of plausible reasoning, and posit four requirements that any such extension should satisfy. Each is a requirement that some property of classical propositional logic be preserved in the extended logic; as such, the requirements are simpler and less problematic than those used in Cox's Theorem and its variants. As with Cox's Theorem, our requirements imply that the extended logic must be isomorphic to (finite-set) probability th",
       "solution": "eory. We also obtain specific numerical values for the probabilities, recovering the classical definition of probability as a theorem, with truth assignments that satisfy the premise playing the role of the \"possible cases.\"",
-      "abstractPattern": "Redundancy Fallback & Fail-Safe Topology",
+      "abstractPattern": "Complex System Dynamics & Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2420,7 +2420,7 @@
       "title": "I-RAVEN-X: Benchmarking Generalization and Robustness of Analogical and Mathematical Reasoning in Large Language and Reasoning Models",
       "problem": "We introduce I-RAVEN-X, a symbolic benchmark designed to evaluate generalization and robustness in analogical and mathematical reasoning for Large Language Models (LLMs) and Large Reasoning Models (LRMs). I-RAVEN-X extends I-RAVEN by increasing operand complexity, attribute range, and introducing perceptual uncertainty. Compared to LLMs, empirical results show that LRMs achieve improved productivity and systematicity on longer reasoning relations and wider attribute ranges, respectively. However",
       "solution": ", LRMs are still significantly challenged by reasoning under uncertainty and cannot effectively explore multiple probabilistic outcomes.",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2439,7 +2439,7 @@
       "title": "Solving morphological analogies: from retrieval to generation",
       "problem": "Analogical inference is a remarkable capability of human reasoning, and has been used to solve hard reasoning tasks. Analogy based reasoning (AR) has gained increasing interest from the artificial intelligence community and has shown its potential in multiple machine learning tasks such as classification, decision making and recommendation with competitive results. We propose a deep learning (DL) framework to address and tackle two key tasks in AR: analogy detection and solving. The framework is",
       "solution": " thoroughly tested on the Siganalogies dataset of morphological analogical proportions (APs) between words, and shown to outperform symbolic approaches in many languages. Previous work have explored the behavior of the Analogy Neural Network for classification (ANNc) on analogy detection and of the Analogy Neural Network for retrieval (ANNr) on analogy solving by retrieval, as well as the potentia",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2457,7 +2457,7 @@
       "title": "Federated and Transfer Learning: A Survey on Adversaries and Defense Mechanisms",
       "problem": "The advent of federated learning has facilitated large-scale data exchange amongst machine learning models while maintaining privacy. Despite its brief history, federated learning is rapidly evolving to make wider use more practical. One of the most significant advancements in this domain is the incorporation of transfer learning into federated learning, which overcomes fundamental constraints of primary federated learning, particularly in terms of security. This chapter performs a comprehensive",
       "solution": " survey on the intersection of federated and transfer learning from a security point of view. The main goal of this study is to uncover potential vulnerabilities and defense mechanisms that might compromise the privacy and performance of systems that use federated and transfer learning.",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2475,7 +2475,7 @@
       "title": "Zero-shot visual reasoning through probabilistic analogical mapping",
       "problem": "Human reasoning is grounded in an ability to identify highly abstract commonalities governing superficially dissimilar visual inputs. Recent efforts to develop algorithms with this capacity have largely focused on approaches that require extensive direct training on visual reasoning tasks, and yield limited generalization to problems with novel content. In contrast, a long tradition of research in cognitive science has focused on elucidating the computational principles underlying human analogic",
       "solution": "al reasoning; however, this work has generally relied on manually constructed representations. Here we present visiPAM (visual Probabilistic Analogical Mapping), a model of visual reasoning that synthesizes these two approaches. VisiPAM employs learned representations derived directly from naturalistic visual inputs, coupled with a similarity-based mapping operation derived from cognitive theories",
-      "abstractPattern": "Impedance Matching & Peak Load Buffering",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2493,7 +2493,7 @@
       "title": "CBR with Commonsense Reasoning and Structure Mapping: An Application to Mediation",
       "problem": "Mediation is an important method in dispute resolution. We implement a case based reasoning approach to mediation integrating analogical and commonsense reasoning components that allow an artificial mediation agent to satisfy requirements expected from a human mediator, in particular: utilizing experience with cases in different domains; and structurally transforming the set of issues for a better solution. We utilize a case structure based on ontologies reflecting the perceptions of the parties",
       "solution": " in dispute. The analogical reasoning component, employing the Structure Mapping Theory from psychology, provides a flexibility to respond innovatively in unusual circumstances, in contrast with conventional approaches confined into specialized problem domains. We aim to build a mediation case base incorporating real world instances ranging from interpersonal or intergroup disputes to internationa",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2512,7 +2512,7 @@
       "title": "MAGIK: Mapping to Analogous Goals via Imagination-enabled Knowledge Transfer",
       "problem": "Humans excel at analogical reasoning - applying knowledge from one task to a related one with minimal relearning. In contrast, reinforcement learning (RL) agents typically require extensive retraining even when new tasks share structural similarities with previously learned ones. In this work, we propose MAGIK, a novel framework that enables RL agents to transfer knowledge to analogous tasks without interacting with the target environment. Our approach leverages an imagination mechanism to map e",
       "solution": "ntities in the target task to their analogues in the source domain, allowing the agent to reuse its original policy. Experiments on custom MiniGrid and MuJoCo tasks show that MAGIK achieves effective zero-shot transfer using only a small number of human-labelled examples. We compare our approach to related baselines and highlight how it offers a novel and effective mechanism for knowledge transfer",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2531,7 +2531,7 @@
       "title": "ChaosBench-Logic: A Benchmark for Logical and Symbolic Reasoning on Chaotic Dynamical Systems",
       "problem": "Large language models (LLMs) excel at natural language tasks but remain brittle in domains requiring precise logical and symbolic reasoning. Chaotic dynamical systems provide an especially demanding test because chaos is deterministic yet often misinterpreted as randomness or complexity. We introduce ChaosBench-Logic, a benchmark that evaluates LLM reasoning across 30 diverse dynamical systems using a unified first-order logic (FOL) ontology. Each system is annotated with truth assignments for 1",
       "solution": "1 semantic predicates, and 621 questions are generated across seven reasoning categories, including multi-hop implications, cross-system analogies, counterfactual reasoning, bias probes, and multi-turn dialogues. We define metrics for logical accuracy, implication consistency, dialogue coherence, and contradiction, and we release an open-source evaluation pipeline. Initial experiments show that fr",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2550,7 +2550,7 @@
       "title": "Multimodal Analogical Reasoning over Knowledge Graphs",
       "problem": "Analogical reasoning is fundamental to human cognition and holds an important place in various fields. However, previous studies mainly focus on single-modal analogical reasoning and ignore taking advantage of structure knowledge. Notably, the research in cognitive psychology has demonstrated that information from multimodal sources always brings more powerful cognitive transfer than single modality sources. To this end, we introduce the new task of multimodal analogical reasoning over knowledge",
       "solution": " graphs, which requires multimodal reasoning ability with the help of background knowledge. Specifically, we construct a Multimodal Analogical Reasoning dataSet (MARS) and a multimodal knowledge graph MarKG. We evaluate with multimodal knowledge graph embedding and pre-trained Transformer baselines, illustrating the potential challenges of the proposed task. We further propose a novel model-agnost",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2568,7 +2568,7 @@
       "title": "Emergent Analogical Reasoning in Transformers",
       "problem": "Analogy is a central faculty of human intelligence, enabling abstract patterns discovered in one domain to be applied to another. Despite its central role in cognition, the mechanisms by which Transformers acquire and implement analogical reasoning remain poorly understood. In this work, inspired by the notion of functors in category theory, we formalize analogical reasoning as the inference of correspondences between entities across categories. Based on this formulation, we introduce synthetic ",
       "solution": "tasks that evaluate the emergence of analogical reasoning under controlled settings. We find that the emergence of analogical reasoning is highly sensitive to data characteristics, optimization choices, and model scale. Through mechanistic analysis, we show that analogical reasoning in Transformers decomposes into two key components: (1) geometric alignment of relational structure in the embedding",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Self-Organization & Emergent Collective Behavior",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2580,25 +2580,7 @@
       "url": "https://arxiv.org/abs/2602.01992v5"
     },
     {
-      "id": "arxiv-2606.03883v1-15",
-      "source": "ArXiv (cs.AI)",
-      "domain": "Architecture",
-      "title": "Reasoning Structure of Large Language Models",
-      "problem": "Large reasoning models (LRMs) are often evaluated using metrics such as final-answer accuracy or token count. However, identical scores on these metrics can hide fundamentally different reasoning structures. To address this limitation, we introduce a scalable LRM benchmark of logic puzzles and a pipeline that converts unstructured traces into verifiable reasoning graphs of claims and dependencies. This turns reasoning into a structured, measurable object whose topology can be quantitatively anal",
-      "solution": "yzed. Building on this, we define a reasoning efficiency metric that quantifies how concentrated the model's logical flow is. Our analysis on open-source reasoning models shows that structural measurements separate behaviors that token count and accuracy conflate, providing a practical tool for diagnosing failure modes and comparing how reasoning scales with puzzle difficulty.",
-      "abstractPattern": "Distributed Flow Under Variable Demand",
-      "keywords": [
-        "analogical",
-        "reasoning",
-        "structural",
-        "mapping",
-        "transfer",
-        "architecture"
-      ],
-      "url": "https://arxiv.org/abs/2606.03883v1"
-    },
-    {
-      "id": "arxiv-2602.06413v1-16",
+      "id": "arxiv-2602.06413v1-15",
       "source": "ArXiv (cs.AI)",
       "domain": "Cybernetics",
       "title": "Intrinsic Stability Limits of Autoregressive Reasoning: Structural Consequences for Long-Horizon Execution",
@@ -2616,13 +2598,31 @@
       "url": "https://arxiv.org/abs/2602.06413v1"
     },
     {
+      "id": "arxiv-2606.03883v1-16",
+      "source": "ArXiv (cs.AI)",
+      "domain": "Architecture",
+      "title": "Reasoning Structure of Large Language Models",
+      "problem": "Large reasoning models (LRMs) are often evaluated using metrics such as final-answer accuracy or token count. However, identical scores on these metrics can hide fundamentally different reasoning structures. To address this limitation, we introduce a scalable LRM benchmark of logic puzzles and a pipeline that converts unstructured traces into verifiable reasoning graphs of claims and dependencies. This turns reasoning into a structured, measurable object whose topology can be quantitatively anal",
+      "solution": "yzed. Building on this, we define a reasoning efficiency metric that quantifies how concentrated the model's logical flow is. Our analysis on open-source reasoning models shows that structural measurements separate behaviors that token count and accuracy conflate, providing a practical tool for diagnosing failure modes and comparing how reasoning scales with puzzle difficulty.",
+      "abstractPattern": "Distributed Flow Under Variable Demand",
+      "keywords": [
+        "analogical",
+        "reasoning",
+        "structural",
+        "mapping",
+        "transfer",
+        "architecture"
+      ],
+      "url": "https://arxiv.org/abs/2606.03883v1"
+    },
+    {
       "id": "arxiv-2308.10454v1-17",
       "source": "ArXiv (cs.AI)",
       "domain": "Computer Science",
       "title": "Elucidating STEM Concepts through Generative AI: A Multi-modal Exploration of Analogical Reasoning",
       "problem": "This study explores the integration of generative artificial intelligence (AI), specifically large language models, with multi-modal analogical reasoning as an innovative approach to enhance science, technology, engineering, and mathematics (STEM) education. We have developed a novel system that utilizes the capacities of generative AI to transform intricate principles in mathematics, physics, and programming into comprehensible metaphors. To further augment the educational experience, these met",
       "solution": "aphors are subsequently converted into visual form. Our study aims to enhance the learners' understanding of STEM concepts and their learning engagement by using the visual metaphors. We examine the efficacy of our system via a randomized A/B/C test, assessing learning gains and motivation shifts among the learners. Our study demonstrates the potential of applying large language models to educatio",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2660,7 +2660,7 @@
       "title": "DeepGAR: Deep Graph Learning for Analogical Reasoning",
       "problem": "Analogical reasoning is the process of discovering and mapping correspondences from a target subject to a base subject. As the most well-known computational method of analogical reasoning, Structure-Mapping Theory (SMT) abstracts both target and base subjects into relational graphs and forms the cognitive process of analogical reasoning by finding a corresponding subgraph (i.e., correspondence) in the target graph that is aligned with the base graph. However, incorporating deep learning for SMT ",
       "solution": "is still under-explored due to several obstacles: 1) the combinatorial complexity of searching for the correspondence in the target graph; 2) the correspondence mining is restricted by various cognitive theory-driven constraints. To address both challenges, we propose a novel framework for Analogical Reasoning (DeepGAR) that identifies the correspondence between source and target domains by assuri",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2678,7 +2678,7 @@
       "title": "MetaLadder: Ascending Mathematical Solution Quality via Analogical-Problem Reasoning Transfer",
       "problem": "Large Language Models (LLMs) have demonstrated promising capabilities in solving mathematical reasoning tasks, leveraging Chain-of-Thought (CoT) data as a vital component in guiding answer generation. Current paradigms typically generate CoT and answers directly for a given problem, diverging from human problem-solving strategies to some extent. Humans often solve problems by recalling analogous cases and leveraging their solutions to reason about the current task. Inspired by this cognitive pro",
       "solution": "cess, we propose \\textbf{MetaLadder}, a novel framework that explicitly prompts LLMs to recall and reflect on meta-problems, those structurally or semantically analogous problems, alongside their CoT solutions before addressing the target problem. Additionally, we introduce a problem-restating mechanism to enhance the model's comprehension of the target problem by regenerating the original questio",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2696,7 +2696,7 @@
       "title": "Analogical Reasoning Within a Conceptual Hyperspace",
       "problem": "We propose an approach to analogical inference that marries the neuro-symbolic computational power of complex-sampled hyperdimensional computing (HDC) with Conceptual Spaces Theory (CST), a promising theory of semantic meaning. CST sketches, at an abstract level, approaches to analogical inference that go beyond the standard predicate-based structure mapping theories. But it does not describe how such an approach can be operationalized. We propose a concrete HDC-based architecture that computes ",
       "solution": "several types of analogy classified by CST. We present preliminary proof-of-concept experimental results within a toy domain and describe how it can perform category-based and property-based analogical reasoning.",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2708,43 +2708,7 @@
       "url": "https://arxiv.org/abs/2411.08684v1"
     },
     {
-      "id": "arxiv-2606.17312v1-22",
-      "source": "ArXiv (cs.AI)",
-      "domain": "Cybernetics",
-      "title": "Quantifying Consistency in LLM Logical Reasoning via Structural Uncertainty",
-      "problem": "Large language models can arrive at the same answer through reasoning paths that are unstable, contradictory, or difficult to rank consistently -- a failure mode especially prevalent in multi-step deductive reasoning. Existing methods assess reliability primarily through output dispersion -- measuring how much sampled answers differ -- but this discards a complementary signal: whether the model can consistently rank competing reasoning candidates. We propose structural uncertainty, a consistency",
-      "solution": "-aware framework derived from the stability of self-preference-induced rankings over sampled reasoning solutions. Given a query, we generate multiple candidate solutions and ask the model to judge pairwise preferences among its own outputs. We aggregate self-preferences into ranking distributions via Bradley-Terry modeling with PageRank, and decompose the signal into two entropy-based components: ",
-      "abstractPattern": "Delayed Feedback Oscillations & System Instability",
-      "keywords": [
-        "analogical",
-        "reasoning",
-        "structural",
-        "mapping",
-        "transfer",
-        "cybernetics"
-      ],
-      "url": "https://arxiv.org/abs/2606.17312v1"
-    },
-    {
-      "id": "arxiv-2305.12660v2-23",
-      "source": "ArXiv (cs.AI)",
-      "domain": "Neuroscience",
-      "title": "Beneath Surface Similarity: Large Language Models Make Reasonable Scientific Analogies after Structure Abduction",
-      "problem": "The vital role of analogical reasoning in human cognition allows us to grasp novel concepts by linking them with familiar ones through shared relational structures. Despite the attention previous research has given to word analogies, this work suggests that Large Language Models (LLMs) often overlook the structures that underpin these analogies, raising questions about the efficacy of word analogies as a measure of analogical reasoning skills akin to human cognition. In response to this, our pap",
-      "solution": "er introduces a task of analogical structure abduction, grounded in cognitive psychology, designed to abduce structures that form an analogy between two systems. In support of this task, we establish a benchmark called SCAR, containing 400 scientific analogies from 13 distinct fields, tailored for evaluating analogical reasoning with structure abduction. The empirical evidence underlines the conti",
-      "abstractPattern": "Complex System Dynamics & Optimization",
-      "keywords": [
-        "analogical",
-        "reasoning",
-        "structural",
-        "mapping",
-        "transfer",
-        "neuroscience"
-      ],
-      "url": "https://arxiv.org/abs/2305.12660v2"
-    },
-    {
-      "id": "arxiv-2606.25178v2-24",
+      "id": "arxiv-2606.25178v2-22",
       "source": "ArXiv (cs.AI)",
       "domain": "Urban Planning",
       "title": "Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR",
@@ -2761,6 +2725,42 @@
         "planning"
       ],
       "url": "https://arxiv.org/abs/2606.25178v2"
+    },
+    {
+      "id": "arxiv-2305.12660v2-23",
+      "source": "ArXiv (cs.AI)",
+      "domain": "Neuroscience",
+      "title": "Beneath Surface Similarity: Large Language Models Make Reasonable Scientific Analogies after Structure Abduction",
+      "problem": "The vital role of analogical reasoning in human cognition allows us to grasp novel concepts by linking them with familiar ones through shared relational structures. Despite the attention previous research has given to word analogies, this work suggests that Large Language Models (LLMs) often overlook the structures that underpin these analogies, raising questions about the efficacy of word analogies as a measure of analogical reasoning skills akin to human cognition. In response to this, our pap",
+      "solution": "er introduces a task of analogical structure abduction, grounded in cognitive psychology, designed to abduce structures that form an analogy between two systems. In support of this task, we establish a benchmark called SCAR, containing 400 scientific analogies from 13 distinct fields, tailored for evaluating analogical reasoning with structure abduction. The empirical evidence underlines the conti",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
+      "keywords": [
+        "analogical",
+        "reasoning",
+        "structural",
+        "mapping",
+        "transfer",
+        "neuroscience"
+      ],
+      "url": "https://arxiv.org/abs/2305.12660v2"
+    },
+    {
+      "id": "arxiv-2606.17312v1-24",
+      "source": "ArXiv (cs.AI)",
+      "domain": "Cybernetics",
+      "title": "Quantifying Consistency in LLM Logical Reasoning via Structural Uncertainty",
+      "problem": "Large language models can arrive at the same answer through reasoning paths that are unstable, contradictory, or difficult to rank consistently -- a failure mode especially prevalent in multi-step deductive reasoning. Existing methods assess reliability primarily through output dispersion -- measuring how much sampled answers differ -- but this discards a complementary signal: whether the model can consistently rank competing reasoning candidates. We propose structural uncertainty, a consistency",
+      "solution": "-aware framework derived from the stability of self-preference-induced rankings over sampled reasoning solutions. Given a query, we generate multiple candidate solutions and ask the model to judge pairwise preferences among its own outputs. We aggregate self-preferences into ranking distributions via Bradley-Terry modeling with PageRank, and decompose the signal into two entropy-based components: ",
+      "abstractPattern": "Delayed Feedback Oscillations & System Instability",
+      "keywords": [
+        "analogical",
+        "reasoning",
+        "structural",
+        "mapping",
+        "transfer",
+        "cybernetics"
+      ],
+      "url": "https://arxiv.org/abs/2606.17312v1"
     },
     {
       "id": "arxiv-2105.04620v1-25",
@@ -2782,13 +2782,32 @@
       "url": "https://arxiv.org/abs/2105.04620v1"
     },
     {
-      "id": "arxiv-2510.10207v2-26",
+      "id": "arxiv-2608.07885v1-26",
+      "source": "ArXiv (cs.AI)",
+      "domain": "Chemical Engineering",
+      "title": "Reason Wide, Not Deep: Amortizing the Reasoning Premium into Distilled Skills",
+      "problem": "Reasoning modes of language models outperform their non-reasoning counterparts on multi-step agentic tasks, but pay a 3-6x premium in output tokens on every episode -- much of it spent re-deriving procedures that are shared across episodes of the same domain. We show this recurring cost can be amortized: a coding agent analyses a small corpus of existing trajectories from a training split and compiles a compact natural-language skill that is injected into the non-reasoning model's system prompt.",
+      "solution": " Across four agentic benchmarks (ALFWorld, tau$^2$-bench telecom and retail, and SpreadsheetBench-Verified), skills recover 55%-100%+ of the reasoning gap for GPT-5.4-mini on held-out tasks -- exceeding the reasoning mode outright on two of four -- while emitting 2.7-6x fewer output tokens and zero reasoning tokens. Notably, reasoning traces are not a prerequisite: skills distilled from non-reason",
+      "abstractPattern": "Rapid Spread Through Connected Population",
+      "keywords": [
+        "analogical",
+        "reasoning",
+        "structural",
+        "mapping",
+        "transfer",
+        "chemical",
+        "engineering"
+      ],
+      "url": "https://arxiv.org/abs/2608.07885v1"
+    },
+    {
+      "id": "arxiv-2510.10207v2-27",
       "source": "ArXiv (cs.AI)",
       "domain": "Computer Science",
       "title": "Adaptive Dual Reasoner: Large Reasoning Models Can Think Efficiently by Hybrid Reasoning",
       "problem": "Although Long Reasoning Models (LRMs) have achieved superior performance on various reasoning scenarios, they often suffer from increased computational costs and inference latency caused by overthinking. To address these limitations, we propose Adaptive Dual Reasoner, which supports two reasoning modes: fast thinking and slow thinking. ADR dynamically alternates between these modes based on the contextual complexity during reasoning. ADR is trained in two stages: (1) A cold-start stage using sup",
       "solution": "ervised fine-tuning (SFT) to equip the model with the ability to integrate both fast and slow reasoning modes, in which we construct a hybrid reasoning dataset through a dedicated pipeline to provide large-scale supervision. (2) A reinforcement learning stage for optimizing reasoning effort, where we introduce Entropy-guided Hybrid Policy Optimization EHPO, an RL training framework employing an en",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Distributed Flow Under Variable Demand",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2801,13 +2820,13 @@
       "url": "https://arxiv.org/abs/2510.10207v2"
     },
     {
-      "id": "arxiv-1910.02453v1-27",
+      "id": "arxiv-1910.02453v1-28",
       "source": "ArXiv (cs.AI)",
       "domain": "Computer Science",
       "title": "A Short Remark on Analogical Reasoning",
       "problem": "We discuss the problem of defining a logic for analogical reasoning, and sketch a solution in the style of the semantics for Counterfactual Conditionals, Preferential Structures, etc.",
       "solution": "Structural optimization and algorithmic refinement approach.",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2820,7 +2839,7 @@
       "url": "https://arxiv.org/abs/1910.02453v1"
     },
     {
-      "id": "arxiv-2511.00099v1-28",
+      "id": "arxiv-2511.00099v1-29",
       "source": "ArXiv (cs.AI)",
       "domain": "Healthcare",
       "title": "A generative adversarial network optimization method for damage detection and digital twinning by deep AI fault learning: Z24 Bridge structural health monitoring benchmark validation",
@@ -2838,13 +2857,13 @@
       "url": "https://arxiv.org/abs/2511.00099v1"
     },
     {
-      "id": "arxiv-1805.06504v1-29",
+      "id": "arxiv-1805.06504v1-30",
       "source": "ArXiv (cs.AI)",
       "domain": "Computer Science",
       "title": "Analogical Reasoning on Chinese Morphological and Semantic Relations",
       "problem": "Analogical reasoning is effective in capturing linguistic regularities. This paper proposes an analogical reasoning task on Chinese. After delving into Chinese lexical knowledge, we sketch 68 implicit morphological relations and 28 explicit semantic relations. A big and balanced dataset CA8 is then built for this task, including 17813 questions. Furthermore, we systematically explore the influences of vector representations, context features, and corpora on analogical reasoning. With the experim",
       "solution": "ents, CA8 is proved to be a reliable benchmark for evaluating Chinese word embeddings.",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2857,13 +2876,13 @@
       "url": "https://arxiv.org/abs/1805.06504v1"
     },
     {
-      "id": "arxiv-2210.00620v1-30",
+      "id": "arxiv-2210.00620v1-31",
       "source": "ArXiv (cs.AI)",
       "domain": "Computer Science",
       "title": "Does Wikidata Support Analogical Reasoning?",
       "problem": "Analogical reasoning methods have been built over various resources, including commonsense knowledge bases, lexical resources, language models, or their combination. While the wide coverage of knowledge about entities and events make Wikidata a promising resource for analogical reasoning across situations and domains, Wikidata has not been employed for this task yet. In this paper, we investigate whether the knowledge in Wikidata supports analogical reasoning. Specifically, we study whether rela",
       "solution": "tional knowledge is modeled consistently in Wikidata, observing that relevant relational information is typically missing or modeled in an inconsistent way. Our further experiments show that Wikidata can be used to create data for analogy classification, but this requires much manual effort. To facilitate future work that can support analogies, we discuss key desiderata, and devise a set of metric",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2876,13 +2895,13 @@
       "url": "https://arxiv.org/abs/2210.00620v1"
     },
     {
-      "id": "arxiv-2607.23019v1-31",
+      "id": "arxiv-2607.23019v1-32",
       "source": "ArXiv (cs.AI)",
       "domain": "Marine Hydrodynamics",
       "title": "Reason Popper-ly: Patching In-Context Reasoning with Inductive Logic Programming",
       "problem": "Chain-of-thought (CoT) prompting enables large language models (LLMs) to tackle multi-step reasoning tasks, yet the generated intermediate steps are not guaranteed to be logically sound. We present Reason Popper-ly, a neurosymbolic framework that uses inductive logic programming (ILP) to learn relation composition rules from reasoning traces and deploys them as an online verifier for step-level correction. Given an LLM-generated trace, the method checks each inferred step against the learned rul",
       "solution": "e table, diagnoses the violation type, rewrites incorrect steps with symbolically derived repairs, and regenerates the remaining suffix so that the model can produce its final answer conditioned on a verified trace. We evaluate on CLUTRR, a multi-hop kinship reasoning benchmark, using five language models over reasoning chains of 2 to 10 hops. Across all models, Reason Popper-ly consistently impro",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Constraint Satisfaction & Safety Verification",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2895,13 +2914,13 @@
       "url": "https://arxiv.org/abs/2607.23019v1"
     },
     {
-      "id": "arxiv-2103.16704v3-32",
+      "id": "arxiv-2103.16704v3-33",
       "source": "ArXiv (cs.AI)",
       "domain": "Urban Planning",
       "title": "Probabilistic Analogical Mapping with Semantic Relation Networks",
       "problem": "The human ability to flexibly reason using analogies with domain-general content depends on mechanisms for identifying relations between concepts, and for mapping concepts and their relations across analogs. Building on a recent model of how semantic relations can be learned from non-relational word embeddings, we present a new computational model of mapping between two analogs. The model adopts a Bayesian framework for probabilistic graph matching, operating on semantic relation networks constr",
       "solution": "ucted from distributed representations of individual concepts and of relations between concepts. Through comparisons of model predictions with human performance in a novel mapping task requiring integration of multiple relations, as well as in several classic studies, we demonstrate that the model accounts for a broad range of phenomena involving analogical mapping by both adults and children. We ",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Graph Structure & Topological Analysis",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2914,7 +2933,26 @@
       "url": "https://arxiv.org/abs/2103.16704v3"
     },
     {
-      "id": "arxiv-2604.14140v1-33",
+      "id": "arxiv-2509.20336v1-34",
+      "source": "ArXiv (cs.AI)",
+      "domain": "Computer Science",
+      "title": "Uncovering Graph Reasoning in Decoder-only Transformers with Circuit Tracing",
+      "problem": "Transformer-based LLMs demonstrate strong performance on graph reasoning tasks, yet their internal mechanisms remain underexplored. To uncover these reasoning process mechanisms in a fundamental and unified view, we set the basic decoder-only transformers and explain them using the circuit-tracer framework. Through this lens, we visualize reasoning traces and identify two core mechanisms in graph reasoning: token merging and structural memorization, which underlie both path reasoning and substru",
+      "solution": "cture extraction tasks. We further quantify these behaviors and analyze how they are influenced by graph density and model size. Our study provides a unified interpretability framework for understanding structural reasoning in decoder-only Transformers.",
+      "abstractPattern": "Complex System Dynamics & Optimization",
+      "keywords": [
+        "analogical",
+        "reasoning",
+        "structural",
+        "mapping",
+        "transfer",
+        "computer",
+        "science"
+      ],
+      "url": "https://arxiv.org/abs/2509.20336v1"
+    },
+    {
+      "id": "arxiv-2604.14140v1-35",
       "source": "ArXiv (cs.AI)",
       "domain": "Robotics & Autonomous Swarms",
       "title": "LongCoT: Benchmarking Long-Horizon Chain-of-Thought Reasoning",
@@ -2935,31 +2973,13 @@
       "url": "https://arxiv.org/abs/2604.14140v1"
     },
     {
-      "id": "arxiv-2312.11562v5-34",
-      "source": "ArXiv (cs.AI)",
-      "domain": "Healthcare",
-      "title": "A Survey of Reasoning with Foundation Models",
-      "problem": "Reasoning, a crucial ability for complex problem-solving, plays a pivotal role in various real-world settings such as negotiation, medical diagnosis, and criminal investigation. It serves as a fundamental methodology in the field of Artificial General Intelligence (AGI). With the ongoing development of foundation models, e.g., Large Language Models (LLMs), there is a growing interest in exploring their abilities in reasoning tasks. In this paper, we introduce seminal foundation models proposed o",
-      "solution": "r adaptable for reasoning, highlighting the latest advancements in various reasoning tasks, methods, and benchmarks. We then delve into the potential future directions behind the emergence of reasoning abilities within foundation models. We also discuss the relevance of multimodal learning, autonomous agents, and super alignment in the context of reasoning. By discussing these future research dire",
-      "abstractPattern": "Complex System Dynamics & Optimization",
-      "keywords": [
-        "analogical",
-        "reasoning",
-        "structural",
-        "mapping",
-        "transfer",
-        "healthcare"
-      ],
-      "url": "https://arxiv.org/abs/2312.11562v5"
-    },
-    {
-      "id": "arxiv-2604.10504v1-35",
+      "id": "arxiv-2604.10504v1-36",
       "source": "ArXiv (cs.AI)",
       "domain": "Neuroscience",
       "title": "CARO: Chain-of-Analogy Reasoning Optimization for Robust Content Moderation",
       "problem": "Current large language models (LLMs), even those explicitly trained for reasoning, often struggle with ambiguous content moderation cases due to misleading \"decision shortcuts\" embedded in context. Inspired by cognitive psychology insights into expert moderation, we introduce \\caro (Chain-of-Analogy Reasoning Optimization), a novel two-stage training framework to induce robust analogical reasoning in LLMs. First, \\caro bootstraps analogical reasoning chains via retrieval-augmented generation (RA",
       "solution": "G) on moderation data and performs supervised fine-tuning (SFT). Second, we propose a customized direct preference optimization (DPO) approach to reinforce analogical reasoning behaviors explicitly. Unlike static retrieval methods, \\caro dynamically generates tailored analogical references during inference, effectively mitigating harmful decision shortcuts. Extensive experiments demonstrate that \\",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -2971,32 +2991,13 @@
       "url": "https://arxiv.org/abs/2604.10504v1"
     },
     {
-      "id": "arxiv-0003012v1-36",
-      "source": "ArXiv (cs.AI)",
-      "domain": "Computer Science",
-      "title": "Defeasible Reasoning in OSCAR",
-      "problem": "This is a system description for the OSCAR defeasible reasoner.",
-      "solution": "Structural optimization and algorithmic refinement approach.",
-      "abstractPattern": "Complex System Dynamics & Optimization",
-      "keywords": [
-        "analogical",
-        "reasoning",
-        "structural",
-        "mapping",
-        "transfer",
-        "computer",
-        "science"
-      ],
-      "url": "https://arxiv.org/abs/0003012v1"
-    },
-    {
       "id": "arxiv-2206.07167v2-37",
       "source": "ArXiv (cs.AI)",
       "domain": "Neuroscience",
       "title": "Understanding Narratives through Dimensions of Analogy",
       "problem": "Analogical reasoning is a powerful qualitative reasoning tool that enables humans to connect two situations, and to generalize their knowledge from familiar to novel situations. Cognitive Science research provides valuable insights into the richness and complexity of analogical reasoning, together with implementations of expressive analogical reasoners with limited scalability. Modern scalable AI techniques with the potential to reason by analogy have been only applied to the special case of pro",
       "solution": "portional analogy, and not to understanding higher-order analogies. In this paper, we aim to bridge the gap by: 1) formalizing six dimensions of analogy based on mature insights from Cognitive Science research, 2) annotating a corpus of fables with each of these dimensions, and 3) defining four tasks with increasing complexity that enable scalable evaluation of AI techniques. Experiments with lang",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Analogical Reasoning & Knowledge Transfer",
       "keywords": [
         "analogical",
         "reasoning",
@@ -3008,13 +3009,31 @@
       "url": "https://arxiv.org/abs/2206.07167v2"
     },
     {
-      "id": "arxiv-2007.11668v1-38",
+      "id": "arxiv-2312.11562v5-38",
+      "source": "ArXiv (cs.AI)",
+      "domain": "Healthcare",
+      "title": "A Survey of Reasoning with Foundation Models",
+      "problem": "Reasoning, a crucial ability for complex problem-solving, plays a pivotal role in various real-world settings such as negotiation, medical diagnosis, and criminal investigation. It serves as a fundamental methodology in the field of Artificial General Intelligence (AGI). With the ongoing development of foundation models, e.g., Large Language Models (LLMs), there is a growing interest in exploring their abilities in reasoning tasks. In this paper, we introduce seminal foundation models proposed o",
+      "solution": "r adaptable for reasoning, highlighting the latest advancements in various reasoning tasks, methods, and benchmarks. We then delve into the potential future directions behind the emergence of reasoning abilities within foundation models. We also discuss the relevance of multimodal learning, autonomous agents, and super alignment in the context of reasoning. By discussing these future research dire",
+      "abstractPattern": "Decentralized Task Allocation Under Local Information",
+      "keywords": [
+        "analogical",
+        "reasoning",
+        "structural",
+        "mapping",
+        "transfer",
+        "healthcare"
+      ],
+      "url": "https://arxiv.org/abs/2312.11562v5"
+    },
+    {
+      "id": "arxiv-2007.11668v1-39",
       "source": "ArXiv (cs.AI)",
       "domain": "Neuroscience",
       "title": "Analogical Reasoning for Visually Grounded Language Acquisition",
       "problem": "Children acquire language subconsciously by observing the surrounding world and listening to descriptions. They can discover the meaning of words even without explicit language knowledge, and generalize to novel compositions effortlessly. In this paper, we bring this ability to AI, by studying the task of Visually grounded Language Acquisition (VLA). We propose a multimodal transformer model augmented with a novel mechanism for analogical reasoning, which approximates novel compositions by learn",
       "solution": "ing semantic mapping and reasoning operations from previously seen compositions. Our proposed method, Analogical Reasoning Transformer Networks (ARTNet), is trained on raw multimedia data (video frames and transcripts), and after observing a set of compositions such as \"washing apple\" or \"cutting carrot\", it can generalize and recognize new compositions in new video frames, such as \"washing carrot",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "analogical",
         "reasoning",
@@ -3026,32 +3045,13 @@
       "url": "https://arxiv.org/abs/2007.11668v1"
     },
     {
-      "id": "arxiv-2007.12020v1-39",
-      "source": "ArXiv (cs.AI)",
-      "domain": "Marine Hydrodynamics",
-      "title": "Few-shot Visual Reasoning with Meta-analogical Contrastive Learning",
-      "problem": "While humans can solve a visual puzzle that requires logical reasoning by observing only few samples, it would require training over large amount of data for state-of-the-art deep reasoning models to obtain similar performance on the same task. In this work, we propose to solve such a few-shot (or low-shot) visual reasoning problem, by resorting to analogical reasoning, which is a unique human ability to identify structural or relational similarity between two sets. Specifically, given training ",
-      "solution": "and test sets that contain the same type of visual reasoning problems, we extract the structural relationships between elements in both domains, and enforce them to be as similar as possible with analogical learning. We repeatedly apply this process with slightly modified queries of the same problem under the assumption that it does not affect the relationship between a training and a test sample.",
-      "abstractPattern": "Complex System Dynamics & Optimization",
-      "keywords": [
-        "analogical",
-        "reasoning",
-        "structural",
-        "mapping",
-        "transfer",
-        "marine",
-        "hydrodynamics"
-      ],
-      "url": "https://arxiv.org/abs/2007.12020v1"
-    },
-    {
       "id": "arxiv-1909.10086v3-0",
       "source": "ArXiv (cs.LG)",
       "domain": "Neuroscience",
       "title": "Learning Universal Graph Neural Network Embeddings With Aid Of Transfer Learning",
       "problem": "Learning powerful data embeddings has become a center piece in machine learning, especially in natural language processing and computer vision domains. The crux of these embeddings is that they are pretrained on huge corpus of data in a unsupervised fashion, sometimes aided with transfer learning. However currently in the graph learning domain, embeddings learned through existing graph neural networks (GNNs) are task dependent and thus cannot be shared across different datasets. In this paper, w",
       "solution": "e present a first powerful and theoretically guaranteed graph neural network that is designed to learn task-independent graph embeddings, thereafter referred to as deep universal graph embedding (DUGNN). Our DUGNN model incorporates a novel graph neural network (as a universal graph encoder) and leverages rich Graph Kernels (as a multi-task graph decoder) for both unsupervised learning and (task-s",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3088,7 +3088,7 @@
       "title": "Predicting concentration levels of air pollutants by transfer learning and recurrent neural network",
       "problem": "Air pollution (AP) poses a great threat to human health, and people are paying more attention than ever to its prediction. Accurate prediction of AP helps people to plan for their outdoor activities and aids protecting human health. In this paper, long-short term memory (LSTM) recurrent neural networks (RNNs) have been used to predict the future concentration of air pollutants (APS) in Macau. Additionally, meteorological data and data on the concentration of APS have been utilized. Moreover, in ",
       "solution": "Macau, some air quality monitoring stations (AQMSs) have less observed data in quantity, and, at the same time, some AQMSs recorded less observed data of certain types of APS. Therefore, the transfer learning and pre-trained neural networks have been employed to assist AQMSs with less observed data to build a neural network with high prediction accuracy. The experimental sample covers a period lon",
-      "abstractPattern": "Stigmergic Signaling & Environmental Memory",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3106,7 +3106,7 @@
       "title": "Masked Conditional Neural Networks for Audio Classification",
       "problem": "We present the ConditionaL Neural Network (CLNN) and the Masked ConditionaL Neural Network (MCLNN) designed for temporal signal recognition. The CLNN takes into consideration the temporal nature of the sound signal and the MCLNN extends upon the CLNN through a binary mask to preserve the spatial locality of the features and allows an automated exploration of the features combination analogous to hand-crafting the most relevant features for the recognition task. MCLNN has achieved competitive rec",
       "solution": "ognition accuracies on the GTZAN and the ISMIR2004 music datasets that surpass several state-of-the-art neural network based architectures and hand-crafted methods applied on both datasets.",
-      "abstractPattern": "Stigmergic Signaling & Environmental Memory",
+      "abstractPattern": "Signal Noise Separation & Information Extraction",
       "keywords": [
         "graph",
         "neural",
@@ -3143,7 +3143,7 @@
       "title": "Graph Neural Network Training Systems: A Performance Comparison of Full-Graph and Mini-Batch",
       "problem": "Graph Neural Networks (GNNs) have gained significant attention in recent years due to their ability to learn representations of graph-structured data. Two common methods for training GNNs are mini-batch training and full-graph training. Since these two methods require different training pipelines and systems optimizations, two separate classes of GNN training systems emerged, each tailored for one method. Works that introduce systems belonging to a particular category predominantly compare them ",
       "solution": "with other systems within the same category, offering limited or no comparison with systems from the other category. Some prior work also justifies its focus on one specific training method by arguing that it achieves higher accuracy than the alternative. The literature, however, has incomplete and contradictory evidence in this regard. In this paper, we provide a comprehensive empirical compariso",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3161,7 +3161,7 @@
       "title": "Proficient Graph Neural Network Design by Accumulating Knowledge on Large Language Models",
       "problem": "High-level automation is increasingly critical in AI, driven by rapid advances in large language models (LLMs) and AI agents. However, LLMs, despite their general reasoning power, struggle significantly in specialized, data-sensitive tasks such as designing Graph Neural Networks (GNNs). This difficulty arises from (1) the inherent knowledge gaps in modeling the intricate, varying relationships between graph properties and suitable architectures and (2) the external noise from misleading descript",
       "solution": "ive inputs, often resulting in generic or even misleading model suggestions. Achieving proficiency in designing data-aware models -- defined as the meta-level capability to systematically accumulate, interpret, and apply data-specific design knowledge -- remains challenging for existing automated approaches, due to their inefficient construction and application of meta-knowledge. To achieve meta-l",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Delayed Feedback Oscillations & System Instability",
       "keywords": [
         "graph",
         "neural",
@@ -3179,7 +3179,7 @@
       "title": "Fast and Deep Graph Neural Networks",
       "problem": "We address the efficiency issue for the construction of a deep graph neural network (GNN). The approach exploits the idea of representing each input graph as a fixed point of a dynamical system (implemented through a recurrent neural network), and leverages a deep architectural organization of the recurrent units. Efficiency is gained by many aspects, including the use of small and very sparse networks, where the weights of the recurrent units are left untrained under the stability condition int",
       "solution": "roduced in this work. This can be viewed as a way to study the intrinsic power of the architecture of a deep GNN, and also to provide insights for the set-up of more complex fully-trained models. Through experimental results, we show that even without training of the recurrent connections, the architecture of small deep GNN is surprisingly able to achieve or improve the state-of-the-art performanc",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3197,7 +3197,7 @@
       "title": "Transformers are Graph Neural Networks",
       "problem": "We establish connections between the Transformer architecture, originally introduced for natural language processing, and Graph Neural Networks (GNNs) for representation learning on graphs. We show how Transformers can be viewed as message passing GNNs operating on fully connected graphs of tokens, where the self-attention mechanism capture the relative importance of all tokens w.r.t. each-other, and positional encodings provide hints about sequential ordering or structure. Thus, Transformers ar",
       "solution": "e expressive set processing networks that learn relationships among input elements without being constrained by apriori graphs. Despite this mathematical connection to GNNs, Transformers are implemented via dense matrix operations that are significantly more efficient on modern hardware than sparse message passing. This leads to the perspective that Transformers are GNNs currently winning the hard",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3233,7 +3233,7 @@
       "title": "Graph neural network for colliding particles with an application to sea ice floe modeling",
       "problem": "This paper introduces a novel approach to sea ice modeling using Graph Neural Networks (GNNs), utilizing the natural graph structure of sea ice, where nodes represent individual ice pieces, and edges model the physical interactions, including collisions. This concept is developed within a one-dimensional framework as a foundational step. Traditional numerical methods, while effective, are computationally intensive and less scalable. By utilizing GNNs, the proposed model, termed the Collision-cap",
       "solution": "tured Network (CN), integrates data assimilation (DA) techniques to effectively learn and predict sea ice dynamics under various conditions. The approach was validated using synthetic data, both with and without observed data points, and it was found that the model accelerates the simulation of trajectories without compromising accuracy. This advancement offers a more efficient tool for forecastin",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3251,7 +3251,7 @@
       "title": "Modern graph neural networks do worse than classical greedy algorithms in solving combinatorial optimization problems like maximum independent set",
       "problem": "The recent work ``Combinatorial Optimization with Physics-Inspired Graph Neural Networks'' [Nat Mach Intell 4 (2022) 367] introduces a physics-inspired unsupervised Graph Neural Network (GNN) to solve combinatorial optimization problems on sparse graphs. To test the performances of these GNNs, the authors of the work show numerical results for two fundamental problems: maximum cut and maximum independent set (MIS). They conclude that \"the graph neural network optimizer performs on par or outperf",
       "solution": "orms existing solvers, with the ability to scale beyond the state of the art to problems with millions of variables.\" In this comment, we show that a simple greedy algorithm, running in almost linear time, can find solutions for the MIS problem of much better quality than the GNN. The greedy algorithm is faster by a factor of $10^4$ with respect to the GNN for problems with a million variables. We",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3269,7 +3269,7 @@
       "title": "How transferable are features in deep neural networks?",
       "problem": "Many deep neural networks trained on natural images exhibit a curious phenomenon in common: on the first layer they learn features similar to Gabor filters and color blobs. Such first-layer features appear not to be specific to a particular dataset or task, but general in that they are applicable to many datasets and tasks. Features must eventually transition from general to specific by the last layer of the network, but this transition has not been studied extensively. In this paper we experime",
       "solution": "ntally quantify the generality versus specificity of neurons in each layer of a deep convolutional neural network and report a few surprising results. Transferability is negatively affected by two distinct issues: (1) the specialization of higher layer neurons to their original task at the expense of performance on the target task, which was expected, and (2) optimization difficulties related to s",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3287,7 +3287,7 @@
       "title": "Learning Active Subspaces and Discovering Important Features with Gaussian Radial Basis Functions Neural Networks",
       "problem": "Providing a model that achieves a strong predictive performance and is simultaneously interpretable by humans is one of the most difficult challenges in machine learning research due to the conflicting nature of these two objectives. To address this challenge, we propose a modification of the radial basis function neural network model by equipping its Gaussian kernel with a learnable precision matrix. We show that precious information is contained in the spectrum of the precision matrix that can",
       "solution": " be extracted once the training of the model is completed. In particular, the eigenvectors explain the directions of maximum sensitivity of the model revealing the active subspace and suggesting potential applications for supervised dimensionality reduction. At the same time, the eigenvectors highlight the relationship in terms of absolute variation between the input and the latent variables, ther",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Signal Noise Separation & Information Extraction",
       "keywords": [
         "graph",
         "neural",
@@ -3305,7 +3305,7 @@
       "title": "Do Kernel and Neural Embeddings Help in Training and Generalization?",
       "problem": "Recent results on optimization and generalization properties of neural networks showed that in a simple two-layer network, the alignment of the labels to the eigenvectors of the corresponding Gram matrix determines the convergence of the optimization during training. Such analyses also provide upper bounds on the generalization error. We experimentally investigate the implications of these results to deeper networks via embeddings. We regard the layers preceding the final hidden layer as produci",
       "solution": "ng different representations of the input data which are then fed to the two-layer model. We show that these representations improve both optimization and generalization. In particular, we investigate three kernel representations when fed to the final hidden layer: the Gaussian kernel and its approximation by random Fourier features, kernels designed to imitate representations produced by neural n",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3341,7 +3341,7 @@
       "title": "Unbiased Graph Embedding with Biased Graph Observations",
       "problem": "Graph embedding techniques are pivotal in real-world machine learning tasks that operate on graph-structured data, such as social recommendation and protein structure modeling. Embeddings are mostly performed on the node level for learning representations of each node. Since the formation of a graph is inevitably affected by certain sensitive node attributes, the node embeddings can inherit such sensitive information and introduce undesirable biases in downstream tasks. Most existing works impos",
       "solution": "e ad-hoc constraints on the node embeddings to restrict their distributions for unbiasedness/fairness, which however compromise the utility of the resulting embeddings. In this paper, we propose a principled new way for unbiased graph embedding by learning node embeddings from an underlying bias-free graph, which is not influenced by sensitive node attributes. Motivated by this new perspective, we",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3360,7 +3360,7 @@
       "title": "Dual Accuracy-Quality-Driven Neural Network for Prediction Interval Generation",
       "problem": "Accurate uncertainty quantification is necessary to enhance the reliability of deep learning models in real-world applications. In the case of regression tasks, prediction intervals (PIs) should be provided along with the deterministic predictions of deep learning models. Such PIs are useful or \"high-quality\" as long as they are sufficiently narrow and capture most of the probability density. In this paper, we present a method to learn prediction intervals for regression-based neural networks au",
       "solution": "tomatically in addition to the conventional target predictions. In particular, we train two companion neural networks: one that uses one output, the target estimate, and another that uses two outputs, the upper and lower bounds of the corresponding PI. Our main contribution is the design of a novel loss function for the PI-generation network that takes into account the output of the target-estimat",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3396,7 +3396,7 @@
       "title": "A Neural Network-Evolutionary Computational Framework for Remaining Useful Life Estimation of Mechanical Systems",
       "problem": "This paper presents a framework for estimating the remaining useful life (RUL) of mechanical systems. The framework consists of a multi-layer perceptron and an evolutionary algorithm for optimizing the data-related parameters. The framework makes use of a strided time window to estimate the RUL for mechanical components. Tuning the data-related parameters can become a very time consuming task. The framework presented here automatically reshapes the data such that the efficiency of the model is i",
       "solution": "ncreased. Furthermore, the complexity of the model is kept low, e.g. neural networks with few hidden layers and few neurons at each layer. Having simple models has several advantages like short training times and the capacity of being in environments with limited computational resources such as embedded systems. The proposed method is evaluated on the publicly available C-MAPSS dataset, its accura",
-      "abstractPattern": "Impedance Matching & Peak Load Buffering",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3414,7 +3414,7 @@
       "title": "Correlation-aware Unsupervised Change-point Detection via Graph Neural Networks",
       "problem": "Change-point detection (CPD) aims to detect abrupt changes over time series data. Intuitively, effective CPD over multivariate time series should require explicit modeling of the dependencies across input variables. However, existing CPD methods either ignore the dependency structures entirely or rely on the (unrealistic) assumption that the correlation structures are static over time. In this paper, we propose a Correlation-aware Dynamics Model for CPD, which explicitly models the correlation s",
       "solution": "tructure and dynamics of variables by incorporating graph neural networks into an encoder-decoder framework. Extensive experiments on synthetic and real-world datasets demonstrate the advantageous performance of the proposed model on CPD tasks over strong baselines, as well as its ability to classify the change-points as correlation changes or independent changes. Keywords: Multivariate Time Serie",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3432,7 +3432,7 @@
       "title": "Hierarchical Attentional Hybrid Neural Networks for Document Classification",
       "problem": "Document classification is a challenging task with important applications. The deep learning approaches to the problem have gained much attention recently. Despite the progress, the proposed models do not incorporate the knowledge of the document structure in the architecture efficiently and not take into account the contexting importance of words and sentences. In this paper, we propose a new approach based on a combination of convolutional neural networks, gated recurrent units, and attention ",
       "solution": "mechanisms for document classification tasks. The main contribution of this work is the use of convolution layers to extract more meaningful, generalizable and abstract features by the hierarchical representation. The proposed method in this paper improves the results of the current attention-based approaches for document classification.",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Hierarchical Control & Multi-Scale Coordination",
       "keywords": [
         "graph",
         "neural",
@@ -3450,7 +3450,7 @@
       "title": "Graph Convolutional Neural Networks with Node Transition Probability-based Message Passing and DropNode Regularization",
       "problem": "Graph convolutional neural networks (GCNNs) have received much attention recently, owing to their capability in handling graph-structured data. Among the existing GCNNs, many methods can be viewed as instances of a neural message passing motif; features of nodes are passed around their neighbors, aggregated and transformed to produce better nodes' representations. Nevertheless, these methods seldom use node transition probabilities, a measure that has been found useful in exploring graphs. Furth",
       "solution": "ermore, when the transition probabilities are used, their transition direction is often improperly considered in the feature aggregation step, resulting in an inefficient weighting scheme. In addition, although a great number of GCNN models with increasing level of complexity have been introduced, the GCNNs often suffer from over-fitting when being trained on small graphs. Another issue of the GCN",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3468,7 +3468,7 @@
       "title": "Spiking Inception Module for Multi-layer Unsupervised Spiking Neural Networks",
       "problem": "Spiking Neural Network (SNN), as a brain-inspired approach, is attracting attention due to its potential to produce ultra-high-energy-efficient hardware. Competitive learning based on Spike-Timing-Dependent Plasticity (STDP) is a popular method to train an unsupervised SNN. However, previous unsupervised SNNs trained through this method are limited to a shallow network with only one learnable layer and cannot achieve satisfactory results when compared with multi-layer SNNs. In this paper, we eas",
       "solution": "ed this limitation by: 1)We proposed a Spiking Inception (Sp-Inception) module, inspired by the Inception module in the Artificial Neural Network (ANN) literature. This module is trained through STDP-based competitive learning and outperforms the baseline modules on learning capability, learning efficiency, and robustness. 2)We proposed a Pooling-Reshape-Activate (PRA) layer to make the Sp-Incepti",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Impedance Matching & Peak Load Buffering",
       "keywords": [
         "graph",
         "neural",
@@ -3486,7 +3486,7 @@
       "title": "Graph Neural Networks for Learning Equivariant Representations of Neural Networks",
       "problem": "Neural networks that process the parameters of other neural networks find applications in domains as diverse as classifying implicit neural representations, generating neural network weights, and predicting generalization errors. However, existing approaches either overlook the inherent permutation symmetry in the neural network or rely on intricate weight-sharing patterns to achieve equivariance, while ignoring the impact of the network architecture itself. In this work, we propose to represent",
       "solution": " neural networks as computational graphs of parameters, which allows us to harness powerful graph neural networks and transformers that preserve permutation symmetry. Consequently, our approach enables a single model to encode neural computational graphs with diverse architectures. We showcase the effectiveness of our method on a wide range of tasks, including classification and editing of implici",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3516,31 +3516,13 @@
       "url": "https://arxiv.org/abs/2410.21006v2"
     },
     {
-      "id": "arxiv-1905.12665v3-26",
-      "source": "ArXiv (cs.LG)",
-      "domain": "Neuroscience",
-      "title": "Graph Learning Network: A Structure Learning Algorithm",
-      "problem": "Recently, graph neural networks (GNNs) have proved to be suitable in tasks on unstructured data. Particularly in tasks as community detection, node classification, and link prediction. However, most GNN models still operate with static relationships. We propose the Graph Learning Network (GLN), a simple yet effective process to learn node embeddings and structure prediction functions. Our model uses graph convolutions to propose expected node features, and predict the best structure based on the",
-      "solution": "m. We repeat these steps recursively to enhance the prediction and the embeddings.",
-      "abstractPattern": "Complex System Dynamics & Optimization",
-      "keywords": [
-        "graph",
-        "neural",
-        "network",
-        "isomorphism",
-        "embedding",
-        "neuroscience"
-      ],
-      "url": "https://arxiv.org/abs/1905.12665v3"
-    },
-    {
-      "id": "arxiv-2606.07700v1-27",
+      "id": "arxiv-2606.07700v1-26",
       "source": "ArXiv (cs.LG)",
       "domain": "Neuroscience",
       "title": "EssentialGIN: a new approach for gene essentiality prediction based on graph isomorphism neural networks",
       "problem": "Background: Prediction of essential genes (proteins), is a basic and challenging problem but at the same time very costly and time-consuming in wet-lab experiments. Predicting essential genes, only based on computational methods (to introduce wet-lab candidates) using centrality measures are not accurate and result in large number of false positives; therefore, more complex models such as deep learning and also integration of biological information are used in recent research to identify essenti",
       "solution": "al genes. Methods: In this work we focus on graph isomorphism networks, in order to embed proteins as a node in PPI network to conserve topological features of PPI network, and also integrate biological data such as gene expression data, gene orthology information and gene subcellular localization information, and introduced a deep architecture for predicting essential genes. Graph isomorphism net",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3552,13 +3534,31 @@
       "url": "https://arxiv.org/abs/2606.07700v1"
     },
     {
+      "id": "arxiv-1905.12665v3-27",
+      "source": "ArXiv (cs.LG)",
+      "domain": "Neuroscience",
+      "title": "Graph Learning Network: A Structure Learning Algorithm",
+      "problem": "Recently, graph neural networks (GNNs) have proved to be suitable in tasks on unstructured data. Particularly in tasks as community detection, node classification, and link prediction. However, most GNN models still operate with static relationships. We propose the Graph Learning Network (GLN), a simple yet effective process to learn node embeddings and structure prediction functions. Our model uses graph convolutions to propose expected node features, and predict the best structure based on the",
+      "solution": "m. We repeat these steps recursively to enhance the prediction and the embeddings.",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
+      "keywords": [
+        "graph",
+        "neural",
+        "network",
+        "isomorphism",
+        "embedding",
+        "neuroscience"
+      ],
+      "url": "https://arxiv.org/abs/1905.12665v3"
+    },
+    {
       "id": "arxiv-2205.13273v1-28",
       "source": "ArXiv (cs.LG)",
       "domain": "Neuroscience",
       "title": "Acute Lymphoblastic Leukemia Detection Using Hypercomplex-Valued Convolutional Neural Networks",
       "problem": "This paper features convolutional neural networks defined on hypercomplex algebras applied to classify lymphocytes in blood smear digital microscopic images. Such classification is helpful for the diagnosis of acute lymphoblast leukemia (ALL), a type of blood cancer. We perform the classification task using eight hypercomplex-valued convolutional neural networks (HvCNNs) along with real-valued convolutional networks. Our results show that HvCNNs perform better than the real-valued model, showcas",
       "solution": "ing higher accuracy with a much smaller number of parameters. Moreover, we found that HvCNNs based on Clifford algebras processing HSV-encoded images attained the highest observed accuracies. Precisely, our HvCNN yielded an average accuracy rate of 96.6% using the ALL-IDB2 dataset with a 50% train-test split, a value extremely close to the state-of-the-art models but using a much simpler architect",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3594,7 +3594,7 @@
       "title": "A Note on Over-Smoothing for Graph Neural Networks",
       "problem": "Graph Neural Networks (GNNs) have achieved a lot of success on graph-structured data. However, it is observed that the performance of graph neural networks does not improve as the number of layers increases. This effect, known as over-smoothing, has been analyzed mostly in linear cases. In this paper, we build upon previous results \\cite{oono2019graph} to further analyze the over-smoothing effect in the general graph neural network architecture. We show when the weight matrix satisfies the condi",
       "solution": "tions determined by the spectrum of augmented normalized Laplacian, the Dirichlet energy of embeddings will converge to zero, resulting in the loss of discriminative power. Using Dirichlet energy to measure \"expressiveness\" of embedding is conceptually clean; it leads to simpler proofs than \\cite{oono2019graph} and can handle more non-linearities.",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3630,7 +3630,7 @@
       "title": "k-hop Graph Neural Networks",
       "problem": "Graph neural networks (GNNs) have emerged recently as a powerful architecture for learning node and graph representations. Standard GNNs have the same expressive power as the Weisfeiler-Leman test of graph isomorphism in terms of distinguishing non-isomorphic graphs. However, it was recently shown that this test cannot identify fundamental graph properties such as connectivity and triangle freeness. We show that GNNs also suffer from the same limitation. To address this limitation, we propose a ",
       "solution": "more expressive architecture, k-hop GNNs, which updates a node's representation by aggregating information not only from its direct neighbors, but from its k-hop neighborhood. We show that the proposed architecture can identify fundamental graph properties. We evaluate the proposed architecture on standard node classification and graph classification datasets. Our experimental evaluation confirms ",
-      "abstractPattern": "Complex System Dynamics & Optimization",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3648,7 +3648,7 @@
       "title": "Towards Dropout Training for Convolutional Neural Networks",
       "problem": "Recently, dropout has seen increasing use in deep learning. For deep convolutional neural networks, dropout is known to work well in fully-connected layers. However, its effect in convolutional and pooling layers is still not clear. This paper demonstrates that max-pooling dropout is equivalent to randomly picking activation based on a multinomial distribution at training time. In light of this insight, we advocate employing our proposed probabilistic weighted pooling, instead of commonly used m",
       "solution": "ax-pooling, to act as model averaging at test time. Empirical evidence validates the superiority of probabilistic weighted pooling. We also empirically show that the effect of convolutional dropout is not trivial, despite the dramatically reduced possibility of over-fitting due to the convolutional architecture. Elaborately designing dropout training simultaneously in max-pooling and fully-connect",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3666,7 +3666,7 @@
       "title": "Analogical and Relational Reasoning with Spiking Neural Networks",
       "problem": "Raven's Progressive Matrices have been widely used for measuring abstract reasoning and intelligence in humans. However for artificial learning systems, abstract reasoning remains a challenging problem. In this paper we investigate how neural networks augmented with biologically inspired spiking modules gain a significant advantage in solving this problem. To illustrate this, we first investigate the performance of our networks with supervised learning, then with unsupervised learning. Experimen",
       "solution": "ts on the RAVEN dataset show that the overall accuracy of our supervised networks surpass human-level performance, while our unsupervised networks significantly outperform existing unsupervised methods. Finally, our results from both supervised and unsupervised learning illustrate that, unlike their non-augmented counterparts, networks with spiking modules are able to extract and encode temporal f",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3684,7 +3684,7 @@
       "title": "Universal Deep Neural Network Compression",
       "problem": "In this paper, we investigate lossy compression of deep neural networks (DNNs) by weight quantization and lossless source coding for memory-efficient deployment. Whereas the previous work addressed non-universal scalar quantization and entropy coding of DNN weights, we for the first time introduce universal DNN compression by universal vector quantization and universal source coding. In particular, we examine universal randomized lattice quantization of DNNs, which randomizes DNN weights by unif",
       "solution": "orm random dithering before lattice quantization and can perform near-optimally on any source without relying on knowledge of its probability distribution. Moreover, we present a method of fine-tuning vector quantized DNNs to recover the performance loss after quantization. Our experimental results show that the proposed universal DNN compression scheme compresses the 32-layer ResNet (trained on C",
-      "abstractPattern": "Redundancy Fallback & Fail-Safe Topology",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3696,31 +3696,13 @@
       "url": "https://arxiv.org/abs/1802.02271v2"
     },
     {
-      "id": "arxiv-2104.07886v2-36",
-      "source": "ArXiv (cs.LG)",
-      "domain": "Neuroscience",
-      "title": "Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks",
-      "problem": "Graph Neural Networks (GNNs) have been widely used for the representation learning of various structured graph data. While promising, most existing GNNs oversimplified the complexity and diversity of the edges in the graph, and thus inefficient to cope with ubiquitous heterogeneous graphs, which are typically in the form of multi-relational graph representations. In this paper, we propose RioGNN, a novel Reinforced, recursive and flexible neighborhood selection guided multi-relational Graph Neur",
-      "solution": "al Network architecture, to navigate complexity of neural network structures whilst maintaining relation-dependent representations. We first construct a multi-relational graph, according to the practical task, to reflect the heterogeneity of nodes, edges, attributes and labels. To avoid the embedding over-assimilation among different types of nodes, we employ a label-aware neural similarity measur",
-      "abstractPattern": "Complex System Dynamics & Optimization",
-      "keywords": [
-        "graph",
-        "neural",
-        "network",
-        "isomorphism",
-        "embedding",
-        "neuroscience"
-      ],
-      "url": "https://arxiv.org/abs/2104.07886v2"
-    },
-    {
-      "id": "arxiv-1911.07532v4-37",
+      "id": "arxiv-1911.07532v4-36",
       "source": "ArXiv (cs.LG)",
       "domain": "Neuroscience",
       "title": "Graph Neural Ordinary Differential Equations",
       "problem": "We introduce the framework of continuous--depth graph neural networks (GNNs). Graph neural ordinary differential equations (GDEs) are formalized as the counterpart to GNNs where the input-output relationship is determined by a continuum of GNN layers, blending discrete topological structures and differential equations. The proposed framework is shown to be compatible with various static and autoregressive GNN models. Results prove general effectiveness of GDEs: in static settings they offer comp",
       "solution": "utational advantages by incorporating numerical methods in their forward pass; in dynamic settings, on the other hand, they are shown to improve performance by exploiting the geometry of the underlying dynamics.",
-      "abstractPattern": "Modular Abstraction & Layered Protocol Coupling",
+      "abstractPattern": "Adaptive Learning & Evolutionary Optimization",
       "keywords": [
         "graph",
         "neural",
@@ -3730,6 +3712,24 @@
         "neuroscience"
       ],
       "url": "https://arxiv.org/abs/1911.07532v4"
+    },
+    {
+      "id": "arxiv-2104.07886v2-37",
+      "source": "ArXiv (cs.LG)",
+      "domain": "Neuroscience",
+      "title": "Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks",
+      "problem": "Graph Neural Networks (GNNs) have been widely used for the representation learning of various structured graph data. While promising, most existing GNNs oversimplified the complexity and diversity of the edges in the graph, and thus inefficient to cope with ubiquitous heterogeneous graphs, which are typically in the form of multi-relational graph representations. In this paper, we propose RioGNN, a novel Reinforced, recursive and flexible neighborhood selection guided multi-relational Graph Neur",
+      "solution": "al Network architecture, to navigate complexity of neural network structures whilst maintaining relation-dependent representations. We first construct a multi-relational graph, according to the practical task, to reflect the heterogeneity of nodes, edges, attributes and labels. To avoid the embedding over-assimilation among different types of nodes, we employ a label-aware neural similarity measur",
+      "abstractPattern": "Hierarchical Control & Multi-Scale Coordination",
+      "keywords": [
+        "graph",
+        "neural",
+        "network",
+        "isomorphism",
+        "embedding",
+        "neuroscience"
+      ],
+      "url": "https://arxiv.org/abs/2104.07886v2"
     },
     {
       "id": "arxiv-2407.02342v1-38",
@@ -3756,7 +3756,7 @@
       "title": "Deep Graph Neural Networks with Shallow Subgraph Samplers",
       "problem": "While Graph Neural Networks (GNNs) are powerful models for learning representations on graphs, most state-of-the-art models do not have significant accuracy gain beyond two to three layers. Deep GNNs fundamentally need to address: 1). expressivity challenge due to oversmoothing, and 2). computation challenge due to neighborhood explosion. We propose a simple \"deep GNN, shallow sampler\" design principle to improve both the GNN accuracy and efficiency -- to generate representation of a target node",
       "solution": ", we use a deep GNN to pass messages only within a shallow, localized subgraph. A properly sampled subgraph may exclude irrelevant or even noisy nodes, and still preserve the critical neighbor features and graph structures. The deep GNN then smooths the informative local signals to enhance feature learning, rather than oversmoothing the global graph signals into just \"white noise\". We theoreticall",
-      "abstractPattern": "Stigmergic Signaling & Environmental Memory",
+      "abstractPattern": "Signal Noise Separation & Information Extraction",
       "keywords": [
         "graph",
         "neural",

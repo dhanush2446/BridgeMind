@@ -81,12 +81,8 @@ export default function AboutPage() {
                   desc: "Combines transferable principles from multiple domains into new solutions that no single field could have produced.",
                 },
                 {
-                  name: "Universal Pattern Library",
-                  desc: "A searchable atlas of ~127 recurring problem structures. Everything else is domain-specific decoration.",
-                },
-                {
-                  name: "Knowledge Graph",
-                  desc: "A growing, persistent map of every structural match, every solution transfer, and every broken bridge. Gets smarter with every query.",
+                  name: "Scientific Research Corpus",
+                  desc: "Indexed database of peer-reviewed papers across 20 scientific disciplines with fast full-text search.",
                 },
                 {
                   name: "Impact Finder",

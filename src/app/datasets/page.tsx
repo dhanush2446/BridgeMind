@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
+import { getCleanPaperUrl } from "@/lib/paper-utils";
 import styles from "./datasets.module.css";
 
 interface DatasetStats {
@@ -35,6 +36,51 @@ export default function DatasetsPage() {
 
   // Modal State
   const [selectedPaper, setSelectedPaper] = useState<any | null>(null);
+
+  // Add Mapped Analogy Modal State
+  const [showAddModal, setShowAddModal] = useState<boolean>(false);
+  const [newQuestion, setNewQuestion] = useState<string>("");
+  const [newSolution, setNewSolution] = useState<string>("");
+  const [newSourceDomain, setNewSourceDomain] = useState<string>("");
+  const [newTargetDomain, setNewTargetDomain] = useState<string>("");
+  const [isSubmittingAnalogy, setIsSubmittingAnalogy] = useState<boolean>(false);
+  const [successToast, setSuccessToast] = useState<string | null>(null);
+
+  const handleCreateAnalogy = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newQuestion.trim()) return;
+
+    try {
+      setIsSubmittingAnalogy(true);
+      const res = await fetch("/api/analogies", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          question: newQuestion,
+          solution: newSolution,
+          sourceDomain: newSourceDomain || undefined,
+          targetDomain: newTargetDomain || undefined
+        }),
+      });
+
+      if (!res.ok) throw new Error("Failed to map analogy");
+
+      const data = await res.json();
+      setAnalogies(data.analogies || []);
+      setStats((prev: any) => prev ? { ...prev, totalAnalogies: data.analogiesCount } : prev);
+      setShowAddModal(false);
+      setNewQuestion("");
+      setNewSolution("");
+      setNewSourceDomain("");
+      setNewTargetDomain("");
+      setSuccessToast("⚡ Mapped analogy automatically generated, persisted, and updated!");
+      setTimeout(() => setSuccessToast(null), 6000);
+    } catch (err: any) {
+      console.error("Error creating analogy:", err);
+    } finally {
+      setIsSubmittingAnalogy(false);
+    }
+  };
 
   const fetchDatasetData = async (page = 1, domain = "all", query = "") => {
     try {
@@ -288,6 +334,24 @@ export default function DatasetsPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery("")}
+              title="Clear search"
+              style={{
+                background: "none",
+                border: "none",
+                color: "#94a3b8",
+                cursor: "pointer",
+                padding: "0 8px",
+                fontSize: "1.1rem",
+                display: "flex",
+                alignItems: "center"
+              }}
+            >
+              ✕
+            </button>
+          )}
         </div>
       </div>
 
@@ -373,46 +437,100 @@ export default function DatasetsPage() {
           )}
 
           {activeTab === "analogies" && (
-            <div className={styles.grid}>
-              {analogies.map((an) => (
-                <div key={an.id} className={styles.card}>
-                  <div>
-                    <div className={styles.analogyHeader}>
-                      <div className={styles.domainArrow}>
-                        <span>{an.sourceDomain}</span>
-                        <span>→</span>
-                        <span>{an.targetDomain}</span>
-                      </div>
-                      <span className={styles.strengthBadge}>
-                        {Math.round(an.overallStrength * 100)}% Match
-                      </span>
-                    </div>
-                    <h3 className={styles.cardTitle}>
-                      {an.sourceSystem} ↔ {an.targetSystem}
-                    </h3>
-
-                    <div className={styles.mappingList}>
-                      {an.mappings?.slice(0, 3).map((m: any, idx: number) => (
-                        <div key={idx} className={styles.mappingItem}>
-                          <div className={styles.mappingPair}>
-                            <span>{m.sourceNode}</span>
-                            <span style={{ color: "#a855f7" }}>➔</span>
-                            <span>{m.targetNode}</span>
-                          </div>
-                          <div className={styles.mappingReason}>{m.reason}</div>
-                        </div>
-                      ))}
-                    </div>
-
-                    {an.brokenBridges?.[0] && (
-                      <div className={styles.bridgeWarning}>
-                        ⚠️ Broken Bridge: {an.brokenBridges[0].breakPoint} ({an.brokenBridges[0].reason})
-                      </div>
-                    )}
-                  </div>
+            <>
+              {successToast && (
+                <div className={styles.successToast}>
+                  <span>{successToast}</span>
+                  <button onClick={() => setSuccessToast(null)} style={{ background: "none", border: "none", color: "#34d399", cursor: "pointer", fontWeight: 700 }}>✕</button>
                 </div>
-              ))}
-            </div>
+              )}
+
+              <div className={styles.addAnalogyHeaderRow}>
+                <div>
+                  <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#f8fafc", margin: 0 }}>
+                    Cross-Domain Mapped Analogies Repository ({analogies.length})
+                  </h3>
+                  <p style={{ fontSize: "0.85rem", color: "#94a3b8", margin: "4px 0 0" }}>
+                    Mapped analogies auto-update when new questions are asked or new solutions are given.
+                  </p>
+                </div>
+                <button className={styles.addAnalogyBtn} onClick={() => setShowAddModal(true)}>
+                  <span>✨</span> + Add Question & Solution
+                </button>
+              </div>
+
+              <div className={styles.grid}>
+                {analogies.map((an) => (
+                  <div key={an.id} className={styles.card}>
+                    <div>
+                      <div className={styles.analogyHeader}>
+                        <div className={styles.domainArrow}>
+                          <span>{an.sourceDomain}</span>
+                          <span>→</span>
+                          <span>{an.targetDomain}</span>
+                        </div>
+                        <span className={styles.strengthBadge}>
+                          {Math.round(an.overallStrength * 100)}% Match
+                        </span>
+                      </div>
+                      <h3 className={styles.cardTitle}>
+                        {an.analogyName || `${an.sourceSystem} ↔ ${an.targetSystem}`}
+                      </h3>
+                      {an.analogyName && (
+                        <p style={{ fontSize: "0.75rem", color: "#64748b", margin: "2px 0 8px" }}>
+                          {an.sourceSystem} ↔ {an.targetSystem}
+                        </p>
+                      )}
+
+                      {/* Inspiring Research Paper Card */}
+                      {an.inspiringPaper && (
+                        <div className={styles.inspiringPaperCard}>
+                          <div className={styles.inspiringPaperBadge}>
+                            <span>📄 Inspiring Research Paper</span>
+                            {an.inspiringPaper.year && (
+                              <span className={styles.inspiringPaperYear}>{an.inspiringPaper.year}</span>
+                            )}
+                          </div>
+                          <div className={styles.inspiringPaperTitle}>{an.inspiringPaper.title}</div>
+                          <div className={styles.inspiringPaperMeta}>
+                            {an.inspiringPaper.authors} {an.inspiringPaper.journal ? `• ${an.inspiringPaper.journal}` : ""}
+                          </div>
+                          {an.inspiringPaper.url && (
+                            <a
+                              href={an.inspiringPaper.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={styles.inspiringPaperLink}
+                            >
+                              View Published Paper ↗
+                            </a>
+                          )}
+                        </div>
+                      )}
+
+                      <div className={styles.mappingList}>
+                        {an.mappings?.slice(0, 3).map((m: any, idx: number) => (
+                          <div key={idx} className={styles.mappingItem}>
+                            <div className={styles.mappingPair}>
+                              <span>{m.sourceNode}</span>
+                              <span style={{ color: "#a855f7" }}>➔</span>
+                              <span>{m.targetNode}</span>
+                            </div>
+                            <div className={styles.mappingReason}>{m.reason}</div>
+                          </div>
+                        ))}
+                      </div>
+
+                      {an.brokenBridges?.[0] && (
+                        <div className={styles.bridgeWarning}>
+                          ⚠️ Broken Bridge: {an.brokenBridges[0].breakPoint} ({an.brokenBridges[0].reason})
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
           )}
 
           {activeTab === "taxonomy" && (
@@ -504,7 +622,7 @@ export default function DatasetsPage() {
               <span style={{ fontSize: "0.8rem", color: "#64748b" }}>Paper ID: {selectedPaper.id}</span>
               <div style={{ display: "flex", gap: "0.75rem" }}>
                 <a
-                  href={selectedPaper.url || `https://scholar.google.com/scholar?q=${encodeURIComponent(selectedPaper.title)}`}
+                  href={getCleanPaperUrl(selectedPaper.title, selectedPaper.url)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.pageBtn}
@@ -521,6 +639,89 @@ export default function DatasetsPage() {
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Add New Question & Solution Modal */}
+      {showAddModal && (
+        <div className={styles.modalOverlay} onClick={() => setShowAddModal(false)}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()} style={{ maxWidth: "600px" }}>
+            <button className={styles.modalCloseBtn} onClick={() => setShowAddModal(false)}>✕</button>
+
+            <div className={styles.modalHeader}>
+              <h2 className={styles.title} style={{ fontSize: "1.6rem", marginBottom: "0.25rem" }}>
+                ✨ Add New Question & Solution
+              </h2>
+              <p className={styles.modalText} style={{ fontSize: "0.85rem", color: "#94a3b8" }}>
+                Submit a question or solution to automatically extract structural elements and add a new mapped analogy to the database.
+              </p>
+            </div>
+
+            <form onSubmit={handleCreateAnalogy}>
+              <div className={styles.formGroup}>
+                <label className={styles.formLabel}>Question / Problem Statement *</label>
+                <textarea
+                  className={styles.formTextarea}
+                  placeholder="e.g., How can we reduce latency spikes in distributed database cluster replication under heavy network traffic?"
+                  value={newQuestion}
+                  onChange={(e) => setNewQuestion(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.formLabel}>Proposed Solution Mechanism (Optional)</label>
+                <textarea
+                  className={styles.formTextarea}
+                  placeholder="e.g., Apply biological vascular flow routing with dynamic bypass loops to reroute high-priority packets."
+                  value={newSolution}
+                  onChange={(e) => setNewSolution(e.target.value)}
+                />
+              </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+                <div className={styles.formGroup}>
+                  <label className={styles.formLabel}>Source Domain (Optional)</label>
+                  <input
+                    type="text"
+                    className={styles.formInput}
+                    placeholder="e.g. Biology / Aviation"
+                    value={newSourceDomain}
+                    onChange={(e) => setNewSourceDomain(e.target.value)}
+                  />
+                </div>
+
+                <div className={styles.formGroup}>
+                  <label className={styles.formLabel}>Target Domain (Optional)</label>
+                  <input
+                    type="text"
+                    className={styles.formInput}
+                    placeholder="e.g. Computer Networking"
+                    value={newTargetDomain}
+                    onChange={(e) => setNewTargetDomain(e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div style={{ display: "flex", gap: "1rem", marginTop: "1.25rem" }}>
+                <button
+                  type="submit"
+                  className={styles.submitModalBtn}
+                  disabled={isSubmittingAnalogy || !newQuestion.trim()}
+                >
+                  {isSubmittingAnalogy ? "⚡ Extracting & Mapping Analogy..." : "Map & Update Analogies Repository →"}
+                </button>
+                <button
+                  type="button"
+                  className={styles.pageBtn}
+                  style={{ background: "rgba(255,255,255,0.1)", color: "#fff", border: "1px solid rgba(255,255,255,0.2)" }}
+                  onClick={() => setShowAddModal(false)}
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}

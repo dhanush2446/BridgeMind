@@ -1348,11 +1348,19 @@ export interface AnalogyMapping {
 
 export interface CrossDomainAnalogy {
   id: string;
+  analogyName?: string;
   sourceDomain: string;
   targetDomain: string;
   sourceSystem: string;
   targetSystem: string;
   overallStrength: number;
+  inspiringPaper?: {
+    title: string;
+    authors: string;
+    journal?: string;
+    year?: number;
+    url?: string;
+  };
   mappings: AnalogyMapping[];
   transferableSolutions: string[];
   brokenBridges: {
@@ -1369,6 +1377,7 @@ export const SEED_ANALOGIES: CrossDomainAnalogy[] = [
     sourceDomain: "Biology",
     targetDomain: "Computer Science",
     sourceSystem: "Blood Circulatory System",
+    analogyName: "Blood Flow → Network Traffic",
     targetSystem: "Computer Network Infrastructure",
     overallStrength: 0.87,
     mappings: [
@@ -1443,6 +1452,7 @@ export const SEED_ANALOGIES: CrossDomainAnalogy[] = [
     sourceDomain: "Ecology",
     targetDomain: "Urban Planning",
     sourceSystem: "Ant Colony Foraging Network",
+    analogyName: "Ant Trails → Data Routing",
     targetSystem: "Urban Traffic System",
     overallStrength: 0.82,
     mappings: [
@@ -1507,6 +1517,7 @@ export const SEED_ANALOGIES: CrossDomainAnalogy[] = [
     sourceDomain: "Biology",
     targetDomain: "Logistics",
     sourceSystem: "Bee Hive Task Allocation",
+    analogyName: "Bee Hive → Task Scheduling",
     targetSystem: "Warehouse Operations",
     overallStrength: 0.79,
     mappings: [
@@ -1563,6 +1574,7 @@ export const SEED_ANALOGIES: CrossDomainAnalogy[] = [
     sourceDomain: "Biology",
     targetDomain: "Cybersecurity",
     sourceSystem: "Human Immune System",
+    analogyName: "Immune System → Security Defense",
     targetSystem: "Network Security Architecture",
     overallStrength: 0.84,
     mappings: [

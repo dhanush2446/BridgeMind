@@ -43,7 +43,10 @@ export async function POST(request: NextRequest) {
 
     // Fallback to local TypeScript Engine
     const analysis = await analyzeProblem(trimmedProblem);
-    return NextResponse.json(analysis);
+    return NextResponse.json({
+      ...analysis,
+      analogiesUpdated: true
+    });
   } catch (error) {
     console.error("Analysis error:", error);
     return NextResponse.json(

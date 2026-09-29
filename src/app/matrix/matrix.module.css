@@ -57,8 +57,8 @@
 
 .matrixGrid {
   display: grid;
-  grid-template-columns: 120px repeat(10, minmax(64px, 1fr));
-  gap: 4px;
+  /* grid-template-columns set dynamically via inline style */
+  gap: 3px;
 }
 
 .cellHeaderCorner {
@@ -87,7 +87,7 @@
 }
 
 .matrixCell {
-  height: 54px;
+  height: 42px;
   border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
@@ -111,7 +111,7 @@
 
 .cellScore {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 700;
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);

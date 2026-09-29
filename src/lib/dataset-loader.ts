@@ -1,6 +1,12 @@
 import fs from "fs";
 import path from "path";
-import { searchCaseStudiesFTS, getDbCaseStudyCount } from "./db";
+import {
+  searchCaseStudiesFTS,
+  getDbCaseStudyCount,
+  getDbAnalogies,
+  getDbAnalogyCount,
+  saveOrUpdateDbAnalogy
+} from "./db";
 
 /* ══════════════════════════════════════════════════════════════
    DATASET LOADER UTILITY LAYER (TIER B SQLITE + FTS5 INTEGRATION)
@@ -35,14 +41,24 @@ export interface DatasetBrokenBridge {
 
 export interface DatasetAnalogy {
   id: string;
+  analogyName?: string;
   sourceDomain: string;
   targetDomain: string;
   sourceSystem: string;
   targetSystem: string;
   overallStrength: number;
+  patternId?: string;
+  inspiringPaper?: {
+    title: string;
+    authors: string;
+    journal?: string;
+    year?: number;
+    url?: string;
+  };
   mappings: DatasetAnalogyMapping[];
   brokenBridges: DatasetBrokenBridge[];
   transferableSolutions: string[];
+  createdAt?: string;
 }
 
 export interface DatasetStats {
@@ -71,6 +87,15 @@ function readJsonFile<T>(filename: string, fallback: T): T {
   }
 }
 
+function writeJsonFile(filename: string, data: any): void {
+  try {
+    const filePath = path.join(DATA_DIR, filename);
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf-8");
+  } catch (error) {
+    console.error(`[DatasetLoader] Error writing ${filename}:`, error);
+  }
+}
+
 /**
  * Retrieves dataset statistics, dynamically integrating SQLite counts.
  */
@@ -92,6 +117,10 @@ export function getDatasetStats(): DatasetStats {
     if (dbCount > 0) {
       jsonStats.totalCaseStudies = dbCount;
       jsonStats.tier = "Tier B (SQLite + FTS5 Virtual Table)";
+    }
+    const analogyDbCount = getDbAnalogyCount();
+    if (analogyDbCount > 0) {
+      jsonStats.totalAnalogies = analogyDbCount;
     }
   } catch (err) {
     // Ignore db fallback
@@ -126,13 +155,60 @@ export function getCaseStudies(limit = 100): { total: number; domains: string[];
 }
 
 /**
- * Returns cross-domain structural analogies.
+ * Returns cross-domain structural analogies from SQLite DB with JSON fallback.
  */
 export function getAnalogies(): { analogiesCount: number; analogies: DatasetAnalogy[] } {
+  try {
+    const dbAnalogies = getDbAnalogies();
+    if (dbAnalogies && dbAnalogies.length > 0) {
+      return {
+        analogiesCount: dbAnalogies.length,
+        analogies: dbAnalogies
+      };
+    }
+  } catch (err) {
+    console.warn("[DatasetLoader] Error querying analogies from DB, using JSON fallback:", err);
+  }
+
   return readJsonFile("analogies.json", {
     analogiesCount: 0,
     analogies: []
   });
+}
+
+/**
+ * Add or update a mapped analogy automatically in SQLite database, JSON file, and stats.
+ */
+export function addOrUpdateMappedAnalogy(analogy: DatasetAnalogy): { analogiesCount: number; analogies: DatasetAnalogy[] } {
+  try {
+    // 1. Persist to SQLite
+    saveOrUpdateDbAnalogy(analogy);
+
+    // 2. Fetch full current dataset from DB
+    const allAnalogies = getDbAnalogies();
+
+    // 3. Sync back to analogies.json file
+    const analogiesPayload = {
+      updatedAt: new Date().toISOString(),
+      analogiesCount: allAnalogies.length,
+      analogies: allAnalogies
+    };
+    writeJsonFile("analogies.json", analogiesPayload);
+
+    // 4. Update dataset-stats.json file
+    const currentStats = getDatasetStats();
+    currentStats.totalAnalogies = allAnalogies.length;
+    currentStats.lastHarvested = new Date().toISOString();
+    writeJsonFile("dataset-stats.json", currentStats);
+
+    return {
+      analogiesCount: allAnalogies.length,
+      analogies: allAnalogies
+    };
+  } catch (err) {
+    console.error("[DatasetLoader] Failed to add or update mapped analogy:", err);
+    return getAnalogies();
+  }
 }
 
 /**

@@ -36,3 +36,9 @@ Thumbs.db
 # SQLite temporary files
 *.db-shm
 *.db-wal
+
+# Scratch/debug scripts
+scratch/
+
+# Trained model weights
+python_backend/trained_models/

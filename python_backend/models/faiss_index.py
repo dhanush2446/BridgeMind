@@ -14,6 +14,48 @@ class FaissSearchEngine:
 
     def _initialize_index(self):
         print("[FAISS Engine] Initializing vector index...")
+
+        # Check for pre-built FAISS index from training pipeline
+        trained_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                   "trained_models")
+        prebuilt_index_path = os.path.join(trained_dir, "faiss_index.bin")
+        prebuilt_items_path = os.path.join(trained_dir, "faiss_items.json")
+        prebuilt_npy_path = os.path.join(trained_dir, "embeddings_matrix.npy")
+
+        # Try loading pre-built FAISS index
+        if os.path.exists(prebuilt_index_path) and os.path.exists(prebuilt_items_path):
+            try:
+                import faiss
+                import json
+                self.index = faiss.read_index(prebuilt_index_path)
+                with open(prebuilt_items_path, "r", encoding="utf-8") as f:
+                    self.items = json.load(f)
+                print(f"[FAISS Engine] Loaded pre-built index: {self.index.ntotal} vectors, {len(self.items)} items")
+                return
+            except Exception as e:
+                print(f"[FAISS Engine] Could not load pre-built FAISS index: {e}")
+
+        # Try loading pre-built numpy embeddings (fallback when faiss not installed during training)
+        if os.path.exists(prebuilt_npy_path) and os.path.exists(prebuilt_items_path):
+            try:
+                import json
+                matrix = np.load(prebuilt_npy_path)
+                with open(prebuilt_items_path, "r", encoding="utf-8") as f:
+                    self.items = json.load(f)
+                try:
+                    import faiss
+                    self.index = faiss.IndexFlatIP(self.dim)
+                    self.index.add(matrix.astype(np.float32))
+                    print(f"[FAISS Engine] Built FAISS index from pre-computed embeddings: {self.index.ntotal} vectors")
+                except ImportError:
+                    self.embeddings_matrix = matrix
+                    print(f"[FAISS Engine] Loaded pre-computed embeddings matrix: {matrix.shape}")
+                return
+            except Exception as e:
+                print(f"[FAISS Engine] Could not load pre-computed embeddings: {e}")
+
+        # No pre-built index found — build from database (original behavior)
+        print("[FAISS Engine] No pre-built index found. Building from database...")
         try:
             import faiss
             self.index = faiss.IndexFlatIP(self.dim)

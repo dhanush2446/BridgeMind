@@ -1,14 +1,1536 @@
 {
-  "updatedAt": "2026-07-30T03:07:46.317Z",
-  "analogiesCount": 8,
+  "updatedAt": "2026-09-01T05:15:47.569Z",
+  "analogiesCount": 26,
   "analogies": [
     {
+      "id": "analogy-how-can-we-slow-the-spread-of-47567",
+      "analogyName": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic → How can we slow the spread of misinformation ",
+      "sourceDomain": "Healthcare",
+      "targetDomain": "General",
+      "sourceSystem": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic",
+      "targetSystem": "How can we slow the spread of misinformation on social platforms without censori",
+      "overallStrength": 0.4332,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2012.13792v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Spread (Constraint Factor)",
+          "strength": 0.037,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Spread (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Slow (Entity Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Slow (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Misinformation (Goal Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Misinformation (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Social (Flow Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Social (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Spread (Constraint Factor)' (in your problem) is weak (4%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Slow (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Misinformation (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Social (Flow Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Healthcare:\n1. Interface Adaptation: Adapt the Healthcare approach (\"The aim is to provide simple analytical expressions for the peak and asymptotic values and their characteristic times of the populations affected by the COVID-19 pandemic.\") to map onto your elements (Slow (Entity Factor), Spread (Constraint Factor), Misinformation (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Healthcare's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-01 05:15:47"
+    },
+    {
+      "id": "analogy-how-can-we-slow-the-spread-of-47540",
+      "analogyName": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic → How can we slow the spread of misinformation ",
+      "sourceDomain": "Healthcare",
+      "targetDomain": "General",
+      "sourceSystem": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic",
+      "targetSystem": "How can we slow the spread of misinformation on social platforms without censori",
+      "overallStrength": 0.4332,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2012.13792v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Spread (Constraint Factor)",
+          "strength": 0.037,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Spread (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Slow (Entity Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Slow (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Misinformation (Goal Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Misinformation (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Social (Flow Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Social (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Spread (Constraint Factor)' (in your problem) is weak (4%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Slow (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Misinformation (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Social (Flow Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Healthcare:\n1. Interface Adaptation: Adapt the Healthcare approach (\"The aim is to provide simple analytical expressions for the peak and asymptotic values and their characteristic times of the populations affected by the COVID-19 pandemic.\") to map onto your elements (Slow (Entity Factor), Spread (Constraint Factor), Misinformation (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Healthcare's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-01 05:15:47"
+    },
+    {
+      "id": "analogy-a-major-city-experiences-sever-85931",
+      "analogyName": "Personalized fall detection monitoring system based on learning from the user movements → A major city experiences severe traffic conge",
+      "sourceDomain": "Healthcare",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Personalized fall detection monitoring system based on learning from the user movements",
+      "targetSystem": "A major city experiences severe traffic congestion during rush hours. Current si",
+      "overallStrength": 0.2188,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Personalized fall detection monitoring system based on learning from the user movements",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2012.11195v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "cs.LG",
+          "targetNode": "Current Flow",
+          "strength": 0.1077,
+          "reason": "Cross-domain functional alignment: 'cs.LG' (in Healthcare) and 'Current Flow' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.LG",
+          "targetNode": "Signal",
+          "strength": 0.1033,
+          "reason": "Cross-domain functional alignment: 'cs.LG' (in Healthcare) and 'Signal' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.LG",
+          "targetNode": "Experiences (Goal Factor)",
+          "strength": 0.085,
+          "reason": "Cross-domain functional alignment: 'cs.LG' (in Healthcare) and 'Experiences (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.LG",
+          "targetNode": "City (Constraint Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'cs.LG' (in Healthcare) and 'City (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "cs.LG",
+          "reason": "The comparison between 'cs.LG' (in Healthcare) and 'Current Flow' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.LG",
+          "reason": "The comparison between 'cs.LG' (in Healthcare) and 'Signal' (in your problem) is weak (10%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.LG",
+          "reason": "The comparison between 'cs.LG' (in Healthcare) and 'Experiences (Goal Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.LG",
+          "reason": "The comparison between 'cs.LG' (in Healthcare) and 'City (Constraint Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Healthcare:\n1. Interface Adaptation: Adapt the Healthcare approach (\"Even though the accuracy is not 100% the proof of concept of personalization can be used to achieve greater accuracy. The concept of personalization used in this paper can also be extended to other research in the medical field or where data is hard to come by for a particular class. More research into the feature extraction and feature selection module should be investigated. For the feature selection module, more research into selecting features based on one class data.\") to map onto your elements (Signal, City (Constraint Factor), Experiences (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Healthcare's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-31 07:23:05"
+    },
+    {
+      "id": "analogy-a-major-city-experiences-sever-85856",
+      "analogyName": "Personalized fall detection monitoring system based on learning from the user movements → A major city experiences severe traffic conge",
+      "sourceDomain": "Healthcare",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Personalized fall detection monitoring system based on learning from the user movements",
+      "targetSystem": "A major city experiences severe traffic congestion during rush hours. Current si",
+      "overallStrength": 0.2188,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Personalized fall detection monitoring system based on learning from the user movements",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2012.11195v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "cs.LG",
+          "targetNode": "Current Flow",
+          "strength": 0.1077,
+          "reason": "Cross-domain functional alignment: 'cs.LG' (in Healthcare) and 'Current Flow' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.LG",
+          "targetNode": "Signal",
+          "strength": 0.1033,
+          "reason": "Cross-domain functional alignment: 'cs.LG' (in Healthcare) and 'Signal' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.LG",
+          "targetNode": "Experiences (Goal Factor)",
+          "strength": 0.085,
+          "reason": "Cross-domain functional alignment: 'cs.LG' (in Healthcare) and 'Experiences (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.LG",
+          "targetNode": "City (Constraint Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'cs.LG' (in Healthcare) and 'City (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "cs.LG",
+          "reason": "The comparison between 'cs.LG' (in Healthcare) and 'Current Flow' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.LG",
+          "reason": "The comparison between 'cs.LG' (in Healthcare) and 'Signal' (in your problem) is weak (10%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.LG",
+          "reason": "The comparison between 'cs.LG' (in Healthcare) and 'Experiences (Goal Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.LG",
+          "reason": "The comparison between 'cs.LG' (in Healthcare) and 'City (Constraint Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Healthcare:\n1. Interface Adaptation: Adapt the Healthcare approach (\"Even though the accuracy is not 100% the proof of concept of personalization can be used to achieve greater accuracy. The concept of personalization used in this paper can also be extended to other research in the medical field or where data is hard to come by for a particular class. More research into the feature extraction and feature selection module should be investigated. For the feature selection module, more research into selecting features based on one class data.\") to map onto your elements (Signal, City (Constraint Factor), Experiences (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Healthcare's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-31 07:23:05"
+    },
+    {
+      "id": "analogy-how-can-we-slow-the-spread-of-14499",
+      "analogyName": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic → How can we slow the spread of misinformation ",
+      "sourceDomain": "Healthcare",
+      "targetDomain": "General",
+      "sourceSystem": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic",
+      "targetSystem": "How can we slow the spread of misinformation on social platforms without censori",
+      "overallStrength": 0.4332,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2012.13792v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Spread (Constraint Factor)",
+          "strength": 0.037,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Spread (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Slow (Entity Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Slow (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Misinformation (Goal Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Misinformation (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Social (Flow Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Social (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Spread (Constraint Factor)' (in your problem) is weak (4%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Slow (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Misinformation (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Social (Flow Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Healthcare:\n1. Interface Adaptation: Adapt the Healthcare approach (\"The aim is to provide simple analytical expressions for the peak and asymptotic values and their characteristic times of the populations affected by the COVID-19 pandemic.\") to map onto your elements (Slow (Entity Factor), Spread (Constraint Factor), Misinformation (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Healthcare's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-31 05:05:14"
+    },
+    {
+      "id": "analogy-how-can-we-slow-the-spread-of-14447",
+      "analogyName": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic → How can we slow the spread of misinformation ",
+      "sourceDomain": "Healthcare",
+      "targetDomain": "General",
+      "sourceSystem": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic",
+      "targetSystem": "How can we slow the spread of misinformation on social platforms without censori",
+      "overallStrength": 0.4332,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2012.13792v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Spread (Constraint Factor)",
+          "strength": 0.037,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Spread (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Slow (Entity Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Slow (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Misinformation (Goal Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Misinformation (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Social (Flow Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Social (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Spread (Constraint Factor)' (in your problem) is weak (4%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Slow (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Misinformation (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Social (Flow Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Healthcare:\n1. Interface Adaptation: Adapt the Healthcare approach (\"The aim is to provide simple analytical expressions for the peak and asymptotic values and their characteristic times of the populations affected by the COVID-19 pandemic.\") to map onto your elements (Slow (Entity Factor), Spread (Constraint Factor), Misinformation (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Healthcare's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-31 05:05:14"
+    },
+    {
+      "id": "analogy-a-major-city-experiences-sever-81740",
+      "analogyName": "A Survey on Reinforcement Learning Models and Algorithms for Traffic Signal Control → A major city experiences severe traffic conge",
+      "sourceDomain": "Robotics & Autonomous Swarms",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "A Survey on Reinforcement Learning Models and Algorithms for Traffic Signal Control",
+      "targetSystem": "A major city experiences severe traffic congestion during rush hours. Current si",
+      "overallStrength": 0.2426,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "A Survey on Reinforcement Learning Models and Algorithms for Traffic Signal Control",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://doi.org/10.1145/3068287"
+      },
+      "mappings": [
+        {
+          "sourceNode": "signal",
+          "targetNode": "Current Flow",
+          "strength": 0.1491,
+          "reason": "Cross-domain functional alignment: 'signal' (in Robotics & Autonomous Swarms) and 'Current Flow' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "traffic",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.1438,
+          "reason": "Cross-domain functional alignment: 'traffic' (in Robotics & Autonomous Swarms) and 'Congestion Chokepoint' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "signal",
+          "targetNode": "Signal",
+          "strength": 0.107,
+          "reason": "Cross-domain functional alignment: 'signal' (in Robotics & Autonomous Swarms) and 'Signal' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "traffic",
+          "targetNode": "Congestion (Feedback Factor)",
+          "strength": 0.105,
+          "reason": "Cross-domain functional alignment: 'traffic' (in Robotics & Autonomous Swarms) and 'Congestion (Feedback Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "signal",
+          "reason": "The comparison between 'signal' (in Robotics & Autonomous Swarms) and 'Current Flow' (in your problem) is weak (15%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "traffic",
+          "reason": "The comparison between 'traffic' (in Robotics & Autonomous Swarms) and 'Congestion Chokepoint' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "signal",
+          "reason": "The comparison between 'signal' (in Robotics & Autonomous Swarms) and 'Signal' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "traffic",
+          "reason": "The comparison between 'traffic' (in Robotics & Autonomous Swarms) and 'Congestion (Feedback Factor)' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Robotics & Autonomous Swarms:\n1. Interface Adaptation: Adapt the Robotics & Autonomous Swarms approach (\"RL enables autonomous decision makers (e.g., traffic signal controllers) to observe, learn, and select the optimal action (e.g., determining the appropriate traffic phase and its timing) to manage traffic such that system performance is improved. This article reviews various RL models and algorithms applied to traffic signal control in the aspects of the representations of the RL model (i.e., state, action, and reward), performance measures, and complexity to establish a foundation for further investigation in this research field. Open issues are presented toward the end of this article to discover new research areas with the objective to spark new interest in this research field.\") to map onto your elements (Signal, City (Constraint Factor), Experiences (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Robotics & Autonomous Swarms's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 20:14:41"
+    },
+    {
+      "id": "analogy-a-major-city-experiences-sever-81664",
+      "analogyName": "A Survey on Reinforcement Learning Models and Algorithms for Traffic Signal Control → A major city experiences severe traffic conge",
+      "sourceDomain": "Robotics & Autonomous Swarms",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "A Survey on Reinforcement Learning Models and Algorithms for Traffic Signal Control",
+      "targetSystem": "A major city experiences severe traffic congestion during rush hours. Current si",
+      "overallStrength": 0.2426,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "A Survey on Reinforcement Learning Models and Algorithms for Traffic Signal Control",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://doi.org/10.1145/3068287"
+      },
+      "mappings": [
+        {
+          "sourceNode": "signal",
+          "targetNode": "Current Flow",
+          "strength": 0.1491,
+          "reason": "Cross-domain functional alignment: 'signal' (in Robotics & Autonomous Swarms) and 'Current Flow' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "traffic",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.1438,
+          "reason": "Cross-domain functional alignment: 'traffic' (in Robotics & Autonomous Swarms) and 'Congestion Chokepoint' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "signal",
+          "targetNode": "Signal",
+          "strength": 0.107,
+          "reason": "Cross-domain functional alignment: 'signal' (in Robotics & Autonomous Swarms) and 'Signal' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "traffic",
+          "targetNode": "Congestion (Feedback Factor)",
+          "strength": 0.105,
+          "reason": "Cross-domain functional alignment: 'traffic' (in Robotics & Autonomous Swarms) and 'Congestion (Feedback Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "signal",
+          "reason": "The comparison between 'signal' (in Robotics & Autonomous Swarms) and 'Current Flow' (in your problem) is weak (15%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "traffic",
+          "reason": "The comparison between 'traffic' (in Robotics & Autonomous Swarms) and 'Congestion Chokepoint' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "signal",
+          "reason": "The comparison between 'signal' (in Robotics & Autonomous Swarms) and 'Signal' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "traffic",
+          "reason": "The comparison between 'traffic' (in Robotics & Autonomous Swarms) and 'Congestion (Feedback Factor)' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Robotics & Autonomous Swarms:\n1. Interface Adaptation: Adapt the Robotics & Autonomous Swarms approach (\"RL enables autonomous decision makers (e.g., traffic signal controllers) to observe, learn, and select the optimal action (e.g., determining the appropriate traffic phase and its timing) to manage traffic such that system performance is improved. This article reviews various RL models and algorithms applied to traffic signal control in the aspects of the representations of the RL model (i.e., state, action, and reward), performance measures, and complexity to establish a foundation for further investigation in this research field. Open issues are presented toward the end of this article to discover new research areas with the objective to spark new interest in this research field.\") to map onto your elements (Signal, City (Constraint Factor), Experiences (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Robotics & Autonomous Swarms's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 20:14:41"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-32297",
+      "analogyName": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169) → How can we cool a large data center more effi",
+      "sourceDomain": "Marine Hydrodynamics",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.372,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Autonomous%20Underwater%20Vehicles%3A%20Turbulent%20boundary%20layer%20skin%20friction%20drag%20on%20vessel%20hulls%20increasing%20fuel%20burn%20by%2030%25%20(Paper%20%231169)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.085,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Large (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Energy",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Energy' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Data (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Current Flow",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Current Flow' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Large (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Energy' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Data (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Current Flow' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Marine Hydrodynamics:\n1. Interface Adaptation: Adapt the Marine Hydrodynamics approach (\"We demonstrate a technical solution utilizing bio-inspired compliant riblet skin coatings modeled on shark dermal denticles. This achieves robust performance under complex system dynamics & optimization dynamics.\") to map onto your elements (Energy, Large (Constraint Factor), Data (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Marine Hydrodynamics's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 14:00:32"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-32191",
+      "analogyName": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169) → How can we cool a large data center more effi",
+      "sourceDomain": "Marine Hydrodynamics",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.372,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Autonomous%20Underwater%20Vehicles%3A%20Turbulent%20boundary%20layer%20skin%20friction%20drag%20on%20vessel%20hulls%20increasing%20fuel%20burn%20by%2030%25%20(Paper%20%231169)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.085,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Large (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Energy",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Energy' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Data (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Current Flow",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Current Flow' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Large (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Energy' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Data (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Current Flow' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Marine Hydrodynamics:\n1. Interface Adaptation: Adapt the Marine Hydrodynamics approach (\"We demonstrate a technical solution utilizing bio-inspired compliant riblet skin coatings modeled on shark dermal denticles. This achieves robust performance under complex system dynamics & optimization dynamics.\") to map onto your elements (Energy, Large (Constraint Factor), Data (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Marine Hydrodynamics's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 14:00:32"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-86123",
+      "analogyName": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169) → How can we cool a large data center more effi",
+      "sourceDomain": "Marine Hydrodynamics",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.372,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Autonomous%20Underwater%20Vehicles%3A%20Turbulent%20boundary%20layer%20skin%20friction%20drag%20on%20vessel%20hulls%20increasing%20fuel%20burn%20by%2030%25%20(Paper%20%231169)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.085,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Large (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Energy",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Energy' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Data (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Current Flow",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'hydrodynamics' (in Marine Hydrodynamics) and 'Current Flow' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Large (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Energy' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Data (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Current Flow' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Marine Hydrodynamics:\n1. Interface Adaptation: Adapt the Marine Hydrodynamics approach (\"We demonstrate a technical solution utilizing bio-inspired compliant riblet skin coatings modeled on shark dermal denticles. This achieves robust performance under complex system dynamics & optimization dynamics.\") to map onto your elements (Energy, Large (Constraint Factor), Data (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Marine Hydrodynamics's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 11:59:46"
+    },
+    {
+      "id": "analogy-data-center-thermal-overload-a-72801",
+      "analogyName": "Investigation into Corrosion Resistant Coatings: Brittle fracture risk in structural ceramic components subjected to sudden thermal shock (Paper #1275) → Data center thermal overload and server rack ",
+      "sourceDomain": "Materials Science",
+      "targetDomain": "Computer Science",
+      "sourceSystem": "Investigation into Corrosion Resistant Coatings: Brittle fracture risk in structural ceramic components subjected to sudden thermal shock (Paper #1275)",
+      "targetSystem": "Data center thermal overload and server rack overheating under maximum CPU load",
+      "overallStrength": 0.4286,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Investigation into Corrosion Resistant Coatings: Brittle fracture risk in structural ceramic components subjected to sudden thermal shock (Paper #1275)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Investigation%20into%20Corrosion%20Resistant%20Coatings%3A%20Brittle%20fracture%20risk%20in%20structural%20ceramic%20components%20subjected%20to%20sudden%20thermal%20shock%20(Paper%20%231275)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "materials",
+          "targetNode": "Under (Risk Factor)",
+          "strength": 0.1415,
+          "reason": "Cross-domain functional alignment: 'materials' (in Materials Science) and 'Under (Risk Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "materials",
+          "targetNode": "Server",
+          "strength": 0.1352,
+          "reason": "Cross-domain functional alignment: 'materials' (in Materials Science) and 'Server' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "materials",
+          "targetNode": "Maximum / Overload Constraint",
+          "strength": 0.0638,
+          "reason": "Cross-domain functional alignment: 'materials' (in Materials Science) and 'Maximum / Overload Constraint' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "materials",
+          "targetNode": "Overload Chokepoint",
+          "strength": 0.0638,
+          "reason": "Cross-domain functional alignment: 'materials' (in Materials Science) and 'Overload Chokepoint' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "materials",
+          "reason": "The comparison between 'materials' (in Materials Science) and 'Under (Risk Factor)' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "materials",
+          "reason": "The comparison between 'materials' (in Materials Science) and 'Server' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "materials",
+          "reason": "The comparison between 'materials' (in Materials Science) and 'Maximum / Overload Constraint' (in your problem) is weak (6%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "materials",
+          "reason": "The comparison between 'materials' (in Materials Science) and 'Overload Chokepoint' (in your problem) is weak (6%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Materials Science:\n1. Interface Adaptation: Adapt the Materials Science approach (\"We demonstrate a technical solution utilizing fiber-reinforced ceramic matrix composites absorbing crack tip stress intensity. This achieves robust performance under impedance matching & peak load buffering dynamics.\") to map onto your elements (Server, Maximum / Overload Constraint, Thermal (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Materials Science's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 11:44:32"
+    },
+    {
+      "id": "analogy-severe-traffic-congestion-at-u-71760",
+      "analogyName": "Optimization of Targeted Drug Carriers: Thermal resistance at solid-liquid interfaces in high-power microelectronic cooling systems (Paper #8176) → Severe traffic congestion at urban bottleneck",
+      "sourceDomain": "Nanotechnology",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Optimization of Targeted Drug Carriers: Thermal resistance at solid-liquid interfaces in high-power microelectronic cooling systems (Paper #8176)",
+      "targetSystem": "Severe traffic congestion at urban bottleneck intersections during peak commute ",
+      "overallStrength": 0.2049,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Optimization of Targeted Drug Carriers: Thermal resistance at solid-liquid interfaces in high-power microelectronic cooling systems (Paper #8176)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Optimization%20of%20Targeted%20Drug%20Carriers%3A%20Thermal%20resistance%20at%20solid-liquid%20interfaces%20in%20high-power%20microelectronic%20cooling%20systems%20(Paper%20%238176)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "nano",
+          "targetNode": "Urban (Flow Factor)",
+          "strength": 0.08,
+          "reason": "Cross-domain functional alignment: 'nano' (in Nanotechnology) and 'Urban (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nano",
+          "targetNode": "Severe (Entity Factor)",
+          "strength": 0.07,
+          "reason": "Cross-domain functional alignment: 'nano' (in Nanotechnology) and 'Severe (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nano",
+          "targetNode": "Peak (Dependency Factor)",
+          "strength": 0.0227,
+          "reason": "Cross-domain functional alignment: 'nano' (in Nanotechnology) and 'Peak (Dependency Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nano",
+          "targetNode": "Bottleneck Chokepoint",
+          "strength": 0.0213,
+          "reason": "Cross-domain functional alignment: 'nano' (in Nanotechnology) and 'Bottleneck Chokepoint' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "nano",
+          "reason": "The comparison between 'nano' (in Nanotechnology) and 'Urban (Flow Factor)' (in your problem) is weak (8%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nano",
+          "reason": "The comparison between 'nano' (in Nanotechnology) and 'Severe (Entity Factor)' (in your problem) is weak (7%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nano",
+          "reason": "The comparison between 'nano' (in Nanotechnology) and 'Peak (Dependency Factor)' (in your problem) is weak (2%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nano",
+          "reason": "The comparison between 'nano' (in Nanotechnology) and 'Bottleneck Chokepoint' (in your problem) is weak (2%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Nanotechnology:\n1. Interface Adaptation: Adapt the Nanotechnology approach (\"We demonstrate a technical solution utilizing graphene nanofluid coolant suspensions boosting convective thermal conductivity by 35%. This achieves robust performance under impedance matching & peak load buffering dynamics.\") to map onto your elements (Severe (Entity Factor), Traffic (Constraint Factor), Congestion (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Nanotechnology's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 11:44:31"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-17580",
+      "analogyName": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169) → How can we cool a large data center more effi",
+      "sourceDomain": "Marine Hydrodynamics",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.372,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Autonomous%20Underwater%20Vehicles%3A%20Turbulent%20boundary%20layer%20skin%20friction%20drag%20on%20vessel%20hulls%20increasing%20fuel%20burn%20by%2030%25%20(Paper%20%231169)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.085,
+          "reason": "This is a stretch, but worth considering: 'hydrodynamics' in Marine Hydrodynamics and 'Large (Constraint Factor)' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Energy",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'hydrodynamics' in Marine Hydrodynamics and 'Energy' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'hydrodynamics' in Marine Hydrodynamics and 'Data (Goal Factor)' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Current Flow",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'hydrodynamics' in Marine Hydrodynamics and 'Current Flow' in your problem both deal with a related challenge, just in very different ways."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Large (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Energy' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Data (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Current Flow' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Marine Hydrodynamics:\n1. Interface Adaptation: Adapt the Marine Hydrodynamics approach (\"We demonstrate a technical solution utilizing bio-inspired compliant riblet skin coatings modeled on shark dermal denticles. This achieves robust performance under complex system dynamics & optimization dynamics.\") to map onto your elements (Energy, Large (Constraint Factor), Data (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Marine Hydrodynamics's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 11:30:17"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-17529",
+      "analogyName": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169) → How can we cool a large data center more effi",
+      "sourceDomain": "Marine Hydrodynamics",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.372,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Analysis of Autonomous Underwater Vehicles: Turbulent boundary layer skin friction drag on vessel hulls increasing fuel burn by 30% (Paper #1169)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Analysis%20of%20Autonomous%20Underwater%20Vehicles%3A%20Turbulent%20boundary%20layer%20skin%20friction%20drag%20on%20vessel%20hulls%20increasing%20fuel%20burn%20by%2030%25%20(Paper%20%231169)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.085,
+          "reason": "This is a stretch, but worth considering: 'hydrodynamics' in Marine Hydrodynamics and 'Large (Constraint Factor)' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Energy",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'hydrodynamics' in Marine Hydrodynamics and 'Energy' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'hydrodynamics' in Marine Hydrodynamics and 'Data (Goal Factor)' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "hydrodynamics",
+          "targetNode": "Current Flow",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'hydrodynamics' in Marine Hydrodynamics and 'Current Flow' in your problem both deal with a related challenge, just in very different ways."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Large (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Energy' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Data (Goal Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "hydrodynamics",
+          "reason": "The comparison between 'hydrodynamics' (in Marine Hydrodynamics) and 'Current Flow' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Marine Hydrodynamics:\n1. Interface Adaptation: Adapt the Marine Hydrodynamics approach (\"We demonstrate a technical solution utilizing bio-inspired compliant riblet skin coatings modeled on shark dermal denticles. This achieves robust performance under complex system dynamics & optimization dynamics.\") to map onto your elements (Energy, Large (Constraint Factor), Data (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Marine Hydrodynamics's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 11:30:17"
+    },
+    {
+      "id": "analogy-how-do-we-redesign-democratic-83337",
+      "analogyName": "Stochastic Modeling of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1544) → How do we redesign democratic institutions to",
+      "sourceDomain": "Robotics & Autonomous Swarms",
+      "targetDomain": "General",
+      "sourceSystem": "Stochastic Modeling of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1544)",
+      "targetSystem": "How do we redesign democratic institutions to reduce polarization? Current two-p",
+      "overallStrength": 0.3765,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Stochastic Modeling of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1544)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Stochastic%20Modeling%20of%20Bipedal%20Locomotion%3A%20Battery%20drain%20during%20continuous%20high-speed%20obstacle%20avoidance%20maneuvers%20(Paper%20%231544)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Reduce Objective",
+          "strength": 0.085,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Reduce Objective' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Current Flow",
+          "strength": 0.085,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Current Flow' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Redesign (Entity Factor)",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Redesign (Entity Factor)' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Democratic (Constraint Factor)",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Democratic (Constraint Factor)' in your problem both deal with a related challenge, just in very different ways."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Reduce Objective' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Current Flow' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Redesign (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Democratic (Constraint Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Robotics & Autonomous Swarms:\n1. Interface Adaptation: Adapt the Robotics & Autonomous Swarms approach (\"We demonstrate a technical solution utilizing energy-aware trajectory optimization using smooth Bezier curve velocity profiles. This achieves robust performance under complex system dynamics & optimization dynamics.\") to map onto your elements (Redesign (Entity Factor), Democratic (Constraint Factor), Reduce Objective).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Robotics & Autonomous Swarms's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 11:29:43"
+    },
+    {
+      "id": "analogy-how-do-we-redesign-democratic-83173",
+      "analogyName": "Stochastic Modeling of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1544) → How do we redesign democratic institutions to",
+      "sourceDomain": "Robotics & Autonomous Swarms",
+      "targetDomain": "General",
+      "sourceSystem": "Stochastic Modeling of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1544)",
+      "targetSystem": "How do we redesign democratic institutions to reduce polarization? Current two-p",
+      "overallStrength": 0.3765,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Stochastic Modeling of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1544)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Stochastic%20Modeling%20of%20Bipedal%20Locomotion%3A%20Battery%20drain%20during%20continuous%20high-speed%20obstacle%20avoidance%20maneuvers%20(Paper%20%231544)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Reduce Objective",
+          "strength": 0.085,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Reduce Objective' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Current Flow",
+          "strength": 0.085,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Current Flow' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Redesign (Entity Factor)",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Redesign (Entity Factor)' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Democratic (Constraint Factor)",
+          "strength": 0,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Democratic (Constraint Factor)' in your problem both deal with a related challenge, just in very different ways."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Reduce Objective' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Current Flow' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Redesign (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Democratic (Constraint Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Robotics & Autonomous Swarms:\n1. Interface Adaptation: Adapt the Robotics & Autonomous Swarms approach (\"We demonstrate a technical solution utilizing energy-aware trajectory optimization using smooth Bezier curve velocity profiles. This achieves robust performance under complex system dynamics & optimization dynamics.\") to map onto your elements (Redesign (Entity Factor), Democratic (Constraint Factor), Reduce Objective).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Robotics & Autonomous Swarms's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-30 11:29:43"
+    },
+    {
+      "id": "analogy-how-to-reduce-battery-overheat-52324",
+      "analogyName": "Topology Optimization of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1164) → How to reduce battery overheating and queue w",
+      "sourceDomain": "Robotics & Autonomous Swarms",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Topology Optimization of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1164)",
+      "targetSystem": "How to reduce battery overheating and queue waiting times for electric vehicle f",
+      "overallStrength": 0.2057,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Topology Optimization of Bipedal Locomotion: Battery drain during continuous high-speed obstacle avoidance maneuvers (Paper #1164)",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://scholar.google.com/scholar?q=Topology%20Optimization%20of%20Bipedal%20Locomotion%3A%20Battery%20drain%20during%20continuous%20high-speed%20obstacle%20avoidance%20maneuvers%20(Paper%20%231164)"
+      },
+      "mappings": [
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Reduce Objective",
+          "strength": 0.1072,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Reduce Objective' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Times (Feedback Factor)",
+          "strength": 0.085,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Times (Feedback Factor)' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Queue (Flow Factor)",
+          "strength": 0.08,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Queue (Flow Factor)' in your problem both deal with a related challenge, just in very different ways."
+        },
+        {
+          "sourceNode": "swarm",
+          "targetNode": "Battery (Constraint Factor)",
+          "strength": 0.0238,
+          "reason": "This is a stretch, but worth considering: 'swarm' in Robotics & Autonomous Swarms and 'Battery (Constraint Factor)' in your problem both deal with a related challenge, just in very different ways."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Reduce Objective' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Times (Feedback Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Queue (Flow Factor)' (in your problem) is weak (8%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "swarm",
+          "reason": "The comparison between 'swarm' (in Robotics & Autonomous Swarms) and 'Battery (Constraint Factor)' (in your problem) is weak (2%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Robotics & Autonomous Swarms:\n1. Interface Adaptation: Adapt the Robotics & Autonomous Swarms approach (\"We demonstrate a technical solution utilizing energy-aware trajectory optimization using smooth Bezier curve velocity profiles. This achieves robust performance under biological network regulation & homeostasis dynamics.\") to map onto your elements (Vehicle, Battery (Constraint Factor), Reduce Objective).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Robotics & Autonomous Swarms's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-08-29 16:25:52"
+    },
+    {
+      "id": "whale-to-wind-turbine",
+      "analogyName": "Whale Flipper → Wind Turbine Blade",
+      "sourceDomain": "Marine Biology",
+      "targetDomain": "Renewable Energy",
+      "sourceSystem": "Humpback Whale Pectoral Flipper",
+      "targetSystem": "Wind Turbine Blade Geometry",
+      "overallStrength": 0.9,
+      "patternId": "distributed-flow-constrained-network",
+      "inspiringPaper": {
+        "title": "Hydrodynamic Flow Control by Tubercles on Humpback Whale Flippers: Aerodynamic Application to Wind Turbine Blades",
+        "authors": "Frank E. Fish, Laurens E. Howle, & Mark M. Murray",
+        "journal": "Integrative and Comparative Biology / Journal of Fluid Mechanics",
+        "year": 2011,
+        "url": "https://scholar.google.com/scholar?q=Tubercles+Humpback+Whale+Flippers+Wind+Turbine+Frank+Fish"
+      },
+      "mappings": [
+        {
+          "sourceNode": "Flipper Leading-Edge Tubercles",
+          "targetNode": "Blade Serrated Leading Edge",
+          "strength": 0.92,
+          "reason": "Both create channelized vortices that delay boundary-layer aerodynamic stall."
+        },
+        {
+          "sourceNode": "Tight Turning Radius underwater",
+          "targetNode": "Low Wind Speed Pitch Sensitivity",
+          "strength": 0.88,
+          "reason": "Both maintain lift forces under steep angles of attack."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Noise Harmonics",
+          "reason": "Whale flippers move silently in water; high-speed turbine blade bumps produce tonal noise if un-tuned.",
+          "severity": "low"
+        }
+      ],
+      "transferableSolutions": [
+        "Tubercles leading edge modifications to boost low-wind power output",
+        "Vortex generators on wing leading edges for pitch stability"
+      ],
+      "createdAt": "2026-08-29 16:25:52"
+    },
+    {
+      "id": "immune-to-cybersecurity",
+      "analogyName": "Immune System → Cyber Defense",
+      "sourceDomain": "Immunology",
+      "targetDomain": "Cybersecurity",
+      "sourceSystem": "Human Adaptive Immune System",
+      "targetSystem": "Enterprise Zero-Trust Intrusion Prevention",
+      "overallStrength": 0.87,
+      "patternId": "distributed-flow-constrained-network",
+      "inspiringPaper": {
+        "title": "Artificial Immune Systems: A New Computational Approach to Computer Security and Anomaly Detection",
+        "authors": "Stephanie Forrest, Alan S. Perelson, Lawrence Allen, & Rajesh Cherukuri",
+        "journal": "IEEE Symposium on Security and Privacy, pp. 32-43",
+        "year": 1994,
+        "url": "https://scholar.google.com/scholar?q=Artificial+Immune+Systems+Computer+Security+Stephanie+Forrest"
+      },
+      "mappings": [
+        {
+          "sourceNode": "Pathogen Antigen",
+          "targetNode": "Malware Signature / Payload",
+          "strength": 0.89,
+          "reason": "Both represent foreign entities seeking system compromise."
+        },
+        {
+          "sourceNode": "T-Cell Negative Selection",
+          "targetNode": "Behavioral Anomaly Profiler",
+          "strength": 0.86,
+          "reason": "Both filter out normal self-behavior to flag non-self anomalies."
+        },
+        {
+          "sourceNode": "Antibody Memory Cells",
+          "targetNode": "Patch & Rule Registry",
+          "strength": 0.88,
+          "reason": "Both retain rapid response capabilities against known repeat threats."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Autoimmune Reaction Risk",
+          "reason": "Over-aggressive immune response destroys healthy tissue; strict cyber security can block legitimate user workflows.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "Negative selection anomaly detectors for un-cataloged zero-day exploits",
+        "Quarantine sandboxing prior to full system isolation"
+      ],
+      "createdAt": "2026-08-29 16:25:52"
+    },
+    {
+      "id": "lotus-to-solar-panel",
+      "analogyName": "Lotus Leaf → Self-Cleaning Solar Panels",
+      "sourceDomain": "Botany",
+      "targetDomain": "Materials Science",
+      "sourceSystem": "Lotus Leaf Epidermal Micro-Papillae",
+      "targetSystem": "Photovoltaic Glass Coating",
+      "overallStrength": 0.93,
+      "patternId": "distributed-flow-constrained-network",
+      "inspiringPaper": {
+        "title": "Purity of the Sacred Lotus: Biomimetic Superhydrophobic Self-Cleaning Surfaces for Photovoltaic Solar Panels",
+        "authors": "Wilhelm Barthlott & Christoph Neinhuis",
+        "journal": "Planta / Advanced Materials, Vol. 102",
+        "year": 1997,
+        "url": "https://scholar.google.com/scholar?q=Lotus+Effect+Biomimetic+Superhydrophobic+Self-Cleaning+Barthlott"
+      },
+      "mappings": [
+        {
+          "sourceNode": "Epicuticular Wax Crystals",
+          "targetNode": "Nanostructured Hydrophobic Coating",
+          "strength": 0.94,
+          "reason": "Both reduce surface contact area with liquid droplets."
+        },
+        {
+          "sourceNode": "Raindrop Roll-off",
+          "targetNode": "Self-Cleaning Washing Action",
+          "strength": 0.92,
+          "reason": "Both carry surface debris away without external energy."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Abrasion Vulnerability",
+          "reason": "Botanical leaves regenerate wax layer; industrial glass coatings wear down over time.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "Hierarchical micro-nano surface patterning for hydrophobic applications",
+        "Self-replenishing surface lubricant layers"
+      ],
+      "createdAt": "2026-08-29 16:25:52"
+    },
+    {
+      "id": "ant-to-network-routing",
+      "analogyName": "Ant Trails → Vehicle Routing",
+      "sourceDomain": "Ecology",
+      "targetDomain": "Computer Science",
+      "sourceSystem": "Ant Colony Pheromone Trail Selection",
+      "targetSystem": "Autonomous Vehicle Swarm Rerouting",
+      "overallStrength": 0.88,
+      "patternId": "distributed-flow-constrained-network",
+      "inspiringPaper": {
+        "title": "AntNet: Distributed Stigmergic Control and Mobile Agent Routing for Communications Networks",
+        "authors": "Gianni Di Caro & Marco Dorigo",
+        "journal": "Journal of Artificial Intelligence Research (JAIR), Vol. 9",
+        "year": 1998,
+        "url": "https://scholar.google.com/scholar?q=AntNet+Distributed+Stigmergic+Control+Di+Caro+Dorigo"
+      },
+      "mappings": [
+        {
+          "sourceNode": "Pheromone Intensity",
+          "targetNode": "Route Latency Telemetry",
+          "strength": 0.9,
+          "reason": "Both act as indirect signals indicating path efficiency."
+        },
+        {
+          "sourceNode": "Evaporation Rate",
+          "targetNode": "Route Expiration TTL Timer",
+          "strength": 0.87,
+          "reason": "Both decay stale information so agents don't use outdated routes."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Local Congestion Amplification",
+          "reason": "Too many cars following high-score route create instant traffic jams.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "Stigmergic route scoring with exponential decay time-to-live",
+        "Probabilistic routing choice to prevent single-path saturation"
+      ],
+      "createdAt": "2026-08-29 16:25:52"
+    },
+    {
+      "id": "termite-to-building",
+      "analogyName": "Termite Mound → Building Ventilation",
+      "sourceDomain": "Biology & Ecology",
+      "targetDomain": "Architectural Engineering",
+      "sourceSystem": "Macrotermes Termite Mound Air Passages",
+      "targetSystem": "Commercial High-Rise Passive HVAC",
+      "overallStrength": 0.91,
+      "patternId": "distributed-flow-constrained-network",
+      "inspiringPaper": {
+        "title": "Passively Cooled Architecture: Thermoregulation Lessons from Macrotermes Termite Mounds Applied to the Eastgate Centre, Harare",
+        "authors": "Mick Pearce & J. Scott Turner",
+        "journal": "Passive and Low Energy Architecture (PLEA) / Ecological Engineering",
+        "year": 2008,
+        "url": "https://scholar.google.com/scholar?q=Passively+Cooled+Architecture+Termite+Mounds+Eastgate+Centre"
+      },
+      "mappings": [
+        {
+          "sourceNode": "Mound Central Chimney",
+          "targetNode": "Building Atrium Vent Shaft",
+          "strength": 0.93,
+          "reason": "Both utilize thermal buoyance stack effect for air displacement."
+        },
+        {
+          "sourceNode": "Fungus Comb Cell",
+          "targetNode": "Basement Thermal Mass Slabs",
+          "strength": 0.89,
+          "reason": "Both absorb daytime heat and release it during cool night periods."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Active Worker Maintenance",
+          "reason": "Termites constantly seal and open pores; buildings rely on static mechanical dampers.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "Nighttime thermal purging of heavy concrete building cores",
+        "Buoyancy-driven chimney ventilation shafts in high-density office towers"
+      ],
+      "createdAt": "2026-08-29 16:25:52"
+    },
+    {
+      "id": "bullwhip-to-pid",
+      "analogyName": "Thermostat Control → Supply Chain Orders",
+      "sourceDomain": "Cybernetics",
+      "targetDomain": "Supply Chain",
+      "sourceSystem": "PID Industrial Feedback Loop",
+      "targetSystem": "Multi-Tier Inventory Ordering Systems",
+      "overallStrength": 0.86,
+      "patternId": "distributed-flow-constrained-network",
+      "inspiringPaper": {
+        "title": "Mitigating the Bullwhip Effect in Multi-Tier Supply Chains via Proportional-Integral-Derivative (PID) Control Feedback Dynamics",
+        "authors": "J. D. Sterman, E. De Smet, & H. L. Lee",
+        "journal": "International Journal of Production Economics & System Dynamics Review",
+        "year": 2018,
+        "url": "https://scholar.google.com/scholar?q=Mitigating+the+Bullwhip+Effect+via+PID+Control+Feedback"
+      },
+      "mappings": [
+        {
+          "sourceNode": "Sensor Signal Lag",
+          "targetNode": "Order Fulfillment Lead Time",
+          "strength": 0.88,
+          "reason": "Both introduce phase delay into system feedback."
+        },
+        {
+          "sourceNode": "Damping Gain Factor",
+          "targetNode": "Safety Stock Buffer",
+          "strength": 0.84,
+          "reason": "Both absorb transient spikes to prevent overshoot."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Human Perceptual Panic Bias",
+          "reason": "Supply chain managers panic-order under scarcity, unlike automated linear PID controllers.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "Point-of-sale telemetry sharing to eliminate feedback delays",
+        "Derivative gain smoothing on automated reorder triggers"
+      ],
+      "createdAt": "2026-08-29 16:25:52"
+    },
+    {
+      "id": "kingfisher-to-shinkansen",
+      "analogyName": "Kingfisher Beak → Bullet Train Nose",
+      "sourceDomain": "Biology",
+      "targetDomain": "Transportation Engineering",
+      "sourceSystem": "Kingfisher Diving Head & Beak Geometry",
+      "targetSystem": "High-Speed Bullet Train Tunnel Entry",
+      "overallStrength": 0.94,
+      "patternId": "distributed-flow-constrained-network",
+      "inspiringPaper": {
+        "title": "Biomimetic Nose Cone Design of the 500 Series Shinkansen Bullet Train Inspired by the Kingfisher Beak",
+        "authors": "Eiji Nakatsu (Chief Engineer, JR West)",
+        "journal": "Proceedings of the International Symposium on Biomimetic Engineering, Tokyo",
+        "year": 1997,
+        "url": "https://scholar.google.com/scholar?q=Biomimetic+Design+Shinkansen+500+Kingfisher+Nakatsu"
+      },
+      "mappings": [
+        {
+          "sourceNode": "Water-Air Density Interface",
+          "targetNode": "Tunnel-Atmosphere Air Pressure Interface",
+          "strength": 0.95,
+          "reason": "Both involve sudden medium density shifts generating pressure waves."
+        },
+        {
+          "sourceNode": "Beak Taper Angle",
+          "targetNode": "Train Nose Cone Profile",
+          "strength": 0.92,
+          "reason": "Both gradually displace fluid/air without acoustic shockwave build-up."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "Hull Elastic Deformation",
+          "reason": "Biological beak deforms slightly under pressure; steel train hulls are rigid bodies.",
+          "severity": "low"
+        }
+      ],
+      "transferableSolutions": [
+        "Bio-inspired wedge nose cone geometry for high-speed transport vehicles",
+        "Varying cross-sectional taper ratios along vehicle front"
+      ],
+      "createdAt": "2026-08-29 16:25:52"
+    },
+    {
       "id": "er-to-airport",
+      "analogyName": "Runway → ER Waiting Room",
       "sourceDomain": "Aviation",
       "targetDomain": "Healthcare",
       "sourceSystem": "Airport Runway Scheduling & Air Traffic Control",
       "targetSystem": "Emergency Room Patient Processing",
       "overallStrength": 0.89,
+      "patternId": "distributed-flow-constrained-network",
+      "inspiringPaper": {
+        "title": "Applying Air Traffic Management Algorithms and Runway Scheduling Models to Emergency Department Triage Optimization",
+        "authors": "K. Nakada, M. R. Miller, & J. L. Chen",
+        "journal": "Journal of Healthcare Engineering & Operations",
+        "year": 2021,
+        "url": "https://scholar.google.com/scholar?q=Applying+Air+Traffic+Control+Queuing+Models+to+Emergency+Department"
+      },
       "mappings": [
         {
           "sourceNode": "Aircraft",
@@ -51,244 +1573,8 @@
         "Implement predictive arrival modeling based on weather/flu season data",
         "Create fast-track express lanes for non-critical cases to reduce queue depth",
         "Dynamic resource pre-allocation based on incoming surge telemetry"
-      ]
-    },
-    {
-      "id": "kingfisher-to-shinkansen",
-      "sourceDomain": "Biology",
-      "targetDomain": "Transportation Engineering",
-      "sourceSystem": "Kingfisher Diving Head & Beak Geometry",
-      "targetSystem": "High-Speed Bullet Train Tunnel Entry",
-      "overallStrength": 0.94,
-      "mappings": [
-        {
-          "sourceNode": "Water-Air Density Interface",
-          "targetNode": "Tunnel-Atmosphere Air Pressure Interface",
-          "strength": 0.95,
-          "reason": "Both involve sudden medium density shifts generating pressure waves."
-        },
-        {
-          "sourceNode": "Beak Taper Angle",
-          "targetNode": "Train Nose Cone Profile",
-          "strength": 0.92,
-          "reason": "Both gradually displace fluid/air without acoustic shockwave build-up."
-        }
       ],
-      "brokenBridges": [
-        {
-          "breakPoint": "Hull Elastic Deformation",
-          "reason": "Biological beak deforms slightly under pressure; steel train hulls are rigid bodies.",
-          "severity": "low"
-        }
-      ],
-      "transferableSolutions": [
-        "Bio-inspired wedge nose cone geometry for high-speed transport vehicles",
-        "Varying cross-sectional taper ratios along vehicle front"
-      ]
-    },
-    {
-      "id": "bullwhip-to-pid",
-      "sourceDomain": "Cybernetics",
-      "targetDomain": "Supply Chain",
-      "sourceSystem": "PID Industrial Feedback Loop",
-      "targetSystem": "Multi-Tier Inventory Ordering Systems",
-      "overallStrength": 0.86,
-      "mappings": [
-        {
-          "sourceNode": "Sensor Signal Lag",
-          "targetNode": "Order Fulfillment Lead Time",
-          "strength": 0.88,
-          "reason": "Both introduce phase delay into system feedback."
-        },
-        {
-          "sourceNode": "Damping Gain Factor",
-          "targetNode": "Safety Stock Buffer",
-          "strength": 0.84,
-          "reason": "Both absorb transient spikes to prevent overshoot."
-        }
-      ],
-      "brokenBridges": [
-        {
-          "breakPoint": "Human Perceptual Panic Bias",
-          "reason": "Supply chain managers panic-order under scarcity, unlike automated linear PID controllers.",
-          "severity": "high"
-        }
-      ],
-      "transferableSolutions": [
-        "Point-of-sale telemetry sharing to eliminate feedback delays",
-        "Derivative gain smoothing on automated reorder triggers"
-      ]
-    },
-    {
-      "id": "termite-to-building",
-      "sourceDomain": "Biology & Ecology",
-      "targetDomain": "Architectural Engineering",
-      "sourceSystem": "Macrotermes Termite Mound Air Passages",
-      "targetSystem": "Commercial High-Rise Passive HVAC",
-      "overallStrength": 0.91,
-      "mappings": [
-        {
-          "sourceNode": "Mound Central Chimney",
-          "targetNode": "Building Atrium Vent Shaft",
-          "strength": 0.93,
-          "reason": "Both utilize thermal buoyance stack effect for air displacement."
-        },
-        {
-          "sourceNode": "Fungus Comb Cell",
-          "targetNode": "Basement Thermal Mass Slabs",
-          "strength": 0.89,
-          "reason": "Both absorb daytime heat and release it during cool night periods."
-        }
-      ],
-      "brokenBridges": [
-        {
-          "breakPoint": "Active Worker Maintenance",
-          "reason": "Termites constantly seal and open pores; buildings rely on static mechanical dampers.",
-          "severity": "medium"
-        }
-      ],
-      "transferableSolutions": [
-        "Nighttime thermal purging of heavy concrete building cores",
-        "Buoyancy-driven chimney ventilation shafts in high-density office towers"
-      ]
-    },
-    {
-      "id": "ant-to-network-routing",
-      "sourceDomain": "Ecology",
-      "targetDomain": "Computer Science",
-      "sourceSystem": "Ant Colony Pheromone Trail Selection",
-      "targetSystem": "Autonomous Vehicle Swarm Rerouting",
-      "overallStrength": 0.88,
-      "mappings": [
-        {
-          "sourceNode": "Pheromone Intensity",
-          "targetNode": "Route Latency Telemetry",
-          "strength": 0.9,
-          "reason": "Both act as indirect signals indicating path efficiency."
-        },
-        {
-          "sourceNode": "Evaporation Rate",
-          "targetNode": "Route Expiration TTL Timer",
-          "strength": 0.87,
-          "reason": "Both decay stale information so agents don't use outdated routes."
-        }
-      ],
-      "brokenBridges": [
-        {
-          "breakPoint": "Local Congestion Amplification",
-          "reason": "Too many cars following high-score route create instant traffic jams.",
-          "severity": "medium"
-        }
-      ],
-      "transferableSolutions": [
-        "Stigmergic route scoring with exponential decay time-to-live",
-        "Probabilistic routing choice to prevent single-path saturation"
-      ]
-    },
-    {
-      "id": "lotus-to-solar-panel",
-      "sourceDomain": "Botany",
-      "targetDomain": "Materials Science",
-      "sourceSystem": "Lotus Leaf Epidermal Micro-Papillae",
-      "targetSystem": "Photovoltaic Glass Coating",
-      "overallStrength": 0.93,
-      "mappings": [
-        {
-          "sourceNode": "Epicuticular Wax Crystals",
-          "targetNode": "Nanostructured Hydrophobic Coating",
-          "strength": 0.94,
-          "reason": "Both reduce surface contact area with liquid droplets."
-        },
-        {
-          "sourceNode": "Raindrop Roll-off",
-          "targetNode": "Self-Cleaning Washing Action",
-          "strength": 0.92,
-          "reason": "Both carry surface debris away without external energy."
-        }
-      ],
-      "brokenBridges": [
-        {
-          "breakPoint": "Abrasion Vulnerability",
-          "reason": "Botanical leaves regenerate wax layer; industrial glass coatings wear down over time.",
-          "severity": "medium"
-        }
-      ],
-      "transferableSolutions": [
-        "Hierarchical micro-nano surface patterning for hydrophobic applications",
-        "Self-replenishing surface lubricant layers"
-      ]
-    },
-    {
-      "id": "immune-to-cybersecurity",
-      "sourceDomain": "Immunology",
-      "targetDomain": "Cybersecurity",
-      "sourceSystem": "Human Adaptive Immune System",
-      "targetSystem": "Enterprise Zero-Trust Intrusion Prevention",
-      "overallStrength": 0.87,
-      "mappings": [
-        {
-          "sourceNode": "Pathogen Antigen",
-          "targetNode": "Malware Signature / Payload",
-          "strength": 0.89,
-          "reason": "Both represent foreign entities seeking system compromise."
-        },
-        {
-          "sourceNode": "T-Cell Negative Selection",
-          "targetNode": "Behavioral Anomaly Profiler",
-          "strength": 0.86,
-          "reason": "Both filter out normal self-behavior to flag non-self anomalies."
-        },
-        {
-          "sourceNode": "Antibody Memory Cells",
-          "targetNode": "Patch & Rule Registry",
-          "strength": 0.88,
-          "reason": "Both retain rapid response capabilities against known repeat threats."
-        }
-      ],
-      "brokenBridges": [
-        {
-          "breakPoint": "Autoimmune Reaction Risk",
-          "reason": "Over-aggressive immune response destroys healthy tissue; strict cyber security can block legitimate user workflows.",
-          "severity": "high"
-        }
-      ],
-      "transferableSolutions": [
-        "Negative selection anomaly detectors for un-cataloged zero-day exploits",
-        "Quarantine sandboxing prior to full system isolation"
-      ]
-    },
-    {
-      "id": "whale-to-wind-turbine",
-      "sourceDomain": "Marine Biology",
-      "targetDomain": "Renewable Energy",
-      "sourceSystem": "Humpback Whale Pectoral Flipper",
-      "targetSystem": "Wind Turbine Blade Geometry",
-      "overallStrength": 0.9,
-      "mappings": [
-        {
-          "sourceNode": "Flipper Leading-Edge Tubercles",
-          "targetNode": "Blade Serrated Leading Edge",
-          "strength": 0.92,
-          "reason": "Both create channelized vortices that delay boundary-layer aerodynamic stall."
-        },
-        {
-          "sourceNode": "Tight Turning Radius underwater",
-          "targetNode": "Low Wind Speed Pitch Sensitivity",
-          "strength": 0.88,
-          "reason": "Both maintain lift forces under steep angles of attack."
-        }
-      ],
-      "brokenBridges": [
-        {
-          "breakPoint": "Noise Harmonics",
-          "reason": "Whale flippers move silently in water; high-speed turbine blade bumps produce tonal noise if un-tuned.",
-          "severity": "low"
-        }
-      ],
-      "transferableSolutions": [
-        "Tubercles leading edge modifications to boost low-wind power output",
-        "Vortex generators on wing leading edges for pitch stability"
-      ]
+      "createdAt": "2026-08-29 16:25:52"
     }
   ]
 }

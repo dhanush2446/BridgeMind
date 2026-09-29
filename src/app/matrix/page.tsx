@@ -7,10 +7,12 @@ import styles from "./matrix.module.css";
 export default function MatrixPage() {
   const router = useRouter();
   const [domains, setDomains] = useState<string[]>([]);
+  const [domainCounts, setDomainCounts] = useState<Record<string, number>>({});
   const [matrix, setMatrix] = useState<number[][]>([]);
   const [pairDetails, setPairDetails] = useState<Record<string, any>>({});
   const [loading, setLoading] = useState(true);
   const [selectedCell, setSelectedCell] = useState<{ row: number; col: number } | null>({ row: 0, col: 1 });
+  const [totalPapers, setTotalPapers] = useState(0);
 
   useEffect(() => {
     async function loadMatrixData() {
@@ -19,8 +21,10 @@ export default function MatrixPage() {
         if (res.ok) {
           const data = await res.json();
           setDomains(data.domains || []);
+          setDomainCounts(data.domainCounts || {});
           setMatrix(data.matrix || []);
           setPairDetails(data.pairDetails || {});
+          setTotalPapers(data.totalPapersIndexed || 0);
         }
       } catch (err) {
         console.error("Failed to load real matrix:", err);
@@ -36,7 +40,8 @@ export default function MatrixPage() {
     if (score >= 0.9) return "rgba(0, 229, 255, 0.65)";
     if (score >= 0.82) return "rgba(77, 124, 255, 0.55)";
     if (score >= 0.75) return "rgba(168, 85, 247, 0.45)";
-    return "rgba(245, 158, 11, 0.35)";
+    if (score >= 0.65) return "rgba(245, 158, 11, 0.35)";
+    return "rgba(239, 68, 68, 0.25)";
   };
 
   const domainA = selectedCell && domains[selectedCell.row] ? domains[selectedCell.row] : "";
@@ -51,6 +56,8 @@ export default function MatrixPage() {
     router.push("/analyze");
   };
 
+  const n = domains.length;
+
   return (
     <main className={styles.main}>
       <div className={styles.pageHeader}>
@@ -60,20 +67,25 @@ export default function MatrixPage() {
             Real Cross-Domain Isomorphism Matrix & Heatmap
           </h1>
           <p className={styles.pageSubtitle}>
-            Calculated live from 1,485 real research papers across top scientific disciplines.
+            Calculated live from {totalPapers > 0 ? totalPapers.toLocaleString() : "…"} real research papers across {n > 0 ? n : "…"} scientific disciplines.
           </p>
         </div>
       </div>
 
       {loading ? (
         <div style={{ padding: "3rem", textAlign: "center", color: "#38bdf8" }}>
-          ⚡ Calculating real cross-domain isomorphism matrix from 1,485 research papers...
+          ⚡ Calculating real cross-domain isomorphism matrix from research papers...
         </div>
       ) : (
         <div className={styles.container}>
           {/* Heatmap Grid */}
           <div className={styles.matrixWrapper}>
-            <div className={styles.matrixGrid}>
+            <div
+              className={styles.matrixGrid}
+              style={{
+                gridTemplateColumns: `100px repeat(${n}, minmax(40px, 1fr))`,
+              }}
+            >
               {/* Top Header Row */}
               <div className={styles.cellHeaderCorner} />
               {domains.map((domain, colIdx) => (
@@ -88,7 +100,7 @@ export default function MatrixPage() {
                   <div className={styles.cellHeaderRow}>
                     <span>{rowDomain}</span>
                   </div>
-                  {domains.map((colDomain, colIdx) => {
+                  {domains.map((_colDomain, colIdx) => {
                     const score = matrix[rowIdx]?.[colIdx] || 0;
                     const isSelf = rowIdx === colIdx;
                     const isSelected = selectedCell?.row === rowIdx && selectedCell?.col === colIdx;
@@ -99,9 +111,11 @@ export default function MatrixPage() {
                         className={`${styles.matrixCell} ${isSelected ? styles.cellSelected : ""}`}
                         style={{ background: getHeatmapColor(score, isSelf) }}
                         onClick={() => setSelectedCell({ row: rowIdx, col: colIdx })}
-                        title={`${rowDomain} ↔ ${colDomain}: ${Math.round(score * 100)}%`}
+                        title={`${rowDomain} ↔ ${domains[colIdx]}: ${Math.round(score * 100)}%`}
                       >
-                        <span className={styles.cellScore}>{Math.round(score * 100)}%</span>
+                        {n <= 12 && (
+                          <span className={styles.cellScore}>{Math.round(score * 100)}%</span>
+                        )}
                       </button>
                     );
                   })}
@@ -122,6 +136,19 @@ export default function MatrixPage() {
               <div className={styles.scoreRow}>
                 <span className={styles.scoreValue}>{Math.round(selectedScore * 100)}%</span>
                 <span className={styles.scoreLabel}>Real Paper Transfer Strength</span>
+              </div>
+
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap", margin: "4px 0" }}>
+                {domainCounts[domainA] && (
+                  <span style={{ fontSize: "0.72rem", color: "#38bdf8", background: "rgba(0,229,255,0.08)", padding: "2px 8px", borderRadius: 4 }}>
+                    {domainA}: {domainCounts[domainA]} papers
+                  </span>
+                )}
+                {domainCounts[domainB] && domainA !== domainB && (
+                  <span style={{ fontSize: "0.72rem", color: "#a78bfa", background: "rgba(168,85,247,0.08)", padding: "2px 8px", borderRadius: 4 }}>
+                    {domainB}: {domainCounts[domainB]} papers
+                  </span>
+                )}
               </div>
 
               {currentPairDetail?.paperA && (
