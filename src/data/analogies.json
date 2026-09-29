@@ -1,7 +1,878 @@
 {
-  "updatedAt": "2026-09-01T05:15:47.569Z",
-  "analogiesCount": 26,
+  "updatedAt": "2026-09-29T14:10:58.348Z",
+  "analogiesCount": 39,
   "analogies": [
+    {
+      "id": "analogy-we-need-to-prevent-the-spread-58346",
+      "analogyName": "Objective Caml for Multicore Architectures → We need to prevent the spread of misinformati",
+      "sourceDomain": "Neuroscience",
+      "targetDomain": "General",
+      "sourceSystem": "Objective Caml for Multicore Architectures",
+      "targetSystem": "We need to prevent the spread of misinformation on social media platforms withou",
+      "overallStrength": 0.4073,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Objective Caml for Multicore Architectures",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2006.05862v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Prevent Objective",
+          "strength": 0.1376,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Prevent Objective' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Platforms (Dependency Factor)",
+          "strength": 0.08,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Platforms (Dependency Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Prevent (Constraint Factor)",
+          "strength": 0.0185,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Prevent (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Need (Entity Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Need (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Prevent Objective' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Platforms (Dependency Factor)' (in your problem) is weak (8%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Prevent (Constraint Factor)' (in your problem) is weak (2%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Need (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Neuroscience:\n1. Interface Adaptation: Adapt the Neuroscience approach (\"This makes memory allocation and collection quite easier. The way it was built makes it not possible to take advantage of now widespread multicore CPU architectures. This paper presents our feedback on removing Objective Caml's garbage collector and designing a \"Stop-The-World Stop&amp;Copy\" garbage collector to permit threads to take advantage of multicore architectures.\") to map onto your elements (Need (Entity Factor), Prevent (Constraint Factor), Prevent Objective).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Neuroscience's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:10:58"
+    },
+    {
+      "id": "analogy-data-center-cooling-systems-st-58111",
+      "analogyName": "A generalized spray-flamelet formulation by means of a monotonic variable → Data center cooling systems struggle to dissi",
+      "sourceDomain": "Urban Planning",
+      "targetDomain": "Computer Science",
+      "sourceSystem": "A generalized spray-flamelet formulation by means of a monotonic variable",
+      "targetSystem": "Data center cooling systems struggle to dissipate heat efficiently under variabl",
+      "overallStrength": 0.3945,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "A generalized spray-flamelet formulation by means of a monotonic variable",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2006.01775v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "physics.flu-dyn",
+          "targetNode": "Systems (Flow Factor)",
+          "strength": 0.1091,
+          "reason": "Cross-domain functional alignment: 'physics.flu-dyn' (in Urban Planning) and 'Systems (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "physics.flu-dyn",
+          "targetNode": "Server",
+          "strength": 0.096,
+          "reason": "Cross-domain functional alignment: 'physics.flu-dyn' (in Urban Planning) and 'Server' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "physics.flu-dyn",
+          "targetNode": "Heat (Dependency Factor)",
+          "strength": 0.07,
+          "reason": "Cross-domain functional alignment: 'physics.flu-dyn' (in Urban Planning) and 'Heat (Dependency Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "physics.flu-dyn",
+          "targetNode": "Center (Constraint Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'physics.flu-dyn' (in Urban Planning) and 'Center (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "physics.flu-dyn",
+          "reason": "The comparison between 'physics.flu-dyn' (in Urban Planning) and 'Systems (Flow Factor)' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "physics.flu-dyn",
+          "reason": "The comparison between 'physics.flu-dyn' (in Urban Planning) and 'Server' (in your problem) is weak (10%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "physics.flu-dyn",
+          "reason": "The comparison between 'physics.flu-dyn' (in Urban Planning) and 'Heat (Dependency Factor)' (in your problem) is weak (7%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "physics.flu-dyn",
+          "reason": "The comparison between 'physics.flu-dyn' (in Urban Planning) and 'Center (Constraint Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Urban Planning:\n1. Interface Adaptation: Adapt the Urban Planning approach (\"For pure gaseous flow, the new cumulative function, Z_C, yields the well-established flamelet structure in Z-space. In the present manuscript, the spray-flamelet structure and the new equations for temperature and mass fractions in terms of Z_C are derived and then applied to the canonical counterflow configuration with potential flow. Numerical results are obtained for ethanol and methanol sprays, and the effect of Lewis and Stokes numbers on the spray-flamelet structure are analyzed. The proposed formulation agrees well when mapping the structure back to physical space thereby confirming our integration methodology.\") to map onto your elements (Server, Center (Constraint Factor), Cooling (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Urban Planning's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:10:58"
+    },
+    {
+      "id": "analogy-global-supply-chain-disruption-57919",
+      "analogyName": "Excess deaths hidden 100 days after the quarantine in Peru by COVID-19 → Global supply chain disruptions cause cascadi",
+      "sourceDomain": "Healthcare",
+      "targetDomain": "Logistics",
+      "sourceSystem": "Excess deaths hidden 100 days after the quarantine in Peru by COVID-19",
+      "targetSystem": "Global supply chain disruptions cause cascading failures across interconnected l",
+      "overallStrength": 0.3856,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Excess deaths hidden 100 days after the quarantine in Peru by COVID-19",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2007.01979v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Supply (Constraint Factor)",
+          "strength": 0.09,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Supply (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Across (Risk Factor)",
+          "strength": 0.09,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Across (Risk Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Global (Entity Factor)",
+          "strength": 0.07,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Global (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cascading",
+          "targetNode": "Cascading (Feedback Factor)",
+          "strength": 0.0172,
+          "reason": "Cross-domain functional alignment: 'cascading' (in Healthcare) and 'Cascading (Feedback Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Supply (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Across (Risk Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Global (Entity Factor)' (in your problem) is weak (7%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cascading",
+          "reason": "The comparison between 'cascading' (in Healthcare) and 'Cascading (Feedback Factor)' (in your problem) is weak (2%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Healthcare:\n1. Interface Adaptation: Adapt the Healthcare approach (\"Result: In Peru, the daily death rate per million inhabitants decreased by -1.89 (95% CI: -2.70; -1.07) on quarantine days and without COVID-19 cases. When comparing this result with the total number of non-violent deaths, the excess deaths during the first 100 days of quarantine is 36,230. This estimate is 1.12 times the estimate with data from 2019 and 4.2 times the deaths officers by COVID-19. Conclusion: Quarantine reduced nonviolent deaths; however, they are overshadowed by the increase as a direct or indirect cause of the pandemic. Therefore, the difference between the number of current deaths and that of past years underestimates the real excess of deaths.\") to map onto your elements (Global (Entity Factor), Supply (Constraint Factor), Chain (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Healthcare's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:10:57"
+    },
+    {
+      "id": "analogy-traffic-congestion-in-urban-ar-57758",
+      "analogyName": "Research on PM emission and energy consumption of mixed traffic flow based on cellular automata FI model → traffic congestion in urban areas during rush",
+      "sourceDomain": "Urban Planning",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Research on PM emission and energy consumption of mixed traffic flow based on cellular automata FI model",
+      "targetSystem": "traffic congestion in urban areas during rush hours with unpredictable demand an",
+      "overallStrength": 0.3467,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Research on PM emission and energy consumption of mixed traffic flow based on cellular automata FI model",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2008.02405v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "nlin.AO",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.1606,
+          "reason": "Cross-domain functional alignment: 'nlin.AO' (in Urban Planning) and 'Congestion Chokepoint' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nlin.AO",
+          "targetNode": "Demand Coupling",
+          "strength": 0.1356,
+          "reason": "Cross-domain functional alignment: 'nlin.AO' (in Urban Planning) and 'Demand Coupling' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nlin.AO",
+          "targetNode": "Areas (Flow Factor)",
+          "strength": 0.1117,
+          "reason": "Cross-domain functional alignment: 'nlin.AO' (in Urban Planning) and 'Areas (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nlin.AO",
+          "targetNode": "Congestion (Constraint Factor)",
+          "strength": 0.1017,
+          "reason": "Cross-domain functional alignment: 'nlin.AO' (in Urban Planning) and 'Congestion (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "nlin.AO",
+          "reason": "The comparison between 'nlin.AO' (in Urban Planning) and 'Congestion Chokepoint' (in your problem) is weak (16%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nlin.AO",
+          "reason": "The comparison between 'nlin.AO' (in Urban Planning) and 'Demand Coupling' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nlin.AO",
+          "reason": "The comparison between 'nlin.AO' (in Urban Planning) and 'Areas (Flow Factor)' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nlin.AO",
+          "reason": "The comparison between 'nlin.AO' (in Urban Planning) and 'Congestion (Constraint Factor)' (in your problem) is weak (10%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Urban Planning:\n1. Interface Adaptation: Adapt the Urban Planning approach (\"When the maximum velocity is different, the PM emission is similar to the change of energy consumption. Moreover, for the same maximum velocity and different mixing ratio, the energy dissipation and the PM emission related to the mixing ratio. There are the maximum fuel consumption and emission value in the maximum flow. For the same maximum velocity and length of vehicles, their energy consumption and emission are determined by random slowing probability.\") to map onto your elements (Traffic (Entity Factor), Congestion (Constraint Factor), Urban (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Urban Planning's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:10:57"
+    },
+    {
+      "id": "analogy-a-hospital-has-long-emergency-57451",
+      "analogyName": "A New Uncertainty Framework for Stochastic Signal Processing → A hospital has long emergency-room waiting ti",
+      "sourceDomain": "Quantum Computing",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "A New Uncertainty Framework for Stochastic Signal Processing",
+      "targetSystem": "A hospital has long emergency-room waiting times during peak hours. Patients arr",
+      "overallStrength": 0.1955,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "A New Uncertainty Framework for Stochastic Signal Processing",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/1904.13038v2"
+      },
+      "mappings": [
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0.09,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Quantum Computing) and 'Emergency (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Hospital (Entity Factor)",
+          "strength": 0.08,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Quantum Computing) and 'Hospital (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Room (Goal Factor)",
+          "strength": 0.0119,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Quantum Computing) and 'Room (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Cascade Loop",
+          "strength": 0.0118,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Quantum Computing) and 'Cascade Loop' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Quantum Computing) and 'Emergency (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Quantum Computing) and 'Hospital (Entity Factor)' (in your problem) is weak (8%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Quantum Computing) and 'Room (Goal Factor)' (in your problem) is weak (1%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Quantum Computing) and 'Cascade Loop' (in your problem) is weak (1%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Quantum Computing:\n1. Interface Adaptation: Adapt the Quantum Computing approach (\"To this end, we develop a new framework for stochastic signal processing that is based on decomposing the local metric space of the signal in a Gaussian Reproducing Kernel Hilbert Space (RKHS). A major advantage of our framework is that we are able to implement this decomposition on a sample-by-sample basis. The key aspects of our framework are the following: (1) We use a data defined metric related to Parzen density estimation for quantifying the local structure of data in the Gaussian RKHS. (2) We use a quantum description of this metric which consequently introduces uncertainty in the structure of the local kernel space. Since the RKHS has been well established and known for providing universal data fitting capabilities, we submit that local quantifiers of the kernel space data projection could significantly improve acquisition of signal information.\") to map onto your elements (Hospital (Entity Factor), Emergency (Constraint Factor), Room (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Quantum Computing's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:10:57"
+    },
+    {
+      "id": "analogy-global-supply-chain-disruption-91354",
+      "analogyName": "Excess deaths hidden 100 days after the quarantine in Peru by COVID-19 → Global supply chain disruptions cause cascadi",
+      "sourceDomain": "Healthcare",
+      "targetDomain": "Logistics",
+      "sourceSystem": "Excess deaths hidden 100 days after the quarantine in Peru by COVID-19",
+      "targetSystem": "Global supply chain disruptions cause cascading failures across interconnected l",
+      "overallStrength": 0.3856,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Excess deaths hidden 100 days after the quarantine in Peru by COVID-19",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2007.01979v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Supply (Constraint Factor)",
+          "strength": 0.09,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Supply (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Across (Risk Factor)",
+          "strength": 0.09,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Across (Risk Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-bio.PE",
+          "targetNode": "Global (Entity Factor)",
+          "strength": 0.07,
+          "reason": "Cross-domain functional alignment: 'q-bio.PE' (in Healthcare) and 'Global (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cascading",
+          "targetNode": "Cascading (Feedback Factor)",
+          "strength": 0.0172,
+          "reason": "Cross-domain functional alignment: 'cascading' (in Healthcare) and 'Cascading (Feedback Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Supply (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Across (Risk Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-bio.PE",
+          "reason": "The comparison between 'q-bio.PE' (in Healthcare) and 'Global (Entity Factor)' (in your problem) is weak (7%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cascading",
+          "reason": "The comparison between 'cascading' (in Healthcare) and 'Cascading (Feedback Factor)' (in your problem) is weak (2%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Healthcare:\n1. Interface Adaptation: Adapt the Healthcare approach (\"Result: In Peru, the daily death rate per million inhabitants decreased by -1.89 (95% CI: -2.70; -1.07) on quarantine days and without COVID-19 cases. When comparing this result with the total number of non-violent deaths, the excess deaths during the first 100 days of quarantine is 36,230. This estimate is 1.12 times the estimate with data from 2019 and 4.2 times the deaths officers by COVID-19. Conclusion: Quarantine reduced nonviolent deaths; however, they are overshadowed by the increase as a direct or indirect cause of the pandemic. Therefore, the difference between the number of current deaths and that of past years underestimates the real excess of deaths.\") to map onto your elements (Global (Entity Factor), Supply (Constraint Factor), Chain (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Healthcare's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:09:51"
+    },
+    {
+      "id": "analogy-data-center-cooling-systems-st-91187",
+      "analogyName": "A generalized spray-flamelet formulation by means of a monotonic variable → Data center cooling systems struggle to dissi",
+      "sourceDomain": "Urban Planning",
+      "targetDomain": "Computer Science",
+      "sourceSystem": "A generalized spray-flamelet formulation by means of a monotonic variable",
+      "targetSystem": "Data center cooling systems struggle to dissipate heat efficiently under variabl",
+      "overallStrength": 0.3945,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "A generalized spray-flamelet formulation by means of a monotonic variable",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2006.01775v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "physics.flu-dyn",
+          "targetNode": "Systems (Flow Factor)",
+          "strength": 0.1091,
+          "reason": "Cross-domain functional alignment: 'physics.flu-dyn' (in Urban Planning) and 'Systems (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "physics.flu-dyn",
+          "targetNode": "Server",
+          "strength": 0.096,
+          "reason": "Cross-domain functional alignment: 'physics.flu-dyn' (in Urban Planning) and 'Server' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "physics.flu-dyn",
+          "targetNode": "Heat (Dependency Factor)",
+          "strength": 0.07,
+          "reason": "Cross-domain functional alignment: 'physics.flu-dyn' (in Urban Planning) and 'Heat (Dependency Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "physics.flu-dyn",
+          "targetNode": "Center (Constraint Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'physics.flu-dyn' (in Urban Planning) and 'Center (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "physics.flu-dyn",
+          "reason": "The comparison between 'physics.flu-dyn' (in Urban Planning) and 'Systems (Flow Factor)' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "physics.flu-dyn",
+          "reason": "The comparison between 'physics.flu-dyn' (in Urban Planning) and 'Server' (in your problem) is weak (10%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "physics.flu-dyn",
+          "reason": "The comparison between 'physics.flu-dyn' (in Urban Planning) and 'Heat (Dependency Factor)' (in your problem) is weak (7%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "physics.flu-dyn",
+          "reason": "The comparison between 'physics.flu-dyn' (in Urban Planning) and 'Center (Constraint Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Urban Planning:\n1. Interface Adaptation: Adapt the Urban Planning approach (\"For pure gaseous flow, the new cumulative function, Z_C, yields the well-established flamelet structure in Z-space. In the present manuscript, the spray-flamelet structure and the new equations for temperature and mass fractions in terms of Z_C are derived and then applied to the canonical counterflow configuration with potential flow. Numerical results are obtained for ethanol and methanol sprays, and the effect of Lewis and Stokes numbers on the spray-flamelet structure are analyzed. The proposed formulation agrees well when mapping the structure back to physical space thereby confirming our integration methodology.\") to map onto your elements (Server, Center (Constraint Factor), Cooling (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Urban Planning's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:09:51"
+    },
+    {
+      "id": "analogy-we-need-to-prevent-the-spread-90993",
+      "analogyName": "Objective Caml for Multicore Architectures → We need to prevent the spread of misinformati",
+      "sourceDomain": "Neuroscience",
+      "targetDomain": "General",
+      "sourceSystem": "Objective Caml for Multicore Architectures",
+      "targetSystem": "We need to prevent the spread of misinformation on social media platforms withou",
+      "overallStrength": 0.4073,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Objective Caml for Multicore Architectures",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2006.05862v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Prevent Objective",
+          "strength": 0.1376,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Prevent Objective' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Platforms (Dependency Factor)",
+          "strength": 0.08,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Platforms (Dependency Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Prevent (Constraint Factor)",
+          "strength": 0.0185,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Prevent (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Need (Entity Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Need (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Prevent Objective' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Platforms (Dependency Factor)' (in your problem) is weak (8%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Prevent (Constraint Factor)' (in your problem) is weak (2%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Need (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Neuroscience:\n1. Interface Adaptation: Adapt the Neuroscience approach (\"This makes memory allocation and collection quite easier. The way it was built makes it not possible to take advantage of now widespread multicore CPU architectures. This paper presents our feedback on removing Objective Caml's garbage collector and designing a \"Stop-The-World Stop&amp;Copy\" garbage collector to permit threads to take advantage of multicore architectures.\") to map onto your elements (Need (Entity Factor), Prevent (Constraint Factor), Prevent Objective).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Neuroscience's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:09:50"
+    },
+    {
+      "id": "analogy-traffic-congestion-in-urban-ar-90854",
+      "analogyName": "Research on PM emission and energy consumption of mixed traffic flow based on cellular automata FI model → traffic congestion in urban areas during rush",
+      "sourceDomain": "Urban Planning",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Research on PM emission and energy consumption of mixed traffic flow based on cellular automata FI model",
+      "targetSystem": "traffic congestion in urban areas during rush hours with unpredictable demand an",
+      "overallStrength": 0.3467,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Research on PM emission and energy consumption of mixed traffic flow based on cellular automata FI model",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2008.02405v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "nlin.AO",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.1606,
+          "reason": "Cross-domain functional alignment: 'nlin.AO' (in Urban Planning) and 'Congestion Chokepoint' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nlin.AO",
+          "targetNode": "Demand Coupling",
+          "strength": 0.1356,
+          "reason": "Cross-domain functional alignment: 'nlin.AO' (in Urban Planning) and 'Demand Coupling' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nlin.AO",
+          "targetNode": "Areas (Flow Factor)",
+          "strength": 0.1117,
+          "reason": "Cross-domain functional alignment: 'nlin.AO' (in Urban Planning) and 'Areas (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "nlin.AO",
+          "targetNode": "Congestion (Constraint Factor)",
+          "strength": 0.1017,
+          "reason": "Cross-domain functional alignment: 'nlin.AO' (in Urban Planning) and 'Congestion (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "nlin.AO",
+          "reason": "The comparison between 'nlin.AO' (in Urban Planning) and 'Congestion Chokepoint' (in your problem) is weak (16%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nlin.AO",
+          "reason": "The comparison between 'nlin.AO' (in Urban Planning) and 'Demand Coupling' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nlin.AO",
+          "reason": "The comparison between 'nlin.AO' (in Urban Planning) and 'Areas (Flow Factor)' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "nlin.AO",
+          "reason": "The comparison between 'nlin.AO' (in Urban Planning) and 'Congestion (Constraint Factor)' (in your problem) is weak (10%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Urban Planning:\n1. Interface Adaptation: Adapt the Urban Planning approach (\"When the maximum velocity is different, the PM emission is similar to the change of energy consumption. Moreover, for the same maximum velocity and different mixing ratio, the energy dissipation and the PM emission related to the mixing ratio. There are the maximum fuel consumption and emission value in the maximum flow. For the same maximum velocity and length of vehicles, their energy consumption and emission are determined by random slowing probability.\") to map onto your elements (Traffic (Entity Factor), Congestion (Constraint Factor), Urban (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Urban Planning's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:09:50"
+    },
+    {
+      "id": "analogy-a-hospital-has-long-emergency-90559",
+      "analogyName": "A New Uncertainty Framework for Stochastic Signal Processing → A hospital has long emergency-room waiting ti",
+      "sourceDomain": "Quantum Computing",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "A New Uncertainty Framework for Stochastic Signal Processing",
+      "targetSystem": "A hospital has long emergency-room waiting times during peak hours. Patients arr",
+      "overallStrength": 0.1955,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "A New Uncertainty Framework for Stochastic Signal Processing",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/1904.13038v2"
+      },
+      "mappings": [
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0.09,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Quantum Computing) and 'Emergency (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Hospital (Entity Factor)",
+          "strength": 0.08,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Quantum Computing) and 'Hospital (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Room (Goal Factor)",
+          "strength": 0.0119,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Quantum Computing) and 'Room (Goal Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Cascade Loop",
+          "strength": 0.0118,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Quantum Computing) and 'Cascade Loop' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Quantum Computing) and 'Emergency (Constraint Factor)' (in your problem) is weak (9%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Quantum Computing) and 'Hospital (Entity Factor)' (in your problem) is weak (8%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Quantum Computing) and 'Room (Goal Factor)' (in your problem) is weak (1%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Quantum Computing) and 'Cascade Loop' (in your problem) is weak (1%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Quantum Computing:\n1. Interface Adaptation: Adapt the Quantum Computing approach (\"To this end, we develop a new framework for stochastic signal processing that is based on decomposing the local metric space of the signal in a Gaussian Reproducing Kernel Hilbert Space (RKHS). A major advantage of our framework is that we are able to implement this decomposition on a sample-by-sample basis. The key aspects of our framework are the following: (1) We use a data defined metric related to Parzen density estimation for quantifying the local structure of data in the Gaussian RKHS. (2) We use a quantum description of this metric which consequently introduces uncertainty in the structure of the local kernel space. Since the RKHS has been well established and known for providing universal data fitting capabilities, we submit that local quantifiers of the kernel space data projection could significantly improve acquisition of signal information.\") to map onto your elements (Hospital (Entity Factor), Emergency (Constraint Factor), Room (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Quantum Computing's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:09:50"
+    },
+    {
+      "id": "analogy-we-need-to-prevent-the-spread-22792",
+      "analogyName": "Objective Caml for Multicore Architectures → We need to prevent the spread of misinformati",
+      "sourceDomain": "Neuroscience",
+      "targetDomain": "General",
+      "sourceSystem": "Objective Caml for Multicore Architectures",
+      "targetSystem": "We need to prevent the spread of misinformation on social media platforms withou",
+      "overallStrength": 0.4073,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Objective Caml for Multicore Architectures",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/2006.05862v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Prevent Objective",
+          "strength": 0.1376,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Prevent Objective' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Platforms (Dependency Factor)",
+          "strength": 0.08,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Platforms (Dependency Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Prevent (Constraint Factor)",
+          "strength": 0.0185,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Prevent (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "cs.DC",
+          "targetNode": "Need (Entity Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'cs.DC' (in Neuroscience) and 'Need (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Prevent Objective' (in your problem) is weak (14%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Platforms (Dependency Factor)' (in your problem) is weak (8%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Prevent (Constraint Factor)' (in your problem) is weak (2%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "cs.DC",
+          "reason": "The comparison between 'cs.DC' (in Neuroscience) and 'Need (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Neuroscience:\n1. Interface Adaptation: Adapt the Neuroscience approach (\"This makes memory allocation and collection quite easier. The way it was built makes it not possible to take advantage of now widespread multicore CPU architectures. This paper presents our feedback on removing Objective Caml's garbage collector and designing a \"Stop-The-World Stop&amp;Copy\" garbage collector to permit threads to take advantage of multicore architectures.\") to map onto your elements (Need (Entity Factor), Prevent (Constraint Factor), Prevent Objective).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Neuroscience's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 14:05:22"
+    },
+    {
+      "id": "analogy-traffic-congestion-in-urban-ar-68395",
+      "analogyName": "Back to the Future: Predicting Traffic Shockwave Formation and Propagation Using a Convolutional Encoder-Decoder Network → traffic congestion in urban areas during rush",
+      "sourceDomain": "Neuroscience",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Back to the Future: Predicting Traffic Shockwave Formation and Propagation Using a Convolutional Encoder-Decoder Network",
+      "targetSystem": "traffic congestion in urban areas during rush hours with unpredictable demand",
+      "overallStrength": 0.4165,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Back to the Future: Predicting Traffic Shockwave Formation and Propagation Using a Convolutional Encoder-Decoder Network",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/1905.02197v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Areas (Flow Factor)",
+          "strength": 0.1206,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Neuroscience) and 'Areas (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Demand Coupling",
+          "strength": 0.12,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Neuroscience) and 'Demand Coupling' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.05,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Neuroscience) and 'Congestion Chokepoint' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "eess.SP",
+          "targetNode": "Traffic (Entity Factor)",
+          "strength": 0.0256,
+          "reason": "Cross-domain functional alignment: 'eess.SP' (in Neuroscience) and 'Traffic (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Neuroscience) and 'Areas (Flow Factor)' (in your problem) is weak (12%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Neuroscience) and 'Demand Coupling' (in your problem) is weak (12%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Neuroscience) and 'Congestion Chokepoint' (in your problem) is weak (5%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "eess.SP",
+          "reason": "The comparison between 'eess.SP' (in Neuroscience) and 'Traffic (Entity Factor)' (in your problem) is weak (3%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Neuroscience:\n1. Interface Adaptation: Adapt the Neuroscience approach (\"The main feature of the proposed methodology is the ability to extract the features embedded in the time-space diagram to predict the propagation of traffic shockwaves.\") to map onto your elements (Traffic (Entity Factor), Congestion (Constraint Factor), Urban (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Neuroscience's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 13:49:28"
+    },
+    {
+      "id": "analogy-a-hospital-has-long-emergency-27626",
+      "analogyName": "Directed Continuous-Time Random Walk with memory → A hospital has long emergency-room waiting ti",
+      "sourceDomain": "Neuroscience",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Directed Continuous-Time Random Walk with memory",
+      "targetSystem": "A hospital has long emergency-room waiting times during peak hours",
+      "overallStrength": 0.2294,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Directed Continuous-Time Random Walk with memory",
+        "authors": "Extracted via Universal Analogy Engine",
+        "url": "https://arxiv.org/abs/1807.01934v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "q-fin.ST",
+          "targetNode": "Waiting Chokepoint",
+          "strength": 0.1288,
+          "reason": "Cross-domain functional alignment: 'q-fin.ST' (in Neuroscience) and 'Waiting Chokepoint' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-fin.ST",
+          "targetNode": "Waiting (Flow Factor)",
+          "strength": 0.1094,
+          "reason": "Cross-domain functional alignment: 'q-fin.ST' (in Neuroscience) and 'Waiting (Flow Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-fin.ST",
+          "targetNode": "Hospital (Entity Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-fin.ST' (in Neuroscience) and 'Hospital (Entity Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        },
+        {
+          "sourceNode": "q-fin.ST",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0,
+          "reason": "Cross-domain functional alignment: 'q-fin.ST' (in Neuroscience) and 'Emergency (Constraint Factor)' (in your problem) both act as critical boundary conditions under variable system demand."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "q-fin.ST",
+          "reason": "The comparison between 'q-fin.ST' (in Neuroscience) and 'Waiting Chokepoint' (in your problem) is weak (13%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-fin.ST",
+          "reason": "The comparison between 'q-fin.ST' (in Neuroscience) and 'Waiting (Flow Factor)' (in your problem) is weak (11%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-fin.ST",
+          "reason": "The comparison between 'q-fin.ST' (in Neuroscience) and 'Hospital (Entity Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "q-fin.ST",
+          "reason": "The comparison between 'q-fin.ST' (in Neuroscience) and 'Emergency (Constraint Factor)' (in your problem) is weak (0%). These parts work quite differently.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "To solve your problem using the proven mechanism from Neuroscience:\n1. Interface Adaptation: Adapt the Neuroscience approach (\"Phys. J. B 90:50]. As CTRW can successfully describe the short term negative autocorrelation of returns in high-frequency financial data (caused by the bid-ask bounce phenomena), we asked ourselves to what extent the observed long-term autocorrelation of absolute values of returns can be explained by the same phenomena. It turned out that the bid-ask bounce can be responsible only for the small fraction of the memory observed in the high-frequency financial data.\") to map onto your elements (Hospital (Entity Factor), Emergency (Constraint Factor), Room (Goal Factor)).\n2. Control & Signal Tuning: Implement feedback damping or buffer management inspired by Neuroscience's operational controls.\n3. Execution & Validation: Deploy a targeted pilot loop to test boundary thresholds under maximum load before full system rollout."
+      ],
+      "createdAt": "2026-09-29 13:48:47"
+    },
     {
       "id": "analogy-how-can-we-slow-the-spread-of-47567",
       "analogyName": "Analytical solution of SEIR model describing the free spread of the COVID-19 pandemic → How can we slow the spread of misinformation ",
