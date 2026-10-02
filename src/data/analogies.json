@@ -1,7 +1,193 @@
 {
-  "updatedAt": "2026-09-29T14:10:58.348Z",
-  "analogiesCount": 39,
+  "updatedAt": "2026-10-02T07:06:43.634Z",
+  "analogiesCount": 42,
   "analogies": [
+    {
+      "id": "analogy-fake-news-spreads-faster-than-03631",
+      "analogyName": "Neuroscience → General: Bessel-like birth-death process",
+      "sourceDomain": "Neuroscience",
+      "targetDomain": "General",
+      "sourceSystem": "Bessel-like birth-death process",
+      "targetSystem": "Fake news spreads faster than real news on social media platforms",
+      "overallStrength": 0.4506,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Bessel-like birth-death process",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/1904.13064v2"
+      },
+      "mappings": [
+        {
+          "sourceNode": "continuous",
+          "targetNode": "Spreads (Goal Factor)",
+          "strength": 0.3,
+          "reason": "\"continuous\" in Neuroscience and \"Spreads (Goal Factor)\" in your problem play analogous structural roles: both act as optimization targets. "
+        },
+        {
+          "sourceNode": "continuous",
+          "targetNode": "Fake (Entity Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"continuous\" (Neuroscience) and \"Fake (Entity Factor)\" (your domain) both exist at the boundary of entity dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "continuous",
+          "targetNode": "News (Constraint Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"continuous\" (Neuroscience) and \"News (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "continuous",
+          "targetNode": "Faster (Flow Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"continuous\" (Neuroscience) and \"Faster (Flow Factor)\" (your domain) both exist at the boundary of flow dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "continuous",
+          "reason": "\"continuous\" in Neuroscience and \"Spreads (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Neuroscience mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "continuous",
+          "reason": "\"continuous\" in Neuroscience and \"Fake (Entity Factor)\" in your problem serve structurally different functions despite surface similarity. The Neuroscience mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "continuous",
+          "reason": "\"continuous\" in Neuroscience and \"News (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Neuroscience mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "continuous",
+          "reason": "\"continuous\" in Neuroscience and \"Faster (Flow Factor)\" in your problem serve structurally different functions despite surface similarity. The Neuroscience mechanism relies on flow constraints that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Neuroscience:\n\n1. WHAT Neuroscience does: We propose and generalize the Bessel-like birth-death process having clear representation by the SDEs. The new process helps to integrate the alternatives of description and to derive the equations fo\n\n2. WHY it applies to you: Your problem involves Fake (Entity Factor), News (Constraint Factor), Spreads (Goal Factor), which structurally play the same roles as the components in the Neuroscience system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Fake (Entity Factor) → Neuroscience's primary variable\n   b) Apply the Neuroscience solution's core mechanism (We propose and generalize the Bessel-like birth-death proces...) to your constraint space\n   c) Adjust parameters: Neuroscience operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Neuroscience's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-02 07:06:43"
+    },
+    {
+      "id": "analogy-traffic-congestion-in-cities-c-03486",
+      "analogyName": "Robotics & Autonomous Swarms → Urban Planning: Elevated LiDAR Placement under Energy an",
+      "sourceDomain": "Robotics & Autonomous Swarms",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Elevated LiDAR Placement under Energy and Throughput Capacity Constraints",
+      "targetSystem": "Traffic congestion in cities causes pollution and wasted fuel",
+      "overallStrength": 0.3026,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Elevated LiDAR Placement under Energy and Throughput Capacity Constraints",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/2007.06043v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "capacity",
+          "targetNode": "Congestion (Constraint Factor)",
+          "strength": 0.5258,
+          "reason": "In Robotics & Autonomous Swarms, \"capacity\" serves as the constraint mechanism — structurally identical to \"Congestion (Constraint Factor)\" in your system. Specifically: \"Elevated LiDAR Placement under Energy and Throughput Capacity Constraints Elevated LiDAR (ELiD) has the potential to has...\""
+        },
+        {
+          "sourceNode": "reduce",
+          "targetNode": "Cities (Goal Factor)",
+          "strength": 0.4325,
+          "reason": "\"reduce\" in Robotics & Autonomous Swarms and \"Cities (Goal Factor)\" in your problem play analogous structural roles: both act as optimization targets. Context: \"Elevated LiDAR Placement under Energy and Throughput Capacity Constraints Elevated LiDAR (ELiD) has the potential to has...\""
+        },
+        {
+          "sourceNode": "particle",
+          "targetNode": "Traffic (Entity Factor)",
+          "strength": 0.38,
+          "reason": "\"particle\" in Robotics & Autonomous Swarms and \"Traffic (Entity Factor)\" in your problem play analogous structural roles: both act as system actors. Context: \"Due to the non-linearity of the problem, we utilize Particle Swarm Optimization (PSO) to solve the problem...\""
+        },
+        {
+          "sourceNode": "energy",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"energy\" (Robotics & Autonomous Swarms) and \"Congestion Chokepoint\" (your domain) both exist at the boundary of bottleneck dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "energy",
+          "reason": "\"energy\" in Robotics & Autonomous Swarms and \"Congestion Chokepoint\" in your problem serve structurally different functions despite surface similarity. The Robotics & Autonomous Swarms mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Robotics & Autonomous Swarms:\n\n1. WHAT Robotics & Autonomous Swarms does: Due to the non-linearity of the problem, we utilize Particle Swarm Optimization (PSO) to solve the problem. After demonstrating its effectiveness in finding a solution for a realistic scenario, we per\n\n2. WHY it applies to you: Your problem involves Traffic (Entity Factor), Congestion (Constraint Factor), Cities (Goal Factor), which structurally play the same roles as the components in the Robotics & Autonomous Swarms system. Both follow the \"Distributed Flow Under Variable Demand\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Traffic (Entity Factor) → Robotics & Autonomous Swarms's primary variable\n   b) Apply the Robotics & Autonomous Swarms solution's core mechanism (Due to the non-linearity of the problem, we utilize Particle...) to your constraint space\n   c) Adjust parameters: Robotics & Autonomous Swarms operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Robotics & Autonomous Swarms's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-02 07:06:43"
+    },
+    {
+      "id": "analogy-hospital-emergency-rooms-are-o-02663",
+      "analogyName": "Marine Hydrodynamics → Healthcare: Effect of COVID-19 Pandemic on Oceans",
+      "sourceDomain": "Marine Hydrodynamics",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Effect of COVID-19 Pandemic on Oceans",
+      "targetSystem": "Hospital emergency rooms are overcrowded with long wait times during peak hours",
+      "overallStrength": 0.3135,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Effect of COVID-19 Pandemic on Oceans",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/2007.01898v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "satellite",
+          "targetNode": "Hospital (Entity Factor)",
+          "strength": 0.185,
+          "reason": "Weak but intriguing parallel: \"satellite\" (Marine Hydrodynamics) and \"Hospital (Entity Factor)\" (your domain) both exist at the boundary of entity dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "threat",
+          "targetNode": "Hours (Risk Factor)",
+          "strength": 0.185,
+          "reason": "Weak but intriguing parallel: \"threat\" (Marine Hydrodynamics) and \"Hours (Risk Factor)\" (your domain) both exist at the boundary of risk dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "pandemic",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"pandemic\" (Marine Hydrodynamics) and \"Emergency (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "pandemic",
+          "targetNode": "Rooms (Goal Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"pandemic\" (Marine Hydrodynamics) and \"Rooms (Goal Factor)\" (your domain) both exist at the boundary of goal dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "satellite",
+          "reason": "\"satellite\" in Marine Hydrodynamics and \"Hospital (Entity Factor)\" in your problem serve structurally different functions despite surface similarity. The Marine Hydrodynamics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "threat",
+          "reason": "\"threat\" in Marine Hydrodynamics and \"Hours (Risk Factor)\" in your problem serve structurally different functions despite surface similarity. The Marine Hydrodynamics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "pandemic",
+          "reason": "\"pandemic\" in Marine Hydrodynamics and \"Emergency (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Marine Hydrodynamics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "pandemic",
+          "reason": "\"pandemic\" in Marine Hydrodynamics and \"Rooms (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Marine Hydrodynamics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Marine Hydrodynamics:\n\n1. WHAT Marine Hydrodynamics does: Based on these estimates, a drop in Chl-a (0.5 mgm-3) is observed off Alaska, North Europe,South China and Southeast USA during the pandemic. CO2 reduction of 123 MtCO2 during the pandemic in China mi\n\n2. WHY it applies to you: Your problem involves Hospital (Entity Factor), Emergency (Constraint Factor), Rooms (Goal Factor), which structurally play the same roles as the components in the Marine Hydrodynamics system. Both follow the \"Impedance Matching & Peak Load Buffering\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Hospital (Entity Factor) → Marine Hydrodynamics's primary variable\n   b) Apply the Marine Hydrodynamics solution's core mechanism (Based on these estimates, a drop in Chl-a (0.5 mgm-3) is obs...) to your constraint space\n   c) Adjust parameters: Marine Hydrodynamics operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Marine Hydrodynamics's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-02 07:06:42"
+    },
     {
       "id": "analogy-we-need-to-prevent-the-spread-58346",
       "analogyName": "Objective Caml for Multicore Architectures → We need to prevent the spread of misinformati",
