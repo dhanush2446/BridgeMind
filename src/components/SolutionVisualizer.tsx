@@ -32,11 +32,11 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
       <div className={styles.headerRow}>
         <div className={styles.titleGroup}>
           <span className={styles.titleBadge}>
-            {viewMode === "kidFriendly" ? "🎈 ELI5 Mode" : "🔬 Technical View"}
+            {viewMode === "kidFriendly" ? "💡 Intuitive View" : "🔬 Technical View"}
           </span>
           <h3 className={styles.mainTitle}>
             {viewMode === "kidFriendly"
-              ? kid?.headline || `Explaining ${domain} Solution to a Child`
+              ? kid?.headline || `Explaining ${domain} Solution Intuitively`
               : `Operational Solution Transfer from ${domain}`}
           </h3>
         </div>
@@ -46,7 +46,7 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
             className={`${styles.toggleBtn} ${viewMode === "kidFriendly" ? styles.toggleActiveKid : ""}`}
             onClick={() => setViewMode("kidFriendly")}
           >
-            🎈 Kid-Friendly (ELI5)
+            💡 Intuitive View
           </button>
           <button
             className={`${styles.toggleBtn} ${viewMode === "technical" ? styles.toggleActiveTech : ""}`}
@@ -63,13 +63,13 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
           {/* Playground Story Box */}
           <div className={styles.storyCard}>
             <div className={styles.storyHeader}>
-              <span className={styles.storyIcon}>🎡</span>
-              <span className={styles.storyTitle}>Playground Metaphor & Story</span>
+              <span className={styles.storyIcon}>💡</span>
+              <span className={styles.storyTitle}>Intuitive Metaphor & Story</span>
             </div>
             <p className={styles.storyText}>{kid.storyMetaphor}</p>
           </div>
 
-          {/* 3 Kid-Friendly Steps */}
+          {/* 3 Intuitive Steps */}
           <div className={styles.stepsGrid}>
             {kid.steps.map((step) => (
               <div key={step.stepNumber} className={styles.stepCard}>
@@ -83,7 +83,7 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
                   <p>{step.simpleAction}</p>
                 </div>
                 <div className={styles.playgroundBox}>
-                  <span className={styles.playgroundLabel}>Child Explanation:</span>
+                  <span className={styles.playgroundLabel}>Intuitive Explanation:</span>
                   <p>{step.playgroundAnalogy}</p>
                 </div>
               </div>

@@ -267,6 +267,138 @@
         "role": "Climate Barrier",
         "abstract": "Selective boundary layer"
       }
+    },
+    "Agriculture & Food Systems": {
+      "Crop Yield": {
+        "role": "Optimization Target",
+        "abstract": "Biomass production per unit area"
+      },
+      "Soil Microbiome": {
+        "role": "Symbiotic Network",
+        "abstract": "Underground biological resource exchange"
+      },
+      "Irrigation System": {
+        "role": "Flow Network",
+        "abstract": "Water distribution under demand constraints"
+      },
+      "Pest Pressure": {
+        "role": "Exogenous Perturbation",
+        "abstract": "Biological threat requiring adaptive response"
+      },
+      "Cold Chain": {
+        "role": "Preservation Pipeline",
+        "abstract": "Temperature-critical flow network"
+      }
+    },
+    "Psychology & Cognitive Science": {
+      "Working Memory": {
+        "role": "Buffer Storage",
+        "abstract": "Capacity-limited temporary information store"
+      },
+      "Cognitive Load": {
+        "role": "Channel Constraint",
+        "abstract": "Processing bandwidth limitation"
+      },
+      "Decision Fatigue": {
+        "role": "Resource Depletion",
+        "abstract": "Sequential capacity degradation"
+      },
+      "Nudge": {
+        "role": "Choice Architecture",
+        "abstract": "Default-based behavioral influence"
+      },
+      "Flow State": {
+        "role": "Optimal Performance Zone",
+        "abstract": "Challenge-skill balanced engagement"
+      }
+    },
+    "Transportation & Logistics": {
+      "Vehicle Route": {
+        "role": "Flow Path",
+        "abstract": "Constrained traversal through network"
+      },
+      "Fleet": {
+        "role": "Distributed Agent Pool",
+        "abstract": "Collection of autonomous carriers"
+      },
+      "Warehouse": {
+        "role": "Buffer Node",
+        "abstract": "Storage and sorting intermediate hub"
+      },
+      "Last Mile": {
+        "role": "Final Delivery Segment",
+        "abstract": "High-cost dispersed endpoint routing"
+      },
+      "Intermodal Hub": {
+        "role": "Transfer Node",
+        "abstract": "Cross-network switching point"
+      }
+    },
+    "Education & Learning Science": {
+      "Student": {
+        "role": "Learning Agent",
+        "abstract": "Knowledge state progression entity"
+      },
+      "Curriculum": {
+        "role": "Learning Pathway",
+        "abstract": "Structured knowledge acquisition sequence"
+      },
+      "Assessment": {
+        "role": "State Estimator",
+        "abstract": "Knowledge level measurement mechanism"
+      },
+      "Feedback": {
+        "role": "Error Signal",
+        "abstract": "Performance gap communication channel"
+      },
+      "Scaffold": {
+        "role": "Temporary Support",
+        "abstract": "Graduated assistance framework"
+      }
+    },
+    "Climate & Environmental Science": {
+      "Carbon Cycle": {
+        "role": "Global Flow Network",
+        "abstract": "Planetary element circulation system"
+      },
+      "Tipping Point": {
+        "role": "Critical Threshold",
+        "abstract": "Irreversible state transition boundary"
+      },
+      "Feedback Loop": {
+        "role": "Self-Reinforcing Cycle",
+        "abstract": "Amplifying or dampening response circuit"
+      },
+      "Albedo": {
+        "role": "Reflection Coefficient",
+        "abstract": "Surface energy balance parameter"
+      },
+      "Permafrost": {
+        "role": "Frozen Carbon Reservoir",
+        "abstract": "Temperature-gated carbon storage"
+      }
+    },
+    "Space & Planetary Science": {
+      "Orbit": {
+        "role": "Constrained Path",
+        "abstract": "Gravitationally determined trajectory"
+      },
+      "Delta-V Budget": {
+        "role": "Energy Constraint",
+        "abstract": "Propulsive capacity limitation"
+      },
+      "Debris Field": {
+        "role": "Cascading Hazard",
+        "abstract": "Self-propagating collision risk"
+      },
+      "Communication Lag": {
+        "role": "Feedback Delay",
+        "abstract": "Speed-of-light signal propagation latency"
+      },
+      "ISRU": {
+        "role": "In-Situ Resource",
+        "abstract": "Local material utilization for autonomy"
+      }
     }
   }
 }

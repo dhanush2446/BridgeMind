@@ -130,8 +130,30 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [charCount, setCharCount] = useState(0);
+  const [liveStats, setLiveStats] = useState({
+    totalCaseStudies: 1492,
+    totalDomains: 26,
+    totalPatterns: 25,
+    totalAnalogies: 44
+  });
   const router = useRouter();
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    fetch("/api/datasets?limit=1")
+      .then(res => res.ok ? res.json() : null)
+      .then(data => {
+        if (data?.stats) {
+          setLiveStats({
+            totalCaseStudies: data.stats.totalCaseStudies || 1492,
+            totalDomains: data.stats.totalDomains || 26,
+            totalPatterns: data.stats.totalPatterns || 25,
+            totalAnalogies: data.stats.totalAnalogies || 44
+          });
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   // Auto-resize textarea
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -294,10 +316,10 @@ Example: 'A hospital has long emergency-room waiting times during peak hours. Pa
       {/* ── Stats Bar ── */}
       <ScrollReveal>
       <section className={styles.statsBar}>
-        <AnimatedStat value={127} label="Universal Patterns" suffix="+" />
-        <AnimatedStat value={15} label="Knowledge Domains" />
-        <AnimatedStat value={1000} label="Cross-Domain Mappings" suffix="+" />
-        <AnimatedStat value={47} label="Solution Mechanisms" />
+        <AnimatedStat value={liveStats.totalCaseStudies} label="Scientific Papers" suffix="+" />
+        <AnimatedStat value={liveStats.totalDomains} label="Knowledge Domains" />
+        <AnimatedStat value={liveStats.totalPatterns} label="Universal Patterns" />
+        <AnimatedStat value={liveStats.totalAnalogies} label="Cross-Domain Mappings" suffix="+" />
       </section>
       </ScrollReveal>
 

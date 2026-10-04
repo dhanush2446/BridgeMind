@@ -1298,7 +1298,7 @@ function generateMappings(inputStructure: ProblemStructure, paper: any, inputWor
   return mappings.slice(0, 4);
 }
 
-/* ── Generate dynamic, domain-aware ELI5 Kid-Friendly Explanations ── */
+/* ── Generate dynamic, domain-aware Intuitive Explanations ── */
 function generateDynamicELI5(domain: string, title: string, targetSolution: string, keyElements: string, problemSummary: string): KidFriendlyExplanation {
   const domLower = domain.toLowerCase();
 

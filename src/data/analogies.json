@@ -1,7 +1,317 @@
 {
-  "updatedAt": "2026-10-02T07:06:43.634Z",
-  "analogiesCount": 42,
+  "updatedAt": "2026-10-04T12:37:46.483Z",
+  "analogiesCount": 47,
   "analogies": [
+    {
+      "id": "analogy-a-hospital-has-long-emergency-66173",
+      "analogyName": "Mechanical Engineering → Healthcare: Design of Mechanically Compliant Membran",
+      "sourceDomain": "Mechanical Engineering",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Design of Mechanically Compliant Membrane Reflectors for Giant Optical Phase Nonlinearity",
+      "targetSystem": "A hospital has long emergency-room waiting times during peak hours. Patients arr",
+      "overallStrength": 0.4552,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Design of Mechanically Compliant Membrane Reflectors for Giant Optical Phase Nonlinearity",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/2609.40354v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "physics.optics",
+          "targetNode": "Cascade Coupling",
+          "strength": 0.3833,
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Coupling\" in your problem play analogous structural roles: both act as causal chains. "
+        },
+        {
+          "sourceNode": "physics.optics",
+          "targetNode": "Cascade Loop",
+          "strength": 0.3,
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Loop\" in your problem play analogous structural roles: both act as regulatory loops. "
+        },
+        {
+          "sourceNode": "signal",
+          "targetNode": "Hospital (Entity Factor)",
+          "strength": 0.29,
+          "reason": "\"signal\" in Mechanical Engineering and \"Hospital (Entity Factor)\" in your problem play analogous structural roles: both act as system actors. Context: \"85% retention of its small-signal phase responsivity through a full $2π$ reflected-phase shift...\""
+        },
+        {
+          "sourceNode": "pressure",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0.155,
+          "reason": "Weak but intriguing parallel: \"pressure\" (Mechanical Engineering) and \"Emergency (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "physics.optics",
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Loop\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "signal",
+          "reason": "\"signal\" in Mechanical Engineering and \"Hospital (Entity Factor)\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "pressure",
+          "reason": "\"pressure\" in Mechanical Engineering and \"Emergency (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Mechanical Engineering:\n\n1. WHAT Mechanical Engineering does: Among reported mechanical resonators compared under a common direct-reflection protocol, this trampoline is an outlier, combining high compliance, practical optical accessibility, and 99.85% retention\n\n2. WHY it applies to you: Your problem involves Hospital (Entity Factor), Emergency (Constraint Factor), Room (Goal Factor), which structurally play the same roles as the components in the Mechanical Engineering system. Both follow the \"Uncertain Arrivals with Priority Queuing\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Hospital (Entity Factor) → Mechanical Engineering's primary variable\n   b) Apply the Mechanical Engineering solution's core mechanism (Among reported mechanical resonators compared under a common...) to your constraint space\n   c) Adjust parameters: Mechanical Engineering operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Mechanical Engineering's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-04 12:37:46"
+    },
+    {
+      "id": "analogy-a-hospital-has-long-emergency-42373",
+      "analogyName": "Mechanical Engineering → Healthcare: Design of Mechanically Compliant Membran",
+      "sourceDomain": "Mechanical Engineering",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Design of Mechanically Compliant Membrane Reflectors for Giant Optical Phase Nonlinearity",
+      "targetSystem": "A hospital has long emergency-room waiting times during peak hours. Patients arr",
+      "overallStrength": 0.4552,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Design of Mechanically Compliant Membrane Reflectors for Giant Optical Phase Nonlinearity",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/2609.40354v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "physics.optics",
+          "targetNode": "Cascade Coupling",
+          "strength": 0.3833,
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Coupling\" in your problem play analogous structural roles: both act as causal chains. "
+        },
+        {
+          "sourceNode": "physics.optics",
+          "targetNode": "Cascade Loop",
+          "strength": 0.3,
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Loop\" in your problem play analogous structural roles: both act as regulatory loops. "
+        },
+        {
+          "sourceNode": "signal",
+          "targetNode": "Hospital (Entity Factor)",
+          "strength": 0.29,
+          "reason": "\"signal\" in Mechanical Engineering and \"Hospital (Entity Factor)\" in your problem play analogous structural roles: both act as system actors. Context: \"85% retention of its small-signal phase responsivity through a full $2π$ reflected-phase shift...\""
+        },
+        {
+          "sourceNode": "pressure",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0.155,
+          "reason": "Weak but intriguing parallel: \"pressure\" (Mechanical Engineering) and \"Emergency (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "physics.optics",
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Loop\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "signal",
+          "reason": "\"signal\" in Mechanical Engineering and \"Hospital (Entity Factor)\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "pressure",
+          "reason": "\"pressure\" in Mechanical Engineering and \"Emergency (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Mechanical Engineering:\n\n1. WHAT Mechanical Engineering does: Among reported mechanical resonators compared under a common direct-reflection protocol, this trampoline is an outlier, combining high compliance, practical optical accessibility, and 99.85% retention\n\n2. WHY it applies to you: Your problem involves Hospital (Entity Factor), Emergency (Constraint Factor), Room (Goal Factor), which structurally play the same roles as the components in the Mechanical Engineering system. Both follow the \"Uncertain Arrivals with Priority Queuing\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Hospital (Entity Factor) → Mechanical Engineering's primary variable\n   b) Apply the Mechanical Engineering solution's core mechanism (Among reported mechanical resonators compared under a common...) to your constraint space\n   c) Adjust parameters: Mechanical Engineering operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Mechanical Engineering's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-04 12:30:42"
+    },
+    {
+      "id": "analogy-a-hospital-has-long-emergency-42210",
+      "analogyName": "Mechanical Engineering → Healthcare: Design of Mechanically Compliant Membran",
+      "sourceDomain": "Mechanical Engineering",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Design of Mechanically Compliant Membrane Reflectors for Giant Optical Phase Nonlinearity",
+      "targetSystem": "A hospital has long emergency-room waiting times during peak hours. Patients arr",
+      "overallStrength": 0.4552,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Design of Mechanically Compliant Membrane Reflectors for Giant Optical Phase Nonlinearity",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/2609.40354v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "physics.optics",
+          "targetNode": "Cascade Coupling",
+          "strength": 0.3833,
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Coupling\" in your problem play analogous structural roles: both act as causal chains. "
+        },
+        {
+          "sourceNode": "physics.optics",
+          "targetNode": "Cascade Loop",
+          "strength": 0.3,
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Loop\" in your problem play analogous structural roles: both act as regulatory loops. "
+        },
+        {
+          "sourceNode": "signal",
+          "targetNode": "Hospital (Entity Factor)",
+          "strength": 0.29,
+          "reason": "\"signal\" in Mechanical Engineering and \"Hospital (Entity Factor)\" in your problem play analogous structural roles: both act as system actors. Context: \"85% retention of its small-signal phase responsivity through a full $2π$ reflected-phase shift...\""
+        },
+        {
+          "sourceNode": "pressure",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0.155,
+          "reason": "Weak but intriguing parallel: \"pressure\" (Mechanical Engineering) and \"Emergency (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "physics.optics",
+          "reason": "\"physics.optics\" in Mechanical Engineering and \"Cascade Loop\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "signal",
+          "reason": "\"signal\" in Mechanical Engineering and \"Hospital (Entity Factor)\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "pressure",
+          "reason": "\"pressure\" in Mechanical Engineering and \"Emergency (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Mechanical Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Mechanical Engineering:\n\n1. WHAT Mechanical Engineering does: Among reported mechanical resonators compared under a common direct-reflection protocol, this trampoline is an outlier, combining high compliance, practical optical accessibility, and 99.85% retention\n\n2. WHY it applies to you: Your problem involves Hospital (Entity Factor), Emergency (Constraint Factor), Room (Goal Factor), which structurally play the same roles as the components in the Mechanical Engineering system. Both follow the \"Uncertain Arrivals with Priority Queuing\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Hospital (Entity Factor) → Mechanical Engineering's primary variable\n   b) Apply the Mechanical Engineering solution's core mechanism (Among reported mechanical resonators compared under a common...) to your constraint space\n   c) Adjust parameters: Mechanical Engineering operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Mechanical Engineering's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-04 12:30:42"
+    },
+    {
+      "id": "analogy-a-hospital-has-long-emergency-43825",
+      "analogyName": "Urban Planning → Healthcare: Energy Scheduling for Residential Distri",
+      "sourceDomain": "Urban Planning",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control",
+      "targetSystem": "A hospital has long emergency-room waiting times during peak hours. Patients arr",
+      "overallStrength": 0.3369,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/2007.11182v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "maximum",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0.4125,
+          "reason": "\"maximum\" in Urban Planning and \"Emergency (Constraint Factor)\" in your problem play analogous structural roles: both act as boundary conditions. Context: \"Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control T...\""
+        },
+        {
+          "sourceNode": "demand",
+          "targetNode": "Cascade Coupling",
+          "strength": 0.3217,
+          "reason": "\"demand\" in Urban Planning and \"Cascade Coupling\" in your problem play analogous structural roles: both act as causal chains. Context: \"Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control T...\""
+        },
+        {
+          "sourceNode": "control",
+          "targetNode": "Cascade Loop",
+          "strength": 0.3129,
+          "reason": "\"control\" in Urban Planning and \"Cascade Loop\" in your problem play analogous structural roles: both act as regulatory loops. Context: \"Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control T...\""
+        },
+        {
+          "sourceNode": "performance",
+          "targetNode": "Room (Goal Factor)",
+          "strength": 0.2975,
+          "reason": "\"performance\" in Urban Planning and \"Room (Goal Factor)\" in your problem play analogous structural roles: both act as optimization targets. Context: \"Although they are environment friendly and accessible, there are challenging issues regarding their performance such as ...\""
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "demand",
+          "reason": "\"demand\" in Urban Planning and \"Cascade Coupling\" in your problem serve structurally different functions despite surface similarity. The Urban Planning mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "control",
+          "reason": "\"control\" in Urban Planning and \"Cascade Loop\" in your problem serve structurally different functions despite surface similarity. The Urban Planning mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "performance",
+          "reason": "\"performance\" in Urban Planning and \"Room (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Urban Planning mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Urban Planning:\n\n1. WHAT Urban Planning does: This research investigates the energy management of these systems in three complementary scenarios. The first and second scenarios are respectively suitable for a market with a constant and inconstant\n\n2. WHY it applies to you: Your problem involves Hospital (Entity Factor), Emergency (Constraint Factor), Room (Goal Factor), which structurally play the same roles as the components in the Urban Planning system. Both follow the \"Uncertain Arrivals with Priority Queuing\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Hospital (Entity Factor) → Urban Planning's primary variable\n   b) Apply the Urban Planning solution's core mechanism (This research investigates the energy management of these sy...) to your constraint space\n   c) Adjust parameters: Urban Planning operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Urban Planning's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-03 17:27:23"
+    },
+    {
+      "id": "analogy-a-hospital-has-long-emergency-43718",
+      "analogyName": "Urban Planning → Healthcare: Energy Scheduling for Residential Distri",
+      "sourceDomain": "Urban Planning",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control",
+      "targetSystem": "A hospital has long emergency-room waiting times during peak hours. Patients arr",
+      "overallStrength": 0.3369,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/2007.11182v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "maximum",
+          "targetNode": "Emergency (Constraint Factor)",
+          "strength": 0.4125,
+          "reason": "\"maximum\" in Urban Planning and \"Emergency (Constraint Factor)\" in your problem play analogous structural roles: both act as boundary conditions. Context: \"Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control T...\""
+        },
+        {
+          "sourceNode": "demand",
+          "targetNode": "Cascade Coupling",
+          "strength": 0.3217,
+          "reason": "\"demand\" in Urban Planning and \"Cascade Coupling\" in your problem play analogous structural roles: both act as causal chains. Context: \"Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control T...\""
+        },
+        {
+          "sourceNode": "control",
+          "targetNode": "Cascade Loop",
+          "strength": 0.3129,
+          "reason": "\"control\" in Urban Planning and \"Cascade Loop\" in your problem play analogous structural roles: both act as regulatory loops. Context: \"Energy Scheduling for Residential Distributed Energy Resources with Uncertainties Using Model-based Predictive Control T...\""
+        },
+        {
+          "sourceNode": "performance",
+          "targetNode": "Room (Goal Factor)",
+          "strength": 0.2975,
+          "reason": "\"performance\" in Urban Planning and \"Room (Goal Factor)\" in your problem play analogous structural roles: both act as optimization targets. Context: \"Although they are environment friendly and accessible, there are challenging issues regarding their performance such as ...\""
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "demand",
+          "reason": "\"demand\" in Urban Planning and \"Cascade Coupling\" in your problem serve structurally different functions despite surface similarity. The Urban Planning mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "control",
+          "reason": "\"control\" in Urban Planning and \"Cascade Loop\" in your problem serve structurally different functions despite surface similarity. The Urban Planning mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "performance",
+          "reason": "\"performance\" in Urban Planning and \"Room (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Urban Planning mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Urban Planning:\n\n1. WHAT Urban Planning does: This research investigates the energy management of these systems in three complementary scenarios. The first and second scenarios are respectively suitable for a market with a constant and inconstant\n\n2. WHY it applies to you: Your problem involves Hospital (Entity Factor), Emergency (Constraint Factor), Room (Goal Factor), which structurally play the same roles as the components in the Urban Planning system. Both follow the \"Uncertain Arrivals with Priority Queuing\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Hospital (Entity Factor) → Urban Planning's primary variable\n   b) Apply the Urban Planning solution's core mechanism (This research investigates the energy management of these sy...) to your constraint space\n   c) Adjust parameters: Urban Planning operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Urban Planning's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-03 17:27:23"
+    },
     {
       "id": "analogy-fake-news-spreads-faster-than-03631",
       "analogyName": "Neuroscience → General: Bessel-like birth-death process",
