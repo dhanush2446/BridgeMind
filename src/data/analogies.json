@@ -1,7 +1,203 @@
 {
-  "updatedAt": "2026-10-04T17:26:41.498Z",
-  "analogiesCount": 52,
+  "updatedAt": "2026-10-04T17:42:21.021Z",
+  "analogiesCount": 55,
   "analogies": [
+    {
+      "id": "analogy-fake-news-spreads-faster-than-41017",
+      "analogyName": "Architecture → General: Experimental Investigation of Heat-gener",
+      "sourceDomain": "Architecture",
+      "targetDomain": "General",
+      "sourceSystem": "Experimental Investigation of Heat-generating Cheese Pallets During an International Export Cold Chain",
+      "targetSystem": "Fake news spreads faster than real news on social media platforms",
+      "overallStrength": 0.4049,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Experimental Investigation of Heat-generating Cheese Pallets During an International Export Cold Chain",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://arxiv.org/abs/2609.35301v1"
+      },
+      "mappings": [
+        {
+          "sourceNode": "cs.CE",
+          "targetNode": "News (Constraint Factor)",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"cs.CE\" (Architecture) and \"News (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "cs.CE",
+          "targetNode": "Spreads (Goal Factor)",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"cs.CE\" (Architecture) and \"Spreads (Goal Factor)\" (your domain) both exist at the boundary of goal dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "transport",
+          "targetNode": "Faster (Flow Factor)",
+          "strength": 0.185,
+          "reason": "Weak but intriguing parallel: \"transport\" (Architecture) and \"Faster (Flow Factor)\" (your domain) both exist at the boundary of flow dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "chain",
+          "targetNode": "Social (Dependency Factor)",
+          "strength": 0.1775,
+          "reason": "Weak but intriguing parallel: \"chain\" (Architecture) and \"Social (Dependency Factor)\" (your domain) both exist at the boundary of dependency dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "cs.CE",
+          "reason": "\"cs.CE\" in Architecture and \"News (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Architecture mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "cs.CE",
+          "reason": "\"cs.CE\" in Architecture and \"Spreads (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Architecture mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "transport",
+          "reason": "\"transport\" in Architecture and \"Faster (Flow Factor)\" in your problem serve structurally different functions despite surface similarity. The Architecture mechanism relies on flow constraints that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "chain",
+          "reason": "\"chain\" in Architecture and \"Social (Dependency Factor)\" in your problem serve structurally different functions despite surface similarity. The Architecture mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Architecture:\n\n1. WHAT Architecture does: The results clearly highlight the effect of ventilation: pallets placed in a well-ventilated area showed temperatures approximately 3{\\textdegree}C lower than those in less ventilated zones. The study\n\n2. WHY it applies to you: Your problem involves Fake (Entity Factor), News (Constraint Factor), Spreads (Goal Factor), which structurally play the same roles as the components in the Architecture system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Fake (Entity Factor) → Architecture's primary variable\n   b) Apply the Architecture solution's core mechanism (The results clearly highlight the effect of ventilation: pal...) to your constraint space\n   c) Adjust parameters: Architecture operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Architecture's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-04 17:42:21"
+    },
+    {
+      "id": "analogy-traffic-congestion-in-cities-c-40882",
+      "analogyName": "Transportation & Logistics → Urban Planning: Dynamic vehicle routing with stochastic ",
+      "sourceDomain": "Transportation & Logistics",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Dynamic vehicle routing with stochastic travel times using anticipatory insertion heuristics",
+      "targetSystem": "Traffic congestion in cities causes pollution and wasted fuel",
+      "overallStrength": 0.4158,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Dynamic vehicle routing with stochastic travel times using anticipatory insertion heuristics",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1016/j.trb.2019.05.009"
+      },
+      "mappings": [
+        {
+          "sourceNode": "congestion",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.37,
+          "reason": "\"congestion\" in Transportation & Logistics and \"Congestion Chokepoint\" in your problem play analogous structural roles: both act as throughput limiters. Context: \"Dynamic vehicle routing with stochastic travel times using anticipatory insertion heuristics Last-mile delivery vehicles...\""
+        },
+        {
+          "sourceNode": "routing",
+          "targetNode": "Causes (Flow Factor)",
+          "strength": 0.305,
+          "reason": "\"routing\" in Transportation & Logistics and \"Causes (Flow Factor)\" in your problem play analogous structural roles: both act as transport channels. Context: \"Dynamic vehicle routing with stochastic travel times using anticipatory insertion heuristics Last-mile delivery vehicles...\""
+        },
+        {
+          "sourceNode": "vehicle",
+          "targetNode": "Traffic (Entity Factor)",
+          "strength": 0.1904,
+          "reason": "Weak but intriguing parallel: \"vehicle\" (Transportation & Logistics) and \"Traffic (Entity Factor)\" (your domain) both exist at the boundary of entity dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "vehicle-routing",
+          "targetNode": "Congestion (Constraint Factor)",
+          "strength": 0.1804,
+          "reason": "Weak but intriguing parallel: \"vehicle-routing\" (Transportation & Logistics) and \"Congestion (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "routing",
+          "reason": "\"routing\" in Transportation & Logistics and \"Causes (Flow Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "vehicle",
+          "reason": "\"vehicle\" in Transportation & Logistics and \"Traffic (Entity Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "vehicle-routing",
+          "reason": "\"vehicle-routing\" in Transportation & Logistics and \"Congestion (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Transportation & Logistics:\n\n1. WHAT Transportation & Logistics does: Anticipatory insertion heuristics pre-compute contingency route segments, reducing late deliveries by 28% compared to reactive re-routing.\n\n2. WHY it applies to you: Your problem involves Traffic (Entity Factor), Congestion (Constraint Factor), Cities (Goal Factor), which structurally play the same roles as the components in the Transportation & Logistics system. Both follow the \"Distributed Flow Under Variable Demand\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Traffic (Entity Factor) → Transportation & Logistics's primary variable\n   b) Apply the Transportation & Logistics solution's core mechanism (Anticipatory insertion heuristics pre-compute contingency ro...) to your constraint space\n   c) Adjust parameters: Transportation & Logistics operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Transportation & Logistics's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-04 17:42:20"
+    },
+    {
+      "id": "analogy-hospital-emergency-rooms-are-o-40768",
+      "analogyName": "Transportation & Logistics → Healthcare: Cold chain logistics optimization for ph",
+      "sourceDomain": "Transportation & Logistics",
+      "targetDomain": "Healthcare",
+      "sourceSystem": "Cold chain logistics optimization for pharmaceutical distribution",
+      "targetSystem": "Hospital emergency rooms are overcrowded with long wait times during peak hours",
+      "overallStrength": 0.3198,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Cold chain logistics optimization for pharmaceutical distribution",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1016/j.vaccine.2017.10.027"
+      },
+      "mappings": [
+        {
+          "sourceNode": "distribution",
+          "targetNode": "Overcrowded (Flow Factor)",
+          "strength": 0.1775,
+          "reason": "Weak but intriguing parallel: \"distribution\" (Transportation & Logistics) and \"Overcrowded (Flow Factor)\" (your domain) both exist at the boundary of flow dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "chain",
+          "targetNode": "Peak (Dependency Factor)",
+          "strength": 0.1775,
+          "reason": "Weak but intriguing parallel: \"chain\" (Transportation & Logistics) and \"Peak (Dependency Factor)\" (your domain) both exist at the boundary of dependency dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "maintain",
+          "targetNode": "Rooms (Goal Factor)",
+          "strength": 0.17,
+          "reason": "Weak but intriguing parallel: \"maintain\" (Transportation & Logistics) and \"Rooms (Goal Factor)\" (your domain) both exist at the boundary of goal dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "cold-chain",
+          "targetNode": "Hours (Risk Factor)",
+          "strength": 0.0567,
+          "reason": "Weak but intriguing parallel: \"cold-chain\" (Transportation & Logistics) and \"Hours (Risk Factor)\" (your domain) both exist at the boundary of risk dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "distribution",
+          "reason": "\"distribution\" in Transportation & Logistics and \"Overcrowded (Flow Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on flow constraints that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "chain",
+          "reason": "\"chain\" in Transportation & Logistics and \"Peak (Dependency Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "maintain",
+          "reason": "\"maintain\" in Transportation & Logistics and \"Rooms (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "cold-chain",
+          "reason": "\"cold-chain\" in Transportation & Logistics and \"Hours (Risk Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Transportation & Logistics:\n\n1. WHAT Transportation & Logistics does: PCM-insulated containers with IoT temperature monitoring maintain 2-8°C for 120 hours eliminating cold chain failures.\n\n2. WHY it applies to you: Your problem involves Hospital (Entity Factor), Emergency (Constraint Factor), Rooms (Goal Factor), which structurally play the same roles as the components in the Transportation & Logistics system. Both follow the \"Impedance Matching & Peak Load Buffering\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Hospital (Entity Factor) → Transportation & Logistics's primary variable\n   b) Apply the Transportation & Logistics solution's core mechanism (PCM-insulated containers with IoT temperature monitoring mai...) to your constraint space\n   c) Adjust parameters: Transportation & Logistics operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Transportation & Logistics's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-04 17:42:20"
+    },
     {
       "id": "analogy-fake-news-spreads-faster-than-01494",
       "analogyName": "Biomimicry → General: RipplePLM: Structural and Property Decou",
