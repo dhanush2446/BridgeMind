@@ -1,22 +1,31 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useMemo } from "react";
 import type { AnalogySuggestion } from "@/lib/analogy-engine";
+import { ensureIntuitiveContent } from "@/lib/intuitive-utils";
 import styles from "./solution-visualizer.module.css";
 
 interface SolutionVisualizerProps {
   analogy: AnalogySuggestion;
 }
 
-export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps) {
+export default function SolutionVisualizer({ analogy: rawAnalogy }: SolutionVisualizerProps) {
+  // Ensure the analogy object has fully populated, dynamic intuitive explanation and diagram fields
+  const analogy = useMemo(() => ensureIntuitiveContent(rawAnalogy), [rawAnalogy]);
+
   const [viewMode, setViewMode] = useState<"technical" | "kidFriendly">("kidFriendly");
-  const [activeNodeId, setActiveNodeId] = useState<string | null>("node-2");
+  const [activeNodeId, setActiveNodeId] = useState<string | null>(analogy.visualDiagramData?.nodes[0]?.id || "node-1");
   const [isExporting, setIsExporting] = useState(false);
   const diagramRef = useRef<HTMLDivElement>(null);
 
   const domain = analogy.sourceDomain || "Cross-Domain Science";
-  const kid = analogy.kidFriendlyExplanation;
-  const diagram = analogy.visualDiagramData;
+  const kid = analogy.kidFriendlyExplanation!;
+  const diagram = analogy.visualDiagramData!;
+
+  // Dynamic active node resolution — no hardcoded node-1 / node-2 checks
+  const activeNode = useMemo(() => {
+    return diagram.nodes.find((n) => n.id === activeNodeId) || diagram.nodes[0];
+  }, [diagram.nodes, activeNodeId]);
 
   const handleExportCard = () => {
     setIsExporting(true);
@@ -36,7 +45,7 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
           </span>
           <h3 className={styles.mainTitle}>
             {viewMode === "kidFriendly"
-              ? kid?.headline || `Explaining ${domain} Solution Intuitively`
+              ? kid.headline || `Explaining ${domain} Solution Intuitively`
               : `Operational Solution Transfer from ${domain}`}
           </h3>
         </div>
@@ -58,7 +67,7 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
       </div>
 
       {/* ── Content View ── */}
-      {viewMode === "kidFriendly" && kid ? (
+      {viewMode === "kidFriendly" ? (
         <div className={styles.kidContainer}>
           {/* Playground Story Box */}
           <div className={styles.storyCard}>
@@ -69,7 +78,7 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
             <p className={styles.storyText}>{kid.storyMetaphor}</p>
           </div>
 
-          {/* 3 Intuitive Steps */}
+          {/* Intuitive Steps */}
           <div className={styles.stepsGrid}>
             {kid.steps.map((step) => (
               <div key={step.stepNumber} className={styles.stepCard}>
@@ -117,10 +126,10 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
           <div>
             <h4 className={styles.diagramTitle}>
               <span className={styles.diagramDot} />
-              Interactive Solution Flow Diagram
+              {diagram.title || "Interactive Solution Flow Diagram"}
             </h4>
             <p className={styles.diagramSubtitle}>
-              {diagram?.flowDescription || "Visual representation of signal flow, buffer management, and controller feedback."}
+              {diagram.flowDescription}
             </p>
           </div>
           <button className={styles.exportCardBtn} onClick={handleExportCard} disabled={isExporting}>
@@ -169,7 +178,7 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
 
           {/* Render Interactive Diagram Nodes */}
           <div className={styles.nodesGrid}>
-            {(diagram?.nodes || []).map((node, index) => {
+            {diagram.nodes.map((node, index) => {
               const isActive = activeNodeId === node.id;
               return (
                 <div
@@ -190,22 +199,14 @@ export default function SolutionVisualizer({ analogy }: SolutionVisualizerProps)
           </div>
         </div>
 
-        {/* Selected Node Details Box */}
-        {activeNodeId && (
+        {/* Dynamic Selected Node Details Box — NO HARDCODED STRINGS */}
+        {activeNode && (
           <div className={styles.nodeDetailBox}>
             <span className={styles.nodeDetailBadge}>Interactive Node Highlight</span>
-            {activeNodeId === "node-1" && (
-              <p>🌊 <strong>Input Demand Stream:</strong> Variable incoming signal or load spikes entering the system under dynamic conditions.</p>
-            )}
-            {activeNodeId === "node-2" && (
-              <p>🛡️ <strong>Reserve Buffer Zone:</strong> Capital / resource buffer mandate directly adapted from {domain} controls to absorb sudden volume peaks.</p>
-            )}
-            {activeNodeId === "node-3" && (
-              <p>🎛️ <strong>Feedback Damping Controller:</strong> Rate-limiting governor that adjusts flow parameters dynamically to prevent system overload.</p>
-            )}
-            {activeNodeId === "node-4" && (
-              <p>🎯 <strong>Robust Experience Goal:</strong> Smooth, uninterrupted performance and end-user goal fulfillment even under maximum stress load.</p>
-            )}
+            <p>
+              <span className={styles.nodeIcon} style={{ marginRight: "0.5rem" }}>{activeNode.icon}</span>
+              <strong>{activeNode.label}:</strong> {activeNode.description || activeNode.sublabel}
+            </p>
           </div>
         )}
       </div>

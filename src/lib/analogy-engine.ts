@@ -21,7 +21,8 @@ import {
   type DatasetAnalogy
 } from "./dataset-loader";
 import { getCleanPaperUrl } from "./paper-utils";
-export { getCleanPaperUrl };
+import { generateDynamicELI5, ensureIntuitiveContent } from "./intuitive-utils";
+export { getCleanPaperUrl, ensureIntuitiveContent };
 
 /* ── Types ── */
 
@@ -60,6 +61,7 @@ export interface VisualDiagramNode {
   type: "source" | "buffer" | "controller" | "target";
   icon: string;
   color: string;
+  description?: string;
 }
 
 export interface VisualDiagramData {
@@ -1298,83 +1300,7 @@ function generateMappings(inputStructure: ProblemStructure, paper: any, inputWor
   return mappings.slice(0, 4);
 }
 
-/* ── Generate dynamic, domain-aware Intuitive Explanations ── */
-function generateDynamicELI5(domain: string, title: string, targetSolution: string, keyElements: string, problemSummary: string): KidFriendlyExplanation {
-  const domLower = domain.toLowerCase();
 
-  let headline = `🎈 How a clever trick from ${domain} solves your challenge!`;
-  let storyMetaphor = "";
-  let step1Analogy = "";
-  let step2Analogy = "";
-  let step3Analogy = "";
-  let takeaway = "";
-
-  if (domLower.includes("biology") || domLower.includes("ecology") || domLower.includes("biomimicry")) {
-    headline = `🌿 Nature's Secret: How ${domain} balances complex systems!`;
-    storyMetaphor = `Imagine an ant colony or forest ecosystem. Millions of individual creatures work together without a single boss shouting orders! When one path gets crowded, ants lay down invisible scent trails (pheromones) so others automatically take a faster route. ${domain} research ("${title}") uses this exact self-organizing trick, which we can apply directly to your ${keyElements}!`;
-    step1Analogy = `Just like worker ants sharing a map of short cuts, we map out how ${keyElements} interact so no single pathway gets overwhelmed.`;
-    step2Analogy = `Like ants strengthening the fastest trail with extra scent, we add automatic feedback loops that guide traffic to open capacity.`;
-    step3Analogy = `Testing this in a mini ant farm first before letting the whole colony use the new paths!`;
-    takeaway = `By copying nature's self-organizing feedback loops from ${domain}, your system manages heavy loads smoothly without needing a giant central controller!`;
-  } else if (domLower.includes("aviation") || domLower.includes("aerospace") || domLower.includes("mechanical") || domLower.includes("marine")) {
-    headline = `✈️ High-Speed Precision: Borrowing aerodynamic flow control from ${domain}!`;
-    storyMetaphor = `Imagine a sleek jet plane flying through violent wind gusts or a kingfisher diving underwater without splashing. Engineers in ${domain} shaped the nose and wings ("${title}") so air and water glide smoothly around them without creating noisy turbulence. We can reshape how ${keyElements} flow through your system in the exact same way!`;
-    step1Analogy = `Like smoothing the sharp edges of a paper airplane, we streamline the entry points for ${keyElements} to stop bottlenecks before they start.`;
-    step2Analogy = `Like automatic wing flaps adjusting to sudden wind gusts, we add dynamic rate-limiters that keep the flow steady under peak demand.`;
-    step3Analogy = `Testing our new aerodynamic shape in a mini wind tunnel simulator before taking off on a real flight!`;
-    takeaway = `By adapting the fluid stream controls from ${domain}, your system glides through heavy pressure spikes without turbulence or drag!`;
-  } else if (domLower.includes("health") || domLower.includes("medicine") || domLower.includes("neuroscience") || domLower.includes("epidemiology")) {
-    headline = `🩺 Immunity & Triage: How ${domain} protects under extreme pressure!`;
-    storyMetaphor = `Imagine a hospital emergency room during flu season or your body's immune system fighting a virus. Doctors don't treat patients on a first-come-first-served basis — they use 'triage' so critical cases get urgent care immediately while mild cases rest in a holding area. ${domain} research ("${title}") perfected this prioritization rule, which is perfect for your ${keyElements}!`;
-    step1Analogy = `Like a triage nurse tagging patients by urgency, we categorize incoming ${keyElements} so critical operations skip the line.`;
-    step2Analogy = `Like white blood cells creating targeted antibodies, we deploy dynamic safety buffers to neutralize unexpected surge spikes.`;
-    step3Analogy = `Running a mock emergency drill with a small group first to make sure every patient gets the right care at the right speed!`;
-    takeaway = `By using medical triage and immune defense patterns from ${domain}, your system handles emergency surges safely and prioritizes what matters most!`;
-  } else if (domLower.includes("energy") || domLower.includes("thermal") || domLower.includes("chemical")) {
-    headline = `⚡ Thermal Equilibrium: How ${domain} dissipates heat & energy surges!`;
-    storyMetaphor = `Imagine a giant underground termite mound in the desert. Even when the outside desert heat hits 110°F, the inside stays at a perfect cool 86°F because air circulates through clever chimneys! ${domain} research ("${title}") uses thermal balance mechanisms to spread out heat and energy so nothing melts. We can use this to keep your ${keyElements} cool and stable!`;
-    step1Analogy = `Like building underground cooling vents, we create secondary overflow channels for ${keyElements} so energy doesn't build up in one spot.`;
-    step2Analogy = `Like a thermostat turning on a fan when things get warm, we activate dynamic rate dampeners as soon as load passes 80%.`;
-    step3Analogy = `Testing temperature gauges on a mini test circuit before turning on the high-voltage power!`;
-    takeaway = `By borrowing thermal equilibrium & energy dissipation rules from ${domain}, your system stays cool, stable, and resilient even under maximum load!`;
-  } else {
-    headline = `🚀 Smart System Balance: Transferring a proven mechanism from ${domain}!`;
-    storyMetaphor = `Imagine a busy city intersection where traffic lights dynamically adjust their timers based on how many cars are waiting in each lane. Instead of fixed red and green lights, the system 'listens' to the road! ${domain} research ("${title}") uses this adaptive flow control to eliminate traffic jams. We can apply this exact logic to your ${keyElements}!`;
-    step1Analogy = `Like mapping out traffic lanes, we define clear routes for ${keyElements} so fast lanes stay clear of slow turn lanes.`;
-    step2Analogy = `Like smart traffic sensors changing lights automatically, we add rate controllers that prevent queue buildup at bottleneck intersections.`;
-    step3Analogy = `Testing our smart light timer on a virtual city map first before turning on the real street lights!`;
-    takeaway = `By pairing dynamic flow buffers with adaptive rate controllers from ${domain}, your system stays fast, safe, and bottleneck-free!`;
-  }
-
-  return {
-    headline,
-    storyMetaphor,
-    steps: [
-      {
-        stepNumber: 1,
-        title: "1. The System Blueprint (Interface Adaptation)",
-        simpleAction: `Map the core mechanism from ${domain} ("${targetSolution.substring(0, 60)}...") onto your system elements (${keyElements}).`,
-        playgroundAnalogy: step1Analogy,
-        icon: "🗺️"
-      },
-      {
-        stepNumber: 2,
-        title: "2. The Smart Controller (Signal & Buffer Tuning)",
-        simpleAction: `Add dynamic rate-limiters inspired by ${domain} controls that automatically dampen flow when capacity saturates.`,
-        playgroundAnalogy: step2Analogy,
-        icon: "🚦"
-      },
-      {
-        stepNumber: 3,
-        title: "3. Safe Pilot Test (Execution & Validation)",
-        simpleAction: `Test this holding & routing zone on a mini test loop first under maximum speed before opening to all traffic.`,
-        playgroundAnalogy: step3Analogy,
-        icon: "🧪"
-      }
-    ],
-    keyTakeaway: takeaway
-  };
-}
 
 /* ── Generate detailed, specific mechanism transfer explanations ── */
 function buildDetailedAnalogyFields(paper: any, similarity: number, inputStructure: ProblemStructure) {
@@ -1421,7 +1347,8 @@ function buildDetailedAnalogyFields(paper: any, similarity: number, inputStructu
         sublabel: keyElements,
         type: "source",
         icon: "🔍",
-        color: "var(--accent-cyan)"
+        color: "var(--accent-cyan)",
+        description: `Operational challenge involving ${keyElements} under variable demand conditions.`
       },
       {
         id: "node-2",
@@ -1429,7 +1356,8 @@ function buildDetailedAnalogyFields(paper: any, similarity: number, inputStructu
         sublabel: targetSolution.substring(0, 40) + "...",
         type: "buffer",
         icon: "⚡",
-        color: "var(--accent-purple)"
+        color: "var(--accent-purple)",
+        description: `Operational control mechanism directly adapted from ${domain} research ("${title.substring(0, 60)}...").`
       },
       {
         id: "node-3",
@@ -1437,7 +1365,8 @@ function buildDetailedAnalogyFields(paper: any, similarity: number, inputStructu
         sublabel: `Pattern: ${paperPattern.substring(0, 30)}`,
         type: "controller",
         icon: "🌉",
-        color: "var(--accent-amber)"
+        color: "var(--accent-amber)",
+        description: `Structural mapping transferring ${domain}'s control logic onto your problem via the "${paperPattern}" archetype.`
       },
       {
         id: "node-4",
@@ -1445,7 +1374,8 @@ function buildDetailedAnalogyFields(paper: any, similarity: number, inputStructu
         sublabel: "First-of-its-kind solution",
         type: "target",
         icon: "💡",
-        color: "var(--accent-green)"
+        color: "var(--accent-green)",
+        description: `First-of-its-kind cross-domain solution optimizing performance and preventing system bottlenecks.`
       }
     ]
   };
@@ -1531,3 +1461,5 @@ export function getAllAnalogies(): CrossDomainAnalogy[] {
   }
   return SEED_ANALOGIES;
 }
+
+

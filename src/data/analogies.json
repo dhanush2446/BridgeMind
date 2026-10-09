@@ -1,7 +1,808 @@
 {
-  "updatedAt": "2026-10-04T17:42:21.021Z",
-  "analogiesCount": 55,
+  "updatedAt": "2026-10-09T12:23:50.687Z",
+  "analogiesCount": 68,
   "analogies": [
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-30675",
+      "analogyName": "Climate & Environmental Science → Energy Systems: Internet of Agro Drones for Precision Ag",
+      "sourceDomain": "Climate & Environmental Science",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Internet of Agro Drones for Precision Agriculture",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.5001,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Internet of Agro Drones for Precision Agriculture",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1201/9781003252085-9"
+      },
+      "mappings": [
+        {
+          "sourceNode": "efficiency",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0.4346,
+          "reason": "\"efficiency\" in Climate & Environmental Science and \"Data (Goal Factor)\" in your problem play analogous structural roles: both act as optimization targets. Context: \"Hence, precision agricultural practices have to be imposed for improving the efficiency of agriculture...\""
+        },
+        {
+          "sourceNode": "data",
+          "targetNode": "Energy",
+          "strength": 0.3238,
+          "reason": "\"data\" in Climate & Environmental Science and \"Energy\" in your problem play analogous structural roles: both act as system actors. Context: \"It is one form of IoT medium that can monitor the agricultural products and processes that can collect useful data from ...\""
+        },
+        {
+          "sourceNode": "supply",
+          "targetNode": "HVAC (Dependency Factor)",
+          "strength": 0.26,
+          "reason": "\"supply\" in Climate & Environmental Science and \"HVAC (Dependency Factor)\" in your problem play analogous structural roles: both act as causal chains. Context: \"With the supply of commodities at low prices at higher rates, the demand for production and consumption of food tends to...\""
+        },
+        {
+          "sourceNode": "precision",
+          "targetNode": "Current Flow",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"precision\" (Climate & Environmental Science) and \"Current Flow\" (your domain) both exist at the boundary of flow dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "data",
+          "reason": "\"data\" in Climate & Environmental Science and \"Energy\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "supply",
+          "reason": "\"supply\" in Climate & Environmental Science and \"HVAC (Dependency Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "precision",
+          "reason": "\"precision\" in Climate & Environmental Science and \"Current Flow\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on flow constraints that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Climate & Environmental Science:\n\n1. WHAT Climate & Environmental Science does: Hence, precision agricultural practices have to be imposed for improving the efficiency of agriculture. All these processes have to be monitored or managed through automatized equipment. Drones are th\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Climate & Environmental Science system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Climate & Environmental Science's primary variable\n   b) Apply the Climate & Environmental Science solution's core mechanism (Hence, precision agricultural practices have to be imposed f...) to your constraint space\n   c) Adjust parameters: Climate & Environmental Science operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Climate & Environmental Science's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-09 12:23:50"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-83209",
+      "analogyName": "Climate & Environmental Science → Energy Systems: Internet of Agro Drones for Precision Ag",
+      "sourceDomain": "Climate & Environmental Science",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Internet of Agro Drones for Precision Agriculture",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.5001,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Internet of Agro Drones for Precision Agriculture",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1201/9781003252085-9"
+      },
+      "mappings": [
+        {
+          "sourceNode": "efficiency",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0.4346,
+          "reason": "\"efficiency\" in Climate & Environmental Science and \"Data (Goal Factor)\" in your problem play analogous structural roles: both act as optimization targets. Context: \"Hence, precision agricultural practices have to be imposed for improving the efficiency of agriculture...\""
+        },
+        {
+          "sourceNode": "data",
+          "targetNode": "Energy",
+          "strength": 0.3238,
+          "reason": "\"data\" in Climate & Environmental Science and \"Energy\" in your problem play analogous structural roles: both act as system actors. Context: \"It is one form of IoT medium that can monitor the agricultural products and processes that can collect useful data from ...\""
+        },
+        {
+          "sourceNode": "supply",
+          "targetNode": "HVAC (Dependency Factor)",
+          "strength": 0.26,
+          "reason": "\"supply\" in Climate & Environmental Science and \"HVAC (Dependency Factor)\" in your problem play analogous structural roles: both act as causal chains. Context: \"With the supply of commodities at low prices at higher rates, the demand for production and consumption of food tends to...\""
+        },
+        {
+          "sourceNode": "precision",
+          "targetNode": "Current Flow",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"precision\" (Climate & Environmental Science) and \"Current Flow\" (your domain) both exist at the boundary of flow dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "data",
+          "reason": "\"data\" in Climate & Environmental Science and \"Energy\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "supply",
+          "reason": "\"supply\" in Climate & Environmental Science and \"HVAC (Dependency Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "precision",
+          "reason": "\"precision\" in Climate & Environmental Science and \"Current Flow\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on flow constraints that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Climate & Environmental Science:\n\n1. WHAT Climate & Environmental Science does: Hence, precision agricultural practices have to be imposed for improving the efficiency of agriculture. All these processes have to be monitored or managed through automatized equipment. Drones are th\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Climate & Environmental Science system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Climate & Environmental Science's primary variable\n   b) Apply the Climate & Environmental Science solution's core mechanism (Hence, precision agricultural practices have to be imposed f...) to your constraint space\n   c) Adjust parameters: Climate & Environmental Science operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Climate & Environmental Science's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-09 11:19:43"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-56806",
+      "analogyName": "Transportation & Logistics → Energy Systems: Shared autonomous vehicle fleet sizing a",
+      "sourceDomain": "Transportation & Logistics",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Shared autonomous vehicle fleet sizing and rebalancing for urban mobility-as-a-service",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.5877,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Shared autonomous vehicle fleet sizing and rebalancing for urban mobility-as-a-service",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1016/j.trb.2019.03.005"
+      },
+      "mappings": [
+        {
+          "sourceNode": "vehicle",
+          "targetNode": "Energy",
+          "strength": 0.555,
+          "reason": "In Transportation & Logistics, \"vehicle\" serves as the entity mechanism — structurally identical to \"Energy\" in your system. Specifically: \"Shared autonomous vehicle fleet sizing and rebalancing for urban mobility-as-a-service Private vehicle ownership creates...\""
+        },
+        {
+          "sourceNode": "shared-autonomous-vehicles",
+          "targetNode": "Current Flow",
+          "strength": 0.3,
+          "reason": "\"shared-autonomous-vehicles\" in Transportation & Logistics and \"Current Flow\" in your problem play analogous structural roles: both act as transport channels. "
+        },
+        {
+          "sourceNode": "shared-autonomous-vehicles",
+          "targetNode": "Efficiently (Bottleneck Factor)",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"shared-autonomous-vehicles\" (Transportation & Logistics) and \"Efficiently (Bottleneck Factor)\" (your domain) both exist at the boundary of bottleneck dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "demand",
+          "targetNode": "HVAC (Dependency Factor)",
+          "strength": 0.155,
+          "reason": "Weak but intriguing parallel: \"demand\" (Transportation & Logistics) and \"HVAC (Dependency Factor)\" (your domain) both exist at the boundary of dependency dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "shared-autonomous-vehicles",
+          "reason": "\"shared-autonomous-vehicles\" in Transportation & Logistics and \"Current Flow\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "shared-autonomous-vehicles",
+          "reason": "\"shared-autonomous-vehicles\" in Transportation & Logistics and \"Efficiently (Bottleneck Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "demand",
+          "reason": "\"demand\" in Transportation & Logistics and \"HVAC (Dependency Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Transportation & Logistics:\n\n1. WHAT Transportation & Logistics does: Agent-based simulation optimizes shared autonomous fleet size and real-time rebalancing, serving equivalent demand with 85% fewer vehicles while maintaining <5 min wait times.\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Transportation & Logistics system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Transportation & Logistics's primary variable\n   b) Apply the Transportation & Logistics solution's core mechanism (Agent-based simulation optimizes shared autonomous fleet siz...) to your constraint space\n   c) Adjust parameters: Transportation & Logistics operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Transportation & Logistics's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-09 11:10:56"
+    },
+    {
+      "id": "analogy-how-do-we-redesign-democratic-47268",
+      "analogyName": "Urban Planning → General: Deforestation Could Push Amazonia Close ",
+      "sourceDomain": "Urban Planning",
+      "targetDomain": "General",
+      "sourceSystem": "Deforestation Could Push Amazonia Close to a Tipping Point Under Future Climate Change",
+      "targetSystem": "How do we redesign democratic institutions to reduce polarization? Current two-p",
+      "overallStrength": 0.5899,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Deforestation Could Push Amazonia Close to a Tipping Point Under Future Climate Change",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1029/2024gl108304"
+      },
+      "mappings": [
+        {
+          "sourceNode": "feedback",
+          "targetNode": "Current (Feedback Factor)",
+          "strength": 0.7019,
+          "reason": "In Urban Planning, \"feedback\" serves as the feedback mechanism — structurally identical to \"Current (Feedback Factor)\" in your system. Specifically: \"Model behavior is strongly influenced by the feedback between the land surface and the atmosphere, with natural vegetati...\""
+        },
+        {
+          "sourceNode": "current",
+          "targetNode": "Current Flow",
+          "strength": 0.6798,
+          "reason": "In Urban Planning, \"current\" serves as the flow mechanism — structurally identical to \"Current Flow\" in your system. Specifically: \"We find that from current conditions, a reduction to 35% forest cover, or a ∼10% decrease in AMF (∼6% less precipitation...\""
+        },
+        {
+          "sourceNode": "trigger",
+          "targetNode": "Party (Dependency Factor)",
+          "strength": 0.17,
+          "reason": "Weak but intriguing parallel: \"trigger\" (Urban Planning) and \"Party (Dependency Factor)\" (your domain) both exist at the boundary of dependency dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "climate",
+          "targetNode": "Redesign (Entity Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"climate\" (Urban Planning) and \"Redesign (Entity Factor)\" (your domain) both exist at the boundary of entity dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "trigger",
+          "reason": "\"trigger\" in Urban Planning and \"Party (Dependency Factor)\" in your problem serve structurally different functions despite surface similarity. The Urban Planning mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "climate",
+          "reason": "\"climate\" in Urban Planning and \"Redesign (Entity Factor)\" in your problem serve structurally different functions despite surface similarity. The Urban Planning mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Urban Planning:\n\n1. WHAT Urban Planning does: Small changes in either forest cover or moisture advection are capable of causing the system to flip abruptly between stable forest, savanna, or shrubland states. Model behavior is strongly influenced\n\n2. WHY it applies to you: Your problem involves Redesign (Entity Factor), Democratic (Constraint Factor), Reduce Objective, which structurally play the same roles as the components in the Urban Planning system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Redesign (Entity Factor) → Urban Planning's primary variable\n   b) Apply the Urban Planning solution's core mechanism (Small changes in either forest cover or moisture advection a...) to your constraint space\n   c) Adjust parameters: Urban Planning operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Urban Planning's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 04:25:47"
+    },
+    {
+      "id": "analogy-how-do-we-redesign-democratic-47153",
+      "analogyName": "Aerospace Engineering → General: Late Quaternary vegetation-climate feedb",
+      "sourceDomain": "Aerospace Engineering",
+      "targetDomain": "General",
+      "sourceSystem": "Late Quaternary vegetation-climate feedbacks",
+      "targetSystem": "How do we redesign democratic institutions to reduce polarization? Current two-p",
+      "overallStrength": 0.593,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Late Quaternary vegetation-climate feedbacks",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.5194/cp-5-203-2009"
+      },
+      "mappings": [
+        {
+          "sourceNode": "current",
+          "targetNode": "Current Flow",
+          "strength": 0.8031,
+          "reason": "In Aerospace Engineering, \"current\" serves as the flow mechanism — structurally identical to \"Current Flow\" in your system. Specifically: \"When weighting current understanding based on interpretation of palaeobotanic and palaeoclimatic evidence by numerical c...\""
+        },
+        {
+          "sourceNode": "feedback",
+          "targetNode": "Current (Feedback Factor)",
+          "strength": 0.7029,
+          "reason": "In Aerospace Engineering, \"feedback\" serves as the feedback mechanism — structurally identical to \"Current (Feedback Factor)\" in your system. Specifically: \"Late Quaternary vegetation-climate feedbacks Feedbacks between vegetation and other components of the climate system are...\""
+        },
+        {
+          "sourceNode": "climate",
+          "targetNode": "Redesign (Entity Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"climate\" (Aerospace Engineering) and \"Redesign (Entity Factor)\" (your domain) both exist at the boundary of entity dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "climate",
+          "targetNode": "Democratic (Constraint Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"climate\" (Aerospace Engineering) and \"Democratic (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "climate",
+          "reason": "\"climate\" in Aerospace Engineering and \"Redesign (Entity Factor)\" in your problem serve structurally different functions despite surface similarity. The Aerospace Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "climate",
+          "reason": "\"climate\" in Aerospace Engineering and \"Democratic (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Aerospace Engineering mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Aerospace Engineering:\n\n1. WHAT Aerospace Engineering does: (b) Variations in the extent of the largest desert on Earth, the Sahara, appear to be amplified by biogeophysical feedback. (c) Biogeochemical feedbacks in the climate system in relation to vegetation\n\n2. WHY it applies to you: Your problem involves Redesign (Entity Factor), Democratic (Constraint Factor), Reduce Objective, which structurally play the same roles as the components in the Aerospace Engineering system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Redesign (Entity Factor) → Aerospace Engineering's primary variable\n   b) Apply the Aerospace Engineering solution's core mechanism ((b) Variations in the extent of the largest desert on Earth,...) to your constraint space\n   c) Adjust parameters: Aerospace Engineering operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Aerospace Engineering's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 04:25:47"
+    },
+    {
+      "id": "analogy-a-major-city-experiences-sever-12268",
+      "analogyName": "Space & Planetary Science → Urban Planning: Titan lake bathymetry estimation using C",
+      "sourceDomain": "Space & Planetary Science",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Titan lake bathymetry estimation using Cassini RADAR altimetry and microwave absorption modeling",
+      "targetSystem": "A major city experiences severe traffic congestion during rush hours. Current si",
+      "overallStrength": 0.4049,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Titan lake bathymetry estimation using Cassini RADAR altimetry and microwave absorption modeling",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1029/2020JE006558"
+      },
+      "mappings": [
+        {
+          "sourceNode": "cycle",
+          "targetNode": "Congestion (Feedback Factor)",
+          "strength": 0.5033,
+          "reason": "In Space & Planetary Science, \"cycle\" serves as the feedback mechanism — structurally identical to \"Congestion (Feedback Factor)\" in your system. Specifically: \"Titan lake bathymetry estimation using Cassini RADAR altimetry and microwave absorption modeling Titan hydrocarbon lake ...\""
+        },
+        {
+          "sourceNode": "titan",
+          "targetNode": "City (Constraint Factor)",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"titan\" (Space & Planetary Science) and \"City (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "titan",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"titan\" (Space & Planetary Science) and \"Congestion Chokepoint\" (your domain) both exist at the boundary of bottleneck dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "titan",
+          "targetNode": "Signal",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"titan\" (Space & Planetary Science) and \"Signal\" (your domain) both exist at the boundary of entity dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "titan",
+          "reason": "\"titan\" in Space & Planetary Science and \"City (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Space & Planetary Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "titan",
+          "reason": "\"titan\" in Space & Planetary Science and \"Congestion Chokepoint\" in your problem serve structurally different functions despite surface similarity. The Space & Planetary Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "titan",
+          "reason": "\"titan\" in Space & Planetary Science and \"Signal\" in your problem serve structurally different functions despite surface similarity. The Space & Planetary Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Space & Planetary Science:\n\n1. WHAT Space & Planetary Science does: Cassini radar altimeter sea-floor echoes combined with liquid dielectric absorption models estimate Kraken Mare depths up to 300m, containing 300,000 km³ of hydrocarbons.\n\n2. WHY it applies to you: Your problem involves Signal, City (Constraint Factor), Experiences (Goal Factor), which structurally play the same roles as the components in the Space & Planetary Science system. Both follow the \"Signal Noise Separation & Information Extraction\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Signal → Space & Planetary Science's primary variable\n   b) Apply the Space & Planetary Science solution's core mechanism (Cassini radar altimeter sea-floor echoes combined with liqui...) to your constraint space\n   c) Adjust parameters: Space & Planetary Science operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Space & Planetary Science's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 04:25:12"
+    },
+    {
+      "id": "analogy-a-major-city-experiences-sever-12172",
+      "analogyName": "Transportation & Logistics → Urban Planning: Automated container inspection using dee",
+      "sourceDomain": "Transportation & Logistics",
+      "targetDomain": "Urban Planning",
+      "sourceSystem": "Automated container inspection using deep learning on X-ray cargo images for port security",
+      "targetSystem": "A major city experiences severe traffic congestion during rush hours. Current si",
+      "overallStrength": 0.4506,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Automated container inspection using deep learning on X-ray cargo images for port security",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1109/TITS.2021.3057890"
+      },
+      "mappings": [
+        {
+          "sourceNode": "container-inspection",
+          "targetNode": "Congestion Chokepoint",
+          "strength": 0.3,
+          "reason": "\"container-inspection\" in Transportation & Logistics and \"Congestion Chokepoint\" in your problem play analogous structural roles: both act as throughput limiters. "
+        },
+        {
+          "sourceNode": "container-inspection",
+          "targetNode": "Congestion (Feedback Factor)",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"container-inspection\" (Transportation & Logistics) and \"Congestion (Feedback Factor)\" (your domain) both exist at the boundary of feedback dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "throughput",
+          "targetNode": "Experiences (Goal Factor)",
+          "strength": 0.185,
+          "reason": "Weak but intriguing parallel: \"throughput\" (Transportation & Logistics) and \"Experiences (Goal Factor)\" (your domain) both exist at the boundary of goal dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "container-inspection",
+          "targetNode": "Signal",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"container-inspection\" (Transportation & Logistics) and \"Signal\" (your domain) both exist at the boundary of entity dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "container-inspection",
+          "reason": "\"container-inspection\" in Transportation & Logistics and \"Congestion Chokepoint\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "container-inspection",
+          "reason": "\"container-inspection\" in Transportation & Logistics and \"Congestion (Feedback Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on feedback dynamics that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "throughput",
+          "reason": "\"throughput\" in Transportation & Logistics and \"Experiences (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "container-inspection",
+          "reason": "\"container-inspection\" in Transportation & Logistics and \"Signal\" in your problem serve structurally different functions despite surface similarity. The Transportation & Logistics mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Transportation & Logistics:\n\n1. WHAT Transportation & Logistics does: YOLOv4 object detection model trained on 200K annotated cargo X-ray images identifies concealed threats in 0.3 seconds with 96.2% accuracy.\n\n2. WHY it applies to you: Your problem involves Signal, City (Constraint Factor), Experiences (Goal Factor), which structurally play the same roles as the components in the Transportation & Logistics system. Both follow the \"Signal Noise Separation & Information Extraction\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Signal → Transportation & Logistics's primary variable\n   b) Apply the Transportation & Logistics solution's core mechanism (YOLOv4 object detection model trained on 200K annotated carg...) to your constraint space\n   c) Adjust parameters: Transportation & Logistics operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Transportation & Logistics's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 04:25:12"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-11178",
+      "analogyName": "Climate & Environmental Science → Energy Systems: Urban heat island mitigation through coo",
+      "sourceDomain": "Climate & Environmental Science",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Urban heat island mitigation through cool roof and green infrastructure co-deployment optimization",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.5959,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Urban heat island mitigation through cool roof and green infrastructure co-deployment optimization",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1016/j.buildenv.2020.106946"
+      },
+      "mappings": [
+        {
+          "sourceNode": "energy",
+          "targetNode": "Energy",
+          "strength": 0.4155,
+          "reason": "\"energy\" in Climate & Environmental Science and \"Energy\" in your problem play analogous structural roles: both act as system actors. Context: \"Urban heat island mitigation through cool roof and green infrastructure co-deployment optimization Urban heat islands in...\""
+        },
+        {
+          "sourceNode": "urban-heat-island",
+          "targetNode": "Current Flow",
+          "strength": 0.305,
+          "reason": "\"urban-heat-island\" in Climate & Environmental Science and \"Current Flow\" in your problem play analogous structural roles: both act as transport channels. "
+        },
+        {
+          "sourceNode": "urban-heat-island",
+          "targetNode": "Efficiently (Bottleneck Factor)",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"urban-heat-island\" (Climate & Environmental Science) and \"Efficiently (Bottleneck Factor)\" (your domain) both exist at the boundary of bottleneck dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "demand",
+          "targetNode": "HVAC (Dependency Factor)",
+          "strength": 0.155,
+          "reason": "Weak but intriguing parallel: \"demand\" (Climate & Environmental Science) and \"HVAC (Dependency Factor)\" (your domain) both exist at the boundary of dependency dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "urban-heat-island",
+          "reason": "\"urban-heat-island\" in Climate & Environmental Science and \"Current Flow\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "urban-heat-island",
+          "reason": "\"urban-heat-island\" in Climate & Environmental Science and \"Efficiently (Bottleneck Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "demand",
+          "reason": "\"demand\" in Climate & Environmental Science and \"HVAC (Dependency Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Climate & Environmental Science:\n\n1. WHAT Climate & Environmental Science does: Coupled WRF urban canopy model simulates cool roof albedo enhancement and green infrastructure configurations, identifying optimal co-deployment achieving 2.5°C UHI reduction.\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Climate & Environmental Science system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Climate & Environmental Science's primary variable\n   b) Apply the Climate & Environmental Science solution's core mechanism (Coupled WRF urban canopy model simulates cool roof albedo en...) to your constraint space\n   c) Adjust parameters: Climate & Environmental Science operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Climate & Environmental Science's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 04:23:31"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-11048",
+      "analogyName": "Climate & Environmental Science → Energy Systems: Integrated assessment models for climate",
+      "sourceDomain": "Climate & Environmental Science",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Integrated assessment models for climate policy cost-benefit analysis",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.4506,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Integrated assessment models for climate policy cost-benefit analysis",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1073/pnas.1609244114"
+      },
+      "mappings": [
+        {
+          "sourceNode": "integrated-assessment",
+          "targetNode": "Energy",
+          "strength": 0.55,
+          "reason": "In Climate & Environmental Science, \"integrated-assessment\" serves as the entity mechanism — structurally identical to \"Energy\" in your system. Both govern the same abstract constraint under variable demand."
+        },
+        {
+          "sourceNode": "integrated-assessment",
+          "targetNode": "Efficiently (Bottleneck Factor)",
+          "strength": 0.3,
+          "reason": "\"integrated-assessment\" in Climate & Environmental Science and \"Efficiently (Bottleneck Factor)\" in your problem play analogous structural roles: both act as throughput limiters. "
+        },
+        {
+          "sourceNode": "target",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0.17,
+          "reason": "Weak but intriguing parallel: \"target\" (Climate & Environmental Science) and \"Data (Goal Factor)\" (your domain) both exist at the boundary of goal dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "integrated-assessment",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"integrated-assessment\" (Climate & Environmental Science) and \"Large (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "integrated-assessment",
+          "reason": "\"integrated-assessment\" in Climate & Environmental Science and \"Efficiently (Bottleneck Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "target",
+          "reason": "\"target\" in Climate & Environmental Science and \"Data (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "integrated-assessment",
+          "reason": "\"integrated-assessment\" in Climate & Environmental Science and \"Large (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Climate & Environmental Science:\n\n1. WHAT Climate & Environmental Science does: DICE model with fat-tailed damage function shows optimal carbon price of $45/tonne rising 3% annually for 2°C target.\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Climate & Environmental Science system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Climate & Environmental Science's primary variable\n   b) Apply the Climate & Environmental Science solution's core mechanism (DICE model with fat-tailed damage function shows optimal car...) to your constraint space\n   c) Adjust parameters: Climate & Environmental Science operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Climate & Environmental Science's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 04:23:31"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-47636",
+      "analogyName": "Climate & Environmental Science → Energy Systems: Internet of Agro Drones for Precision Ag",
+      "sourceDomain": "Climate & Environmental Science",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Internet of Agro Drones for Precision Agriculture",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.5001,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Internet of Agro Drones for Precision Agriculture",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1201/9781003252085-9"
+      },
+      "mappings": [
+        {
+          "sourceNode": "efficiency",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0.4346,
+          "reason": "\"efficiency\" in Climate & Environmental Science and \"Data (Goal Factor)\" in your problem play analogous structural roles: both act as optimization targets. Context: \"Hence, precision agricultural practices have to be imposed for improving the efficiency of agriculture...\""
+        },
+        {
+          "sourceNode": "data",
+          "targetNode": "Energy",
+          "strength": 0.3238,
+          "reason": "\"data\" in Climate & Environmental Science and \"Energy\" in your problem play analogous structural roles: both act as system actors. Context: \"It is one form of IoT medium that can monitor the agricultural products and processes that can collect useful data from ...\""
+        },
+        {
+          "sourceNode": "supply",
+          "targetNode": "HVAC (Dependency Factor)",
+          "strength": 0.26,
+          "reason": "\"supply\" in Climate & Environmental Science and \"HVAC (Dependency Factor)\" in your problem play analogous structural roles: both act as causal chains. Context: \"With the supply of commodities at low prices at higher rates, the demand for production and consumption of food tends to...\""
+        },
+        {
+          "sourceNode": "precision",
+          "targetNode": "Current Flow",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"precision\" (Climate & Environmental Science) and \"Current Flow\" (your domain) both exist at the boundary of flow dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "data",
+          "reason": "\"data\" in Climate & Environmental Science and \"Energy\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "supply",
+          "reason": "\"supply\" in Climate & Environmental Science and \"HVAC (Dependency Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "precision",
+          "reason": "\"precision\" in Climate & Environmental Science and \"Current Flow\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on flow constraints that don't exist in your system.",
+          "severity": "medium"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Climate & Environmental Science:\n\n1. WHAT Climate & Environmental Science does: Hence, precision agricultural practices have to be imposed for improving the efficiency of agriculture. All these processes have to be monitored or managed through automatized equipment. Drones are th\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Climate & Environmental Science system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Climate & Environmental Science's primary variable\n   b) Apply the Climate & Environmental Science solution's core mechanism (Hence, precision agricultural practices have to be imposed f...) to your constraint space\n   c) Adjust parameters: Climate & Environmental Science operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Climate & Environmental Science's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 04:09:07"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-47496",
+      "analogyName": "Agriculture & Food Systems → Energy Systems: Alternative protein production from prec",
+      "sourceDomain": "Agriculture & Food Systems",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Alternative protein production from precision fermentation",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.4506,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Alternative protein production from precision fermentation",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1038/s43016-020-0070-z"
+      },
+      "mappings": [
+        {
+          "sourceNode": "alternative-protein",
+          "targetNode": "Current Flow",
+          "strength": 0.55,
+          "reason": "In Agriculture & Food Systems, \"alternative-protein\" serves as the flow mechanism — structurally identical to \"Current Flow\" in your system. Both govern the same abstract constraint under variable demand."
+        },
+        {
+          "sourceNode": "alternative-protein",
+          "targetNode": "Energy",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"alternative-protein\" (Agriculture & Food Systems) and \"Energy\" (your domain) both exist at the boundary of entity dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "alternative-protein",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"alternative-protein\" (Agriculture & Food Systems) and \"Large (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "alternative-protein",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"alternative-protein\" (Agriculture & Food Systems) and \"Data (Goal Factor)\" (your domain) both exist at the boundary of goal dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "alternative-protein",
+          "reason": "\"alternative-protein\" in Agriculture & Food Systems and \"Energy\" in your problem serve structurally different functions despite surface similarity. The Agriculture & Food Systems mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "alternative-protein",
+          "reason": "\"alternative-protein\" in Agriculture & Food Systems and \"Large (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Agriculture & Food Systems mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        },
+        {
+          "breakPoint": "alternative-protein",
+          "reason": "\"alternative-protein\" in Agriculture & Food Systems and \"Data (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Agriculture & Food Systems mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Agriculture & Food Systems:\n\n1. WHAT Agriculture & Food Systems does: Precision fermentation using engineered yeast produces whey protein identical to dairy at 1/10th land use and 1/4 emissions.\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Agriculture & Food Systems system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Agriculture & Food Systems's primary variable\n   b) Apply the Agriculture & Food Systems solution's core mechanism (Precision fermentation using engineered yeast produces whey ...) to your constraint space\n   c) Adjust parameters: Agriculture & Food Systems operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Agriculture & Food Systems's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 04:09:07"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-02725",
+      "analogyName": "Climate & Environmental Science → Energy Systems: Integrated assessment models for climate",
+      "sourceDomain": "Climate & Environmental Science",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Integrated assessment models for climate policy cost-benefit analysis",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.4506,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Integrated assessment models for climate policy cost-benefit analysis",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1073/pnas.1609244114"
+      },
+      "mappings": [
+        {
+          "sourceNode": "integrated-assessment",
+          "targetNode": "Energy",
+          "strength": 0.55,
+          "reason": "In Climate & Environmental Science, \"integrated-assessment\" serves as the entity mechanism — structurally identical to \"Energy\" in your system. Both govern the same abstract constraint under variable demand."
+        },
+        {
+          "sourceNode": "integrated-assessment",
+          "targetNode": "Efficiently (Bottleneck Factor)",
+          "strength": 0.3,
+          "reason": "\"integrated-assessment\" in Climate & Environmental Science and \"Efficiently (Bottleneck Factor)\" in your problem play analogous structural roles: both act as throughput limiters. "
+        },
+        {
+          "sourceNode": "target",
+          "targetNode": "Data (Goal Factor)",
+          "strength": 0.17,
+          "reason": "Weak but intriguing parallel: \"target\" (Climate & Environmental Science) and \"Data (Goal Factor)\" (your domain) both exist at the boundary of goal dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "integrated-assessment",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"integrated-assessment\" (Climate & Environmental Science) and \"Large (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "integrated-assessment",
+          "reason": "\"integrated-assessment\" in Climate & Environmental Science and \"Efficiently (Bottleneck Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "target",
+          "reason": "\"target\" in Climate & Environmental Science and \"Data (Goal Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "integrated-assessment",
+          "reason": "\"integrated-assessment\" in Climate & Environmental Science and \"Large (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Climate & Environmental Science mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Climate & Environmental Science:\n\n1. WHAT Climate & Environmental Science does: DICE model with fat-tailed damage function shows optimal carbon price of $45/tonne rising 3% annually for 2°C target.\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Climate & Environmental Science system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Climate & Environmental Science's primary variable\n   b) Apply the Climate & Environmental Science solution's core mechanism (DICE model with fat-tailed damage function shows optimal car...) to your constraint space\n   c) Adjust parameters: Climate & Environmental Science operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Climate & Environmental Science's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 03:51:42"
+    },
+    {
+      "id": "analogy-how-can-we-cool-a-large-data-c-02620",
+      "analogyName": "Quantum Computing → Energy Systems: Variational quantum eigensolver for mole",
+      "sourceDomain": "Quantum Computing",
+      "targetDomain": "Energy Systems",
+      "sourceSystem": "Variational quantum eigensolver for molecular ground state energy",
+      "targetSystem": "How can we cool a large data center more efficiently? Current HVAC systems consu",
+      "overallStrength": 0.4428,
+      "patternId": "db-pat-1",
+      "inspiringPaper": {
+        "title": "Variational quantum eigensolver for molecular ground state energy",
+        "authors": "Extracted via Universal Analogy Engine v2",
+        "url": "https://doi.org/10.1038/ncomms5213"
+      },
+      "mappings": [
+        {
+          "sourceNode": "energy",
+          "targetNode": "Energy",
+          "strength": 0.5465,
+          "reason": "In Quantum Computing, \"energy\" serves as the entity mechanism — structurally identical to \"Energy\" in your system. Specifically: \"Variational quantum eigensolver for molecular ground state energy Classical computation of molecular electronic structur...\""
+        },
+        {
+          "sourceNode": "vqe",
+          "targetNode": "Current Flow",
+          "strength": 0.3062,
+          "reason": "\"vqe\" in Quantum Computing and \"Current Flow\" in your problem play analogous structural roles: both act as transport channels. "
+        },
+        {
+          "sourceNode": "vqe",
+          "targetNode": "Efficiently (Bottleneck Factor)",
+          "strength": 0.2167,
+          "reason": "Weak but intriguing parallel: \"vqe\" (Quantum Computing) and \"Efficiently (Bottleneck Factor)\" (your domain) both exist at the boundary of bottleneck dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        },
+        {
+          "sourceNode": "vqe",
+          "targetNode": "Large (Constraint Factor)",
+          "strength": 0.05,
+          "reason": "Weak but intriguing parallel: \"vqe\" (Quantum Computing) and \"Large (Constraint Factor)\" (your domain) both exist at the boundary of constraint dynamics, but the analogy breaks down in specifics — this is where a new mechanism could be invented."
+        }
+      ],
+      "brokenBridges": [
+        {
+          "breakPoint": "vqe",
+          "reason": "\"vqe\" in Quantum Computing and \"Current Flow\" in your problem serve structurally different functions despite surface similarity. The Quantum Computing mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "vqe",
+          "reason": "\"vqe\" in Quantum Computing and \"Efficiently (Bottleneck Factor)\" in your problem serve structurally different functions despite surface similarity. The Quantum Computing mechanism relies on causal chains that don't exist in your system.",
+          "severity": "medium"
+        },
+        {
+          "breakPoint": "vqe",
+          "reason": "\"vqe\" in Quantum Computing and \"Large (Constraint Factor)\" in your problem serve structurally different functions despite surface similarity. The Quantum Computing mechanism relies on causal chains that don't exist in your system.",
+          "severity": "high"
+        }
+      ],
+      "transferableSolutions": [
+        "SPECIFIC MECHANISM TRANSFER from Quantum Computing:\n\n1. WHAT Quantum Computing does: VQE with hardware-efficient ansatz computes H2O ground state energy to chemical accuracy on 12-qubit processor.\n\n2. WHY it applies to you: Your problem involves Energy, Large (Constraint Factor), Data (Goal Factor), which structurally play the same roles as the components in the Quantum Computing system. Both follow the \"Complex System Dynamics & Optimization\" pattern.\n\n3. HOW to adapt it:\n   a) Map your Energy → Quantum Computing's primary variable\n   b) Apply the Quantum Computing solution's core mechanism (VQE with hardware-efficient ansatz computes H2O ground state...) to your constraint space\n   c) Adjust parameters: Quantum Computing operates at different scales, so recalibrate thresholds for your system\n\n4. WHAT'S NOVEL: This combination of Quantum Computing's mechanism applied to your domain problems has likely never been attempted. The gap between these fields is where your invention lives."
+      ],
+      "createdAt": "2026-10-05 03:51:42"
+    },
     {
       "id": "analogy-fake-news-spreads-faster-than-41017",
       "analogyName": "Architecture → General: Experimental Investigation of Heat-gener",
